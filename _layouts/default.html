@@ -2,18 +2,41 @@
 <html>
 <head>
 	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ page.title }}</title>
 	<link rel="stylesheet" href="http://cdn.bootcss.com/twitter-bootstrap/3.0.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../stylesheets/custom.css"/>
 
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <![endif]-->
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
+	<header class="dhead">
+		<div class="container">
+			<h1>Draco's Blog</h1>
+			<p>Don't forget the things you once you owned. Treasure the things you can't get. Don't give up the things that belong to you and keep those things in memory.</p>
+		</div>
+	</header>
 	<div class="container">
-	{{ content }}
+		<div class="row">
+			<div class="col-md-10">{{ content }}</div>
+			<div class="col-md-2 list-group">
+				<a href="#" class="list-group-item active">所有文章</a>
+				<a href="#" class="list-group-item">Java</a>
+				<a href="#" class="list-group-item">C#</a>
+				<a href="#" class="list-group-item">WPF</a>
+				<a href="#" class="list-group-item">Javascript</a>
+				<a href="#" class="list-group-item">CSS</a>
+				<a href="#" class="list-group-item">Go</a>
+				<a href="#" class="list-group-item">C++</a>
+				<a href="#" class="list-group-item">Qt</a>
+			</div>
+		</div>
 	</div>
 	<script src="http://codeorigin.jquery.com/jquery-1.10.2.min.js"></script>
 	<script src="http://cdn.bootcss.com/twitter-bootstrap/3.0.2/js/bootstrap.min.js"></script>
