@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<title>Our Love Story</title>
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('love/digital-7_mono.ttf') format("truetype");
+		}
+	</style>
+	<link href="{{ site.baseurl }}/love/css/default_dev.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="{{ site.baseurl }}/love/js/jquery.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/love/js/garden.js"></script>
+	<script type="text/javascript" src="{{ site.baseurl }}/love/js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">/**</span><br />
+				<span class="space"/><span class="comments">* 谨以此纪念我们见面的日子</span><br />
+				<span class="space"/><span class="comments">* 以及将至的情人节</span><br />
+				<span class="space"/><span class="comments">*/</span><br />
+				Boy i = <span class="keyword">new</span> Boy(<span class="string">"彭畅"</span>);<br />
+				Girl u = <span class="keyword">new</span> Girl(<span class="string">"蔡山"</span>);<br />
+				i.meet(u, "2014-02-04");<br />
+				<span class="comments">// 我开始相信一见钟情</span><br />
+				i.fallInLoveAtFirstSightWith(u);<br />
+				<span class="comments">// 从此，每一天都十分想你</span><br />
+				i.miss(u);<br />
+				<span class="comments">// 数日的来往使我觉得无比温暖</span><br />
+				u.isWarm = true;<br />
+				<span class="comments">// 苦思冥想却只得到四个字</span><br />
+				i.tryingToThink();<br />
+				<span class="comments">// 有你真好！</span><br />
+				i.isLucky = have(u);<br />
+				<span class="comments">// 希望我们能走到一起</span><br />
+				<span class="keyword">while</span> (!u.accept(i)) {<br />
+				<span class="placeholder"/>i.waitFor(u);<br />
+				}<br />
+				<span class="comments">// 我爱你！</span><br />
+				i.love(u);<br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						33，我已经爱上你
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						情人节快乐！<br/>
+						<div class="signature">- 畅</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright" style="visibility:hidden">
+			Inspired by <a href="http://www.openrise.com/lab/FlowerPower/">FlowerPower</a> project.<br />
+			Copyright © 2013 <a href='#'>draco</a> 2012-2016
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		together.setFullYear(2014, 1, 4);
+		together.setHours(10);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "浏览器过于陈旧!<br/>推荐使用 Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+	    document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 3000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+</html>
