@@ -31,7 +31,7 @@
 				i.fallInLoveAtFirstSightWith(u);<br />
 				<span class="comments">// 从此，每一天都十分想你</span><br />
 				i.miss(u);<br />
-				<span class="comments">// 数日的来往使我觉得无比温暖</span><br />
+				<span class="comments">// 你的悉心使我觉得无比温暖</span><br />
 				u.isWarm = true;<br />
 				<span class="comments">// 苦思冥想却只得到四个字</span><br />
 				i.tryingToThink();<br />
@@ -73,7 +73,14 @@
 		together.setSeconds(0);
 		together.setMilliseconds(0);
 		
-		if (!document.createElement('canvas').getContext) {
+		if (+new Date() < +new Date(2014, 1, 14, 0, 0, 0, 0)) {
+			$('#mainDiv').css({
+				'height': '400px',
+				'line-height': '400px',
+				'text-align': 'center',
+				'font-size': '32px'
+			}).html('未到开放时间，请耐心等候&hearts;');
+		} else if (!document.createElement('canvas').getContext) {
 			var msg = document.createElement("div");
 			msg.id = "errorMsg";
 			msg.innerHTML = "浏览器过于陈旧!<br/>推荐使用 Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
@@ -81,7 +88,7 @@
 			$("#code").css("display", "none")
 			$("#copyright").css("position", "absolute");
 			$("#copyright").css("bottom", "10px");
-	    document.execCommand("stop");
+	    	document.execCommand("stop");
 		} else {
 			setTimeout(function () {
 				startHeartAnimation();
