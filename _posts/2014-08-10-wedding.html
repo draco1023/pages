@@ -28,7 +28,7 @@
 		Zepto(function($){
 		  var envelope = $('.envelope');
 		  envelope.addClass('new');
-		  envelope.on('tap', function(e) {
+		  envelope.on('click', function(e) {
 		  	$(this).addClass('turn');
 		  	window.setTimeout(function() {
 		  		$('.flip').addClass('open');
