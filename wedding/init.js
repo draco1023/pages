@@ -105,6 +105,6 @@ $(document).ready(function() {
     //     });
     // }
     var _img = new Image();
-    _img.src = "1.jpg";
+    _img.src = ctx + "1.jpg";
     _img.onload = function () {$(".loading").hide()}
 });
