@@ -1,40 +1,33 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title>2014-09-20诚挚的邀请您参加彭畅和蔡山的婚礼</title>
-		<link href="{{ site.baseurl }}/wedding/main.css" type="text/css" rel="stylesheet">
-		<script src="{{ site.baseurl }}/wedding/zepto.min.js"></script>
-	</head>
-	<body>
-		<div class="envelope new">
-			<div class="front">
-				<div class="invite"></div>
-			</div>
-			<div class="back">
-				<div class="bottom"></div>
-				<div class="letter">
-					<div class="content"></div>
-				</div>
-				<div class="top"></div>
-				<div class="flip">
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
-			</div>
+<head>
+	<meta charset="utf-8">
+	<title>20140920彭畅&hearts;蔡山</title>
+	<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<script type="text/javascript" src="{{ site.baseurl }}/wedding/jquery.min.js"></script>
+</head>
+<body>
+	<div class="loading"><img src="loading.gif" style="margin:0 0 -50px -50px"></div>
+	<div class="main">
+		<div class="content">
+			<div class="invitation show page" style="overflow:hidden">
+				<ul class="item first"><img src="{{ site.baseurl }}/wedding/1.jpg"></ul>
+				<ul class="item hide"><img src="{{ site.baseurl }}/wedding/2.jpg"></ul>
+				<ul class="item hide"><img src="{{ site.baseurl }}/wedding/3.jpg"></ul>
+				<ul class="item hide"><img src="{{ site.baseurl }}/wedding/4.jpg"></ul>
+				<!--<ul class="item hide"><img src="5.jpg"></ul>
+				<ul class="item hide"><img src="6.jpg"></ul>
+				<ul class="item hide"><img src="7.jpg"></ul>
+				<ul class="item hide"><img src="8.jpg"></ul>
+				<ul class="item hide"><img src="9.jpg"></ul>
+				<ul class="item hide"><img src="10.jpg"></ul>
+				<ul class="item hide"><img src="yjdh.jpg" onClick="window.location.href='地图连接'"><img src="11.jpg"></ul>-->
+			</div> 
 		</div>
-		<script>
-		Zepto(function($){
-		  var envelope = $('.envelope');
-		  envelope.addClass('new');
-		  envelope.on('click', function(e) {
-		  	$(this).addClass('turn');
-		  	window.setTimeout(function() {
-		  		$('.flip').addClass('open');
-	  		}, 2000);
-		  });
-		});
-		</script>
-	</body>
+	</div>
+
+	<!--<audio src="bg.mp3" id="audio_play" loop autoplay="autoplay"></audio>-->
+	<script type="text/javascript" src="{{ site.baseurl }}/wedding/init.js"></script> 
+</body>
 </html>
