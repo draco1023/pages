@@ -2,39 +2,34 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<title>2014-09-20诚挚的邀请您参加彭畅和蔡山的婚礼</title>
-		<link href="{{ site.baseurl }}/wedding/main.css" type="text/css" rel="stylesheet">
-		<script src="{{ site.baseurl }}/wedding/zepto.min.js"></script>
+		<title>2014-09-20彭畅&hearts;蔡山</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="{{ site.baseurl }}/wedding/jm.m.css" type="text/css" rel="stylesheet">
+		<link href="{{ site.baseurl }}/wedding/my.css" type="text/css" rel="stylesheet">
+		<script src="{{ site.baseurl }}/wedding/j.m.js"></script>
+		<script src="{{ site.baseurl }}/wedding/jm.m.js"></script>
+		<script src="{{ site.baseurl }}/wedding/my.js"></script>
 	</head>
 	<body>
-		<div class="envelope new">
-			<div class="front">
-				<div class="invite"></div>
-			</div>
-			<div class="back">
-				<div class="bottom"></div>
-				<div class="letter">
-					<div class="content"></div>
-				</div>
-				<div class="top"></div>
-				<div class="flip">
-					<div class="front"></div>
-					<div class="back"></div>
-				</div>
+		<div data-role="page" id="first" class="container" data-title="New York" data-next="second">
+			<div role="main" class="ui-content">
 			</div>
 		</div>
-		<script>
-		Zepto(function($){
-		  var envelope = $('.envelope');
-		  envelope.addClass('new');
-		  envelope.on('click', function(e) {
-		  	$(this).addClass('turn');
-		  	window.setTimeout(function() {
-		  		$('.flip').addClass('open');
-	  		}, 2000);
-		  });
-		});
-		</script>
+		<div data-role="page" id="second" class="container" data-title="New York" data-prev="first" data-next="third">
+			<div role="main" class="ui-content">
+			</div>
+		</div>
+		<div data-role="page" id="third" class="container" data-title="New York" data-prev="second" data-next="forth">
+			<div role="main" class="ui-content">
+			</div>
+		</div>
+		<div data-role="page" id="forth" class="container" data-title="New York" data-prev="third" data-next="fifth">
+			<div role="main" class="ui-content">
+			</div>
+		</div>
+		<div data-role="page" id="fifth" class="container" data-title="New York" data-prev="forth">
+			<div role="main" class="ui-content">
+			</div>
+		</div>
 	</body>
 </html>
