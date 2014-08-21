@@ -17,14 +17,16 @@ $(document).ready(function() {
     }
 
     function touchstart(e) {
-        if (e.type == "touchstart") {
-            pos.x1 = window.event.touches[0].pageX;
-            pos.y1 = window.event.touches[0].pageY;
-        } else {
-            pos.x1 = e.pageX;
-            pos.y1 = e.pageY;
-        }
-        mousedown = true;
+        if (e.target.tagName == 'IMG') {
+			if (e.type == "touchstart") {
+				pos.x1 = window.event.touches[0].pageX;
+				pos.y1 = window.event.touches[0].pageY;
+			} else {
+				pos.x1 = e.pageX;
+				pos.y1 = e.pageY;
+			}
+			mousedown = true;
+		}
     }
 
     function touchmove(e) {
