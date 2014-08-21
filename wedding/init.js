@@ -93,7 +93,7 @@ $(document).ready(function() {
                 current = current + step;
 				if (current == total - 1 && !map) {
 					map = new BMap.Map("map");
-					map.centerAndZoom(new BMap.Point(112.370064,28.570186), 17);
+					map.centerAndZoom(new BMap.Point(112.370064,28.570986), 17);
 					var marker1 = new BMap.Marker(new BMap.Point(112.370064,28.570186));
 					map.addOverlay(marker1);
 					var infoWindow1 = new BMap.InfoWindow("世纪豪廷大酒店五楼紫光阁<br/>电话:17096701027 15616168974");
