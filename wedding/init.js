@@ -9,7 +9,8 @@ $(document).ready(function() {
         direct = null,
         current = 0,
         items = $(".item"),
-        total = items.size();
+        total = items.size(),
+		map = null;
 
     function swipeDirection(x1, x2, y1, y2) {
         return Math.abs(x1-x2) >=Math.abs(y1-y2) ? (x1-x2>100 ? "left" : (x1-x2<-100 ? "right" : "middle")) : (y1-y2 > 100 ? "up" : (y1-y2<-100 ? "down" : "middle"));
@@ -92,6 +93,14 @@ $(document).ready(function() {
                 current = current + step;
             });
         }
+		if (current == total - 1 && !map) {
+			map = new BMap.Map("map");
+			map.centerAndZoom(new BMap.Point(112.370064,28.570186), 17);
+			var marker1 = new BMap.Marker(new BMap.Point(112.370064,28.570186));
+			map.addOverlay(marker1);
+			var infoWindow1 = new BMap.InfoWindow("世纪豪廷大酒店五楼紫光阁<br/>联系电话:17096701027 15616168974");
+			marker1.openInfoWindow(infoWindow1);
+		}
     }
 
     $('.invitation').height(h);
