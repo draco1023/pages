@@ -99,7 +99,7 @@ $(document).ready(function() {
 					var infoWindow1 = new BMap.InfoWindow("世纪豪廷大酒店五楼紫光阁<br/>电话:17096701027 15616168974");
 					marker1.openInfoWindow(infoWindow1);
 					marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
-					map.addEventListener("tilesloaded",function(){$('.BMap_cpyCtrl').hide();});
+					// map.addEventListener("tilesloaded",function(){$('.BMap_cpyCtrl').hide();});
 				}
             });
         }
