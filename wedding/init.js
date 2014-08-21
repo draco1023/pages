@@ -96,7 +96,7 @@ $(document).ready(function() {
 					map.centerAndZoom(new BMap.Point(112.370064,28.570186), 17);
 					var marker1 = new BMap.Marker(new BMap.Point(112.370064,28.570186));
 					map.addOverlay(marker1);
-					var infoWindow1 = new BMap.InfoWindow("世纪豪廷大酒店五楼紫光阁<br/>联系电话:17096701027 15616168974");
+					var infoWindow1 = new BMap.InfoWindow("世纪豪廷大酒店五楼紫光阁<br/>电话:17096701027 15616168974");
 					marker1.openInfoWindow(infoWindow1);
 				}
             });
