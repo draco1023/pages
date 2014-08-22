@@ -118,25 +118,19 @@ $(document).ready(function() {
     p.bind("mousemove touchmove", touchmove);
     p.bind("mouseup touchend mouseout", touchend);
 	
-	function resetTip() {
-		if (!tipStopped) {
-			tip.css({
-				'margin-left': '-32px',
-				'opacity': 1
-			});
-			loopTip();
-		}
-	}
-	
 	function loopTip() {
+		if (tipStopped) return;
+		tip.css({
+			'margin-left': '-32px',
+			'opacity': 1
+		});
 		tip.animate({
 			'margin-left': '-=100px',
 			'opacity': 0
 		}, 1000, 'swing', function() {
-			setTimeout(resetTip, 800);
+			setTimeout(loopTip, 800);
 		});
 	}
-	loopTip();
 
     // if(/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
     //     $(document).one('touchstart', function (e) { 
@@ -145,5 +139,8 @@ $(document).ready(function() {
     // }
     var _img = new Image();
     _img.src = ctx + "1.jpg";
-    _img.onload = function () {$(".loading").hide()}
+    _img.onload = function () {
+		$(".loading").hide();
+		setTimeout(loopTip, 800);
+	}
 });
