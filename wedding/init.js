@@ -10,7 +10,9 @@ $(document).ready(function() {
         current = 0,
         items = $(".item"),
         total = items.size(),
-		map = null;
+		map = null,
+		tip = $('#tip'),
+		tipStopped = false;
 
     function swipeDirection(x1, x2, y1, y2) {
         return Math.abs(x1-x2) >=Math.abs(y1-y2) ? (x1-x2>100 ? "left" : (x1-x2<-100 ? "right" : "middle")) : (y1-y2 > 100 ? "up" : (y1-y2<-100 ? "down" : "middle"));
@@ -103,6 +105,10 @@ $(document).ready(function() {
 					marker1.addEventListener("click", function(){this.openInfoWindow(infoWindow1);});
 					// map.addEventListener("tilesloaded",function(){$('.BMap_cpyCtrl').hide();});
 				}
+				if (!tipStopped) {
+					tipStopped = true;
+					tip.hide();
+				}
             });
         }
     }
@@ -111,6 +117,26 @@ $(document).ready(function() {
     p.bind("mousedown touchstart", touchstart);
     p.bind("mousemove touchmove", touchmove);
     p.bind("mouseup touchend mouseout", touchend);
+	
+	function resetTip() {
+		if (!tipStopped) {
+			tip.css({
+				'margin-left': '-32px',
+				'opacity': 1
+			});
+			loopTip();
+		}
+	}
+	
+	function loopTip() {
+		tip.animate({
+			'margin-left': '-=100px',
+			'opacity': 0
+		}, 1000, 'swing', function() {
+			setTimeout(resetTip, 800);
+		});
+	}
+	loopTip();
 
     // if(/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
     //     $(document).one('touchstart', function (e) { 
