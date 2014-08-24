@@ -5,6 +5,7 @@ $(document).ready(function() {
         w = win.width(),
         p = $(".page"),
         pos = {},
+        d = 75,
         mousedown = null,
         direct = null,
         current = 0,
@@ -15,7 +16,7 @@ $(document).ready(function() {
 		tipStopped = false;
 
     function swipeDirection(x1, x2, y1, y2) {
-        return Math.abs(x1-x2) >=Math.abs(y1-y2) ? (x1-x2>100 ? "left" : (x1-x2<-100 ? "right" : "middle")) : (y1-y2 > 100 ? "up" : (y1-y2<-100 ? "down" : "middle"));
+        return Math.abs(x1-x2) >=Math.abs(y1-y2) ? (x1-x2>d ? "left" : (x1-x2<-d ? "right" : "middle")) : (y1-y2 > d ? "up" : (y1-y2<-d ? "down" : "middle"));
     }
 
     function touchstart(e) {
@@ -132,11 +133,11 @@ $(document).ready(function() {
 		});
 	}
 
-    if(/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
-        $(document).one('touchstart', function (e) { 
-           document.getElementById("audio_play").play(); 
-        });
-    }
+    // if(/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
+    //     $(document).one('touchstart', function (e) { 
+    //        document.getElementById("audio_play").play(); 
+    //     });
+    // }
     var _img = new Image();
     _img.src = ctx + "1.jpg";
     _img.onload = function () {

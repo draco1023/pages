@@ -26,3 +26,4 @@ img{border:0}
 #mc {position:relative;width:100%;height:100%;}
 #map {width:90%; height:80%; overflow:hidden; left:0; top:0; margin:0; position:absolute!important;margin: 5%;}
 #tip {position:absolute;left:50%;bottom:0;z-index:20;margin-left:-32px;opacity:0;}
+#wel {position: absolute;left:50%;bottom: 2%;margin-left: -90px;width:180px;}
