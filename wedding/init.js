@@ -132,11 +132,11 @@ $(document).ready(function() {
 		});
 	}
 
-    // if(/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
-    //     $(document).one('touchstart', function (e) { 
-    //        document.getElementById("audio_play").play(); 
-    //     });
-    // }
+    if(/i(Phone|P(o|a)d)/.test(navigator.userAgent)) {
+        $(document).one('touchstart', function (e) { 
+           document.getElementById("audio_play").play(); 
+        });
+    }
     var _img = new Image();
     _img.src = ctx + "1.jpg";
     _img.onload = function () {
