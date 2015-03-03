@@ -3,7 +3,7 @@ html, body, .container {
 }
 
 body {
-	background: #e74c3c url(../img/winterforest.png) repeat-x bottom center;
+	background: #e74c3c url(winterforest.png) repeat-x bottom center;
 	overflow: hidden;
 }
 
