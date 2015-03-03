@@ -1,0 +1,38 @@
+/* 
+* @Author: Draco
+* @Date:   2015-03-03 15:28:46
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-03-03 16:44:57
+*/
+
+body {
+    color: #333;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+#section01 {
+    background: rgb(158,122,65);
+	background: -moz-linear-gradient(-45deg,  rgba(158,122,65,1) 0%, rgba(255,255,255,1) 60%, rgba(255,255,255,1) 70%, rgba(225,202,139,1) 100%);
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(158,122,65,1)), color-stop(60%,rgba(255,255,255,1)), color-stop(70%,rgba(255,255,255,1)), color-stop(100%,rgba(225,202,139,1)));
+	background: -webkit-linear-gradient(-45deg,  rgba(158,122,65,1) 0%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 70%,rgba(225,202,139,1) 100%);
+	background: -o-linear-gradient(-45deg,  rgba(158,122,65,1) 0%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 70%,rgba(225,202,139,1) 100%);
+	background: -ms-linear-gradient(-45deg,  rgba(158,122,65,1) 0%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 70%,rgba(225,202,139,1) 100%);
+	background: linear-gradient(135deg,  rgba(158,122,65,1) 0%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 70%,rgba(225,202,139,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e7a41', endColorstr='#e1ca8b',GradientType=1 );
+
+    color: #fff;
+}
+#section01 h1 {
+	position: absolute;
+	left: 5%;
+	top: 2%;
+}
+#section01 h2#subtitle1 {
+	position: absolute;
+	left: 5%;
+	top: 10%;	
+}
+#section01 h2#subtitle2 {
+	position: absolute;
+	left: 5%;
+	top: 16%;	
+}
