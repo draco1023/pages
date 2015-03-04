@@ -2,12 +2,22 @@
 * @Author: Draco
 * @Date:   2015-03-03 15:28:46
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-04 11:07:04
+* @Last Modified time: 2015-03-04 16:18:34
 */
 
 body {
     color: #333;
     font-family: "YouYuan", "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+svg {
+	width: 100%;
+	height: 100%;
+}
+
+svg text {
+	line-height: 125%;
+	fill: #fff;
 }
 
 /********** 01 **********/
@@ -20,35 +30,6 @@ body {
 	background: -ms-linear-gradient(-30deg,  rgba(158,122,65,1) 0%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 70%,rgba(225,202,139,1) 100%);
 	background: linear-gradient(150deg,  rgba(158,122,65,1) 0%,rgba(255,255,255,1) 60%,rgba(255,255,255,1) 70%,rgba(225,202,139,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e7a41', endColorstr='#e1ca8b',GradientType=1 );
-
-    color: #fff;
-}
-#section01 h1 {
-	position: absolute;
-	left: 5%;
-	top: 5%;
-}
-#section01 #subtitle1-1 {
-	position: absolute;
-	left: 5%;
-	top: 13%;	
-}
-#section01 #subtitle1-2 {
-	position: absolute;
-	left: 5%;
-	top: 19%;	
-}
-#section01 #foot1-1 {
-	position: absolute;
-	width: 100%;
-	bottom: 1%;
-	color: #9e7a41;
-	text-align: center;
-}
-
-#section01 svg {
-	width: 100%;
-	height: 100%;
 }
 
 #path1-1 {
@@ -70,12 +51,6 @@ body {
     opacity: 1;
 }
 
-#section01 #img1-1 {
-	position: absolute;
-	top: 35%;
-	width: 90%;
-}
-
 /********** 02 **********/
 #section02 {
 	background: rgb(255,150,0);
@@ -86,4 +61,12 @@ body {
 	background: -ms-linear-gradient(top,  rgba(255,150,0,1) 0%,rgba(255,150,0,1) 43%,rgba(255,150,0,1) 43%,rgba(219,254,255,1) 43%,rgba(219,254,255,1) 100%);
 	background: linear-gradient(to bottom,  rgba(255,150,0,1) 0%,rgba(255,150,0,1) 43%,rgba(255,150,0,1) 43%,rgba(219,254,255,1) 43%,rgba(219,254,255,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9600', endColorstr='#dbfeff',GradientType=0 );
+}
+
+#g2-1 path {
+	stroke-linejoin: miter;
+	stroke:#6CC5EC;
+	stroke-linecap:butt;
+	stroke-width:5px;
+	fill:none;
 }
