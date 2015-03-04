@@ -13,8 +13,13 @@
 		<div id="fullpage">
 			<div class="section" id="section01">
 				<h1>睿胜能效</h1>
-				<h2 id="subtitle1">致力于成为行业内值得信赖</h2>
-				<h2 id="subtitle2">受人尊敬的节能管理专家</h2>
+				<h2 id="subtitle1-1">致力于成为行业内值得信赖</h2>
+				<h2 id="subtitle1-2">受人尊敬的节能管理专家</h2>
+				<h5 id="foot1-1">Resp已经坚定地走在了能效业务的探索求真之路上</h4>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 744.09 1052.4">
+					<path id="path1-1" fill="#ffd901" d="M381.32,976.06c-115.02-2.84-224.37-22.95-349.64-64.31l-30.357-10.03,0.00211-30.238c0.00116-16.631,0.42508-53.763,0.94203-82.516l0.93993-52.278,17.079,10.51c159.22,97.986,384.37,155.61,591.74,151.44,44.339-0.89094,78.564-3.1877,109.2-7.3283,8.9858-1.2143,17.825-2.2079,19.643-2.2079h3.3051v22.857c0,12.571-0.32616,22.857-0.72479,22.857-0.39864,0-9.5594,1.9742-20.357,4.3871-87.127,19.47-166.98,31.275-240.35,35.53-36.718,2.1297-57.613,2.4021-101.43,1.3224z"/>
+				</svg>
+				<img id="img1-1" src="../wasion/img/jqr.png">
 			</div>
 			<div class="section" id="section02">
 				<h1>Second</h1>
@@ -50,20 +55,23 @@
 					// sectionsColor: colors,
 					// verticalCentered: false,
 					afterRender: function() {
-						
+						$('#path1-1').attr('class', 'enter');
 					},
 
 					afterLoad: function(anchorLink, index){
-						if(index == 2){
+						if (index == 1) {
+							$('#path1-1').attr('class', 'enter');
+						} else if (index == 2) {
 							
 						}
 					},
 
 					onLeave: function(index, newIndex, direction){
-						if (index == 3 && direction == 'down'){
+						if (index == 1 && direction == 'down') {
+							$('#path1-1').removeAttr('class');
+						} else if (index == 3 && direction == 'down'){
 							$('.section').eq(index -1).removeClass('moveDown').addClass('moveUp');
-						}
-						else if(index == 3 && direction == 'up'){
+						} else if(index == 3 && direction == 'up'){
 							$('.section').eq(index -1).removeClass('moveUp').addClass('moveDown');
 						}
 					}
