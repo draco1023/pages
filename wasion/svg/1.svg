@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 768 1024" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <text xml:space="preserve">
+        <tspan x="54" y="20" style="font-size:72px;font-weight:bold;">睿胜能效</tspan>
+        <tspan x="54" y="100" style="font-size:56px;">致力于成为行业内值得信赖</tspan>
+        <tspan x="54" y="180" style="font-size:56px;">受人尊敬的节能管理专家</tspan>
+    </text>
+
+    <path id="path1-1" style="fill:#ffd901;" d="M409.09,768.06c-123.42-2.84-240.77-22.95-375.19-64.31l-32.575-10.03,0.00226-30.238c0.00124-16.631,0.45614-53.763,1.0109-82.516l1.0086-52.278,18.327,10.51c170.86,97.986,412.46,155.61,634.99,151.44,47.579-0.89094,84.305-3.1877,117.18-7.3283,9.6424-1.2143,19.128-2.2079,21.078-2.2079h3.5466v22.857c0,12.571-0.34999,22.857-0.77775,22.857-0.42777,0-10.258,1.9742-21.845,4.3871-93.494,19.47-179.19,31.275-257.91,35.53-39.402,2.1297-61.823,2.4021-108.84,1.3224z" transform="translate(1280,200)" fill-opacity="0"/>
+
+    <image xlink:href="../wasion/img/jqr.png" height="750" width="750" y="240" x="10" />
+
+    <text style="font-size:32px;fill:#000;" xml:space="preserve" y="1050" x="40">Resp已经坚定地走在了能效业务的探索求真之路上</text>
+</svg>
