@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 768 1024" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <g transform="translate(0,-28.36218)">
+
+        <rect style="fill:#ff9600;" height="96" width="768" y="6.36" x="0"/>
+
+        <text style="font-size:40px;" xml:space="preserve" y="71.70593" x="40.406101">企业文化</text>
+
+        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="-48" x="210"/>
+
+        <text xml:space="preserve" style="fill:#ff9600;" id="text3-1" transform="translate(0,300)" fill-opacity="0">
+            <tspan x="68.649765" style="font-size:36px;" y="188.44321">睿胜能效将致力于管理节能领域的研究，</tspan>
+            <tspan x="68.649765" style="font-size:36px;" y="228.44321">持续领先，不断完善，</tspan>
+            <tspan x="68.649765" style="font-size:36px;" y="268.44321">为客户提供最优质的服务，</tspan>
+            <tspan x="68.649765" style="font-size:36px;" y="308.44321">引领并推动能效服务产业的长期健康发展。</tspan>
+        </text>
+
+        <image xlink:href="../wasion/img/p3_tu3.png" height="640" width="616" y="398.24" x="76" id="img3-1" transform="translate(0,800)" fill-opacity="0"/>
+
+        <text style="font-size:40px;" xml:space="preserve" y="533.02191" x="508.91074" class="text3-2" transform="scale(0)">使命</text>
+        <text style="font-size:30px;" xml:space="preserve" y="583.5296" x="428.83261" class="text3-2" transform="scale(0)">成为管理节能专家</text>
+        <text style="font-size:40px;" xml:space="preserve" y="700.60571" x="205.17979" class="text3-2" transform="scale(0)">愿景</text>
+        <text style="font-size:30px;" xml:space="preserve" y="753.23523" x="139.84776" class="text3-2" transform="scale(0)">成为市场领导者</text>
+        <text style="font-size:40px;" xml:space="preserve" y="842.25043" x="487.09518" class="text3-2" transform="scale(0)">价值观</text>
+        <text xml:space="preserve" class="text3-2" transform="scale(0)">
+            <tspan x="428.64987" style="font-size:28px;" y="884.67688">精益求精 尽善尽美</tspan>
+            <tspan x="428.64987" style="font-size:28px;" y="919.67688">服务社会 成就个人</tspan>
+        </text>
+
+     </g>
+</svg>

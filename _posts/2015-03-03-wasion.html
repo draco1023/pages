@@ -7,8 +7,8 @@
     <title>睿胜能效</title>
     <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
     <meta name="author" content="Draco">
-    <link rel="stylesheet" href="{{ site.baseurl }}/wasion/jquery.fullPage.css">
-    <link rel="stylesheet" href="{{ site.baseurl }}/wasion/wasion.css">
+    <link rel="stylesheet" href="../wasion/jquery.fullPage.css">
+    <link rel="stylesheet" href="../wasion/wasion.css">
 </head>
 
 <body>
@@ -32,10 +32,10 @@
         <div class="section" id="section17"></div>
     </div>
 
-    <script src="{{ site.baseurl }}/wasion/jquery.min.js"></script>
-    <!-- <script src="{{ site.baseurl }}/wasion/jquery.easings.min.js"></script> -->
-    <script src="{{ site.baseurl }}/wasion/jquery.fullPage.min.js"></script>
-    <script src="{{ site.baseurl }}/wasion/snap.svg-min.js"></script>
+    <script src="../wasion/jquery.min.js"></script>
+    <!-- <script src="../wasion/jquery.easings.min.js"></script> -->
+    <script src="../wasion/jquery.fullPage.min.js"></script>
+    <script src="../wasion/snap.svg-min.js"></script>
     <script type="text/javascript">
     var flag = 0,
     jqCache = {},
@@ -71,16 +71,6 @@
             	'fill-opacity': 1
     		}
     	},
-    	'#text2-3': {
-    		o: {
-    			transform: 'translate(-300,0)',
-            	'fill-opacity': 0
-    		},
-    		n: {
-    			transform: 'translate(0,0)',
-            	'fill-opacity': 1
-    		}
-    	},
     	'#g2-1': {
     		o: {
     			transform: 'translate(-100,0)',
@@ -90,11 +80,58 @@
     			transform: 'translate(0,0)',
             	'stroke-opacity': 1
     		}
+    	},
+    	'#text3-1': {
+    		o: {
+    			transform: 'translate(0,300)',
+            	'fill-opacity': 0
+    		},
+    		n: {
+    			transform: 'translate(0,0)',
+            	'fill-opacity': 1
+    		}
+    	},
+    	'#img3-1': {
+    		o: {
+    			transform: 'translate(0,500)',
+    			opacity: 0
+    		},
+    		n: {
+				transform: 'translate(0,0)',
+				opacity: 1
+    		}
+    	},
+    	'.text3-2': {
+    		o: {
+    			transform: 'scale(0)'
+    		},
+    		n: {
+    			transform: 'scale(1)'
+    		}
     	}
     },
     components = [
     	['#path1-1'],
-    	['#text2-1', '#g2-1', '#text2-2', '#text2-3']
+    	['#text2-1', '#g2-1', '#text2-2'],
+    	['#text3-1', '#img3-1', '.text3-2'],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[],
+    	[]
 	];
 
     function _(selector, isJquery) {
@@ -108,7 +145,7 @@
 		} else {
 			obj = svgCache[selector];
 			if (!obj) {
-				obj = selector.indexOf(',') > -1 ? Snap.selectAll(selector) : Snap.select(selector);
+				obj = selector.indexOf(',') > -1 || selector.indexOf('.') === 0 ? Snap.selectAll(selector) : Snap.select(selector);
 				svgCache[selector] = obj;
 			}
 		}
@@ -119,7 +156,7 @@
 		var i = index - 1,
 		cur = flag;
 		if (!(cur >> i & 1))
-			Snap.load('{{ site.baseurl }}/wasion/svg/' + index + '.svg', function(d) {
+			Snap.load('../wasion/svg/' + index + '.svg', function(d) {
 				this.appendChild(d.node);
 				flag |= 1 << i;
 				var comp = components[i];
@@ -130,7 +167,14 @@
 	}
 
 	function attr(selector) {
-		_(selector).stop().attr(states[selector].o);
+		var els = _(selector);
+		if (els.stop) {
+			els.stop().attr(states[selector].o);
+		} else {
+			els.forEach(function(el){
+				el.stop();
+			}).attr(states[selector].o);
+		}
 	}
 
 	function animate(selector, duration, ease, callback) {
