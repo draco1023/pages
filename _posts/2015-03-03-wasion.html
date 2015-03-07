@@ -108,14 +108,136 @@
     		n: {
     			transform: 'scale(1)'
     		}
-    	}
+    	},
+        '#text4-1': {
+            o: {
+                transform: 'translate(0,-200)',
+                'fill-opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'fill-opacity': 1
+            }
+        },
+        '#text4-2': {
+            o: {
+                transform: 'translate(0,-200)',
+                'fill-opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'fill-opacity': 1
+            }
+        },
+        '#text4-3': {
+            o: {
+                transform: 'translate(0,-200)',
+                'fill-opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'fill-opacity': 1
+            }
+        },
+        '#text4-4': {
+            o: {
+                transform: 'translate(0,-200)',
+                'fill-opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'fill-opacity': 1
+            }
+        },
+        '#img5-1': {
+            o: {
+                transform: 'translate(0,900)',
+                'opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'opacity': 1
+            }
+        },
+        '#img5-2': {
+            o: {
+                transform: 'translate(0,200)',
+                'opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'opacity': 1
+            }
+        },
+        '#img5-3': {
+            o: {
+                transform: 'translate(0,800)',
+                'opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'opacity': 1
+            }
+        },
+        '#img5-4': {
+            o: {
+                transform: 'translate(0,500)',
+                'opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'opacity': 1
+            }
+        },
+        '#img5-5': {
+            o: {
+                transform: 'translate(0,500)',
+                'opacity': 0
+            },
+            n: {
+                transform: 'translate(0,0)',
+                'opacity': 1
+            }
+        },
+        '#text5-1': {
+            o: {
+                transform: 'scale(0)'
+            },
+            n: {
+                transform: 'scale(1) rotate(360, 384, 512)'
+            }
+        },
+        '#text5-2': {
+            o: {
+                transform: 'scale(0)'
+            },
+            n: {
+                transform: 'scale(1) rotate(360, 384, 512)'
+            }
+        },
+        '#text5-3': {
+            o: {
+                transform: 'scale(0)'
+            },
+            n: {
+                transform: 'scale(1) rotate(360, 384, 512)'
+            }
+        },
+        '#text5-4': {
+            o: {
+                transform: 'scale(0)'
+            },
+            n: {
+                transform: 'scale(1) rotate(360, 384, 512)'
+            }
+        }
     },
     components = [
     	['#path1-1'],
     	['#text2-1', '#g2-1', '#text2-2'],
     	['#text3-1', '#img3-1', '.text3-2'],
-    	[],
-    	[],
+    	['#text4-1', '#text4-2', '#text4-3', '#text4-4'],
+    	['#img5-1', '#img5-2', '#img5-3', '#img5-4', '#img5-5', '#text5-1', '#text5-2', '#text5-3', '#text5-4'],
     	[],
     	[],
     	[],
@@ -156,7 +278,7 @@
 		var i = index - 1,
 		cur = flag;
 		if (!(cur >> i & 1))
-			Snap.load('../wasion/svg/' + index + '.svg', function(d) {
+			Snap.load('../wasion/svg/' + index + '.svg?d=' + (+new Date), function(d) {
 				this.appendChild(d.node);
 				flag |= 1 << i;
 				var comp = components[i];

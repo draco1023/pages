@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 768 1024" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <image xlink:href="../wasion/img/p2_nx.png" height="335" width="515" y="-20" x="160"/>
+    <image xlink:href="../wasion/img/p2_nx.png" height="335" width="515" y="20" x="160"/>
 
     <text style="font-size:32px;" xml:space="preserve" id="text2-1" transform="translate(-300,0)" fill-opacity="0">
-        <tspan y="90.677" x="258.10526">能效业务</tspan>
-        <tspan y="135.43245" x="214.76151">是实现节能产业</tspan>
-        <tspan y="180.00043" x="227.04276">跨越式发展的</tspan>
-        <tspan y="225.03708" x="258.19901">唯一途径</tspan>
+        <tspan y="130.677" x="258.10526">能效业务</tspan>
+        <tspan y="175.43245" x="214.76151">是实现节能产业</tspan>
+        <tspan y="220.00043" x="227.04276">跨越式发展的</tspan>
+        <tspan y="265.03708" x="258.19901">唯一途径</tspan>
     </text>
 
     <text style="font-size:36px;fill:#000;" xml:space="preserve" id="text2-2" transform="translate(-300,0)" fill-opacity="0">

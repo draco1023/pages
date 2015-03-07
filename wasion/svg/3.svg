@@ -2,17 +2,15 @@
     
     <g transform="translate(0,-28.36218)">
 
-        <rect style="fill:#ff9600;" height="96" width="768" y="6.36" x="0"/>
+        <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0"/>
 
-        <text style="font-size:40px;" xml:space="preserve" y="71.70593" x="40.406101">企业文化</text>
-
-        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="-48" x="210"/>
-
+        <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">企业文化</text>
+        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="210"/>
         <text xml:space="preserve" style="fill:#ff9600;" id="text3-1" transform="translate(0,300)" fill-opacity="0">
-            <tspan x="68.649765" style="font-size:36px;" y="188.44321">睿胜能效将致力于管理节能领域的研究，</tspan>
-            <tspan x="68.649765" style="font-size:36px;" y="228.44321">持续领先，不断完善，</tspan>
-            <tspan x="68.649765" style="font-size:36px;" y="268.44321">为客户提供最优质的服务，</tspan>
-            <tspan x="68.649765" style="font-size:36px;" y="308.44321">引领并推动能效服务产业的长期健康发展。</tspan>
+            <tspan x="48" style="font-size:36px;" y="230">睿胜能效将致力于管理节能领域的研究，</tspan>
+            <tspan x="48" style="font-size:36px;" y="270">持续领先，不断完善，</tspan>
+            <tspan x="48" style="font-size:36px;" y="310">为客户提供最优质的服务，</tspan>
+            <tspan x="48" style="font-size:36px;" y="350">引领并推动能效服务产业的长期健康发展。</tspan>
         </text>
 
         <image xlink:href="../wasion/img/p3_tu3.png" height="640" width="616" y="398.24" x="76" id="img3-1" transform="translate(0,800)" fill-opacity="0"/>
