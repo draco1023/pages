@@ -160,8 +160,7 @@
             n: {
                 transform: 'translate(0,0)',
                 'opacity': 1
-            },
-            t: 500
+            }
         },
         '#img5-4': {
             o: {
@@ -287,6 +286,44 @@
 		}
 	}
 
+    function timeout(els, s, t, d, e, callback) {
+        timeouts.push(setTimeout(function() {
+            if (s.n) {
+                if (s.q && !els.stop) {
+                    var tg = -t;
+                    els.forEach(function(el){
+                        tg += t;
+                        timeouts.push(setTimeout(function() {
+                            el.animate(s.n, d, e, callback);
+                        }, tg));
+                    });
+                } else {
+                    els.animate(s.n, d, e, callback);
+                }
+            }
+                
+            if (s.scale || s.rotate) {
+                if (els.stop) {
+                    trans(els, s, d, e, callback);
+                } else {
+                    if (s.q) {
+                        var ti = -t;
+                        els.forEach(function(el){
+                            ti += t;
+                            timeouts.push(setTimeout(function() {
+                                trans(el, s, d, e, callback);
+                            }, ti));
+                        });
+                    } else {
+                        els.forEach(function(el){
+                            trans(el, s, d, e, callback);
+                        });
+                    }
+                }
+            }
+        }, t));
+    }
+
 	function animate(selector, duration, ease, callback) {
         var s = states[selector],
         d = duration || s.d || defDuration,
@@ -295,41 +332,7 @@
         els = _(selector);
 
         if (t) {
-            timeouts.push(setTimeout(function() {
-                if (s.n) {
-                    if (s.q && !els.stop) {
-                        var tg = -t;
-                        els.forEach(function(el){
-                            tg += t;
-                            timeouts.push(setTimeout(function() {
-                                el.animate(s.n, d, e, callback);
-                            }, tg));
-                        });
-                    } else {
-                        els.animate(s.n, d, e, callback);
-                    }
-                }
-                    
-                if (s.scale || s.rotate) {
-                    if (els.stop) {
-                        trans(els, s, d, e, callback);
-                    } else {
-                        if (s.q) {
-                            var ti = -t;
-                            els.forEach(function(el){
-                                ti += t;
-                                timeouts.push(setTimeout(function() {
-                                    trans(el, s, d, e, callback);
-                                }, ti));
-                            });
-                        } else {
-                            els.forEach(function(el){
-                                trans(el, s, d, e, callback);
-                            });
-                        }
-                    }
-                }
-            }, t));
+            timeout(els, s, t, d, e, callback);
         } else {
             if (s.n)
                 els.animate(s.n, d, e, callback);

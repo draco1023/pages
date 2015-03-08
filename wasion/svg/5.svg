@@ -14,19 +14,19 @@
         <image id="img5-4" width="143.08" xlink:href="../wasion/img/p5_3.png" height="95.639" y="709.09" x="251.12" preserveAspectRatio="none"/>
         <image id="img5-5" width="159.11" xlink:href="../wasion/img/p5_4.png" height="174.91" y="646.34" x="564.16" preserveAspectRatio="none"/>
 
-        <text style="fill:#ff9600" xml:space="preserve" class="text5-1">
+        <text style="fill:#ff9600" xml:space="preserve" class="text5-1" x="131.79262" y="557.58606">
             <tspan x="131.79262" style="font-size:35px;" y="557.58606">信息与核心</tspan>
             <tspan x="131.79262" style="font-size:35px;" y="601.33606">技术的融合</tspan>
         </text>
-        <text style="fill:#fff" xml:space="preserve" class="text5-1">
+        <text style="fill:#fff" xml:space="preserve" class="text5-1" x="439.81506" y="518.79749">
             <tspan x="439.81506" style="font-size:35px;" y="518.79749">    基于互联网的</tspan>
             <tspan x="439.81506" style="font-size:35px;" y="562.04749">大数据采集和存储</tspan>
         </text>
-        <text style="fill:#ff9600" xml:space="preserve" class="text5-1">
+        <text style="fill:#ff9600" xml:space="preserve" class="text5-1" x="439.81506" y="778.51172">
             <tspan x="439.81506" style="font-size:25px;" y="778.51172">快速灵活的交付能力</tspan>
             <tspan x="439.81506" style="font-size:25px;" y="809.76172">更低成本的平台构架</tspan>
         </text>
-        <text style="fill:#fff" xml:space="preserve" class="text5-1">
+        <text style="fill:#fff" xml:space="preserve" class="text5-1" x="172.95796" y="869.94031">
             <tspan x="172.95796" style="font-size:25px;" y="869.94031">  深度数据挖掘分析</tspan>
             <tspan x="172.95796" style="font-size:25px;" y="901.19031">诊断并提供技术支持</tspan>
         </text>
