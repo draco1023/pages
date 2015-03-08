@@ -38,8 +38,11 @@
     <script src="../wasion/snap.svg-min.js"></script>
     <script type="text/javascript">
     var flag = 0,
+    defDuration = 1200,
+    defEase = mina.easeinout,
     jqCache = {},
     svgCache = {},
+    timeouts = [],
     states = {
     	'#path1-1': {
     		o: {
@@ -69,7 +72,8 @@
     		n: {
     			transform: 'translate(0,0)',
             	'fill-opacity': 1
-    		}
+    		},
+            t: 700
     	},
     	'#g2-1': {
     		o: {
@@ -99,17 +103,23 @@
     		n: {
 				transform: 'translate(0,0)',
 				opacity: 1
-    		}
+    		},
+            t: defDuration
     	},
     	'.text3-2': {
     		o: {
-    			transform: 'scale(0)'
-    		},
-    		n: {
-    			transform: 'scale(1)'
-    		}
+                'fill-opacity': 0
+            },
+            n: {
+                'fill-opacity': 1
+            },
+            scale: {
+                o: 0,
+                n: 1
+            },
+            t: defDuration * 2
     	},
-        '#text4-1': {
+        '.text4-1': {
             o: {
                 transform: 'translate(0,-200)',
                 'fill-opacity': 0
@@ -117,37 +127,10 @@
             n: {
                 transform: 'translate(0,0)',
                 'fill-opacity': 1
-            }
-        },
-        '#text4-2': {
-            o: {
-                transform: 'translate(0,-200)',
-                'fill-opacity': 0
             },
-            n: {
-                transform: 'translate(0,0)',
-                'fill-opacity': 1
-            }
-        },
-        '#text4-3': {
-            o: {
-                transform: 'translate(0,-200)',
-                'fill-opacity': 0
-            },
-            n: {
-                transform: 'translate(0,0)',
-                'fill-opacity': 1
-            }
-        },
-        '#text4-4': {
-            o: {
-                transform: 'translate(0,-200)',
-                'fill-opacity': 0
-            },
-            n: {
-                transform: 'translate(0,0)',
-                'fill-opacity': 1
-            }
+            d: 700,
+            t: 700,
+            q: 1
         },
         '#img5-1': {
             o: {
@@ -177,7 +160,8 @@
             n: {
                 transform: 'translate(0,0)',
                 'opacity': 1
-            }
+            },
+            t: 500
         },
         '#img5-4': {
             o: {
@@ -199,45 +183,26 @@
                 'opacity': 1
             }
         },
-        '#text5-1': {
+        '.text5-1': {
             o: {
-                transform: 'scale(0)'
+                'fill-opacity': 0
             },
             n: {
-                transform: 'scale(1) rotate(360, 384, 512)'
-            }
-        },
-        '#text5-2': {
-            o: {
-                transform: 'scale(0)'
+                'fill-opacity': 1
             },
-            n: {
-                transform: 'scale(1) rotate(360, 384, 512)'
-            }
-        },
-        '#text5-3': {
-            o: {
-                transform: 'scale(0)'
+            rotate: {
+                o: 0,
+                n: 360
             },
-            n: {
-                transform: 'scale(1) rotate(360, 384, 512)'
-            }
-        },
-        '#text5-4': {
-            o: {
-                transform: 'scale(0)'
-            },
-            n: {
-                transform: 'scale(1) rotate(360, 384, 512)'
-            }
+            t: defDuration
         }
     },
     components = [
     	['#path1-1'],
     	['#text2-1', '#g2-1', '#text2-2'],
     	['#text3-1', '#img3-1', '.text3-2'],
-    	['#text4-1', '#text4-2', '#text4-3', '#text4-4'],
-    	['#img5-1', '#img5-2', '#img5-3', '#img5-4', '#img5-5', '#text5-1', '#text5-2', '#text5-3', '#text5-4'],
+    	['.text4-1'],
+    	['#img5-1', '#img5-2', '#img5-3', '#img5-4', '#img5-5', '.text5-1'],
     	[],
     	[],
     	[],
@@ -288,25 +253,101 @@
 			}, _('.section', 1)[i]);
 	}
 
+    function trans(el, state, duration, ease, callback) {
+        var r = state.rotate,
+        s = state.scale,
+        bbox = r || s ? el.getBBox() : null;
+        if (bbox) {
+            Snap.animate(0, 1, function(v) {
+                var matrix = new Snap.Matrix();
+                if (r) {
+                    var angle = r.o + (r.n - r.o) * v;
+                    matrix.rotate(angle, bbox.cx, bbox.cy);
+                }
+                if (s) {
+                    var rate = s.o + (s.n - s.o) * v;
+                    matrix.scale(rate, rate, bbox.cx, bbox.cy);
+                }
+                el.transform(matrix);
+            }, duration || 0, ease, callback);
+        }
+    }
+
 	function attr(selector) {
-		var els = _(selector);
+		var els = _(selector),
+        s = states[selector];
 		if (els.stop) {
-			els.stop().attr(states[selector].o);
+			els.stop().attr(s.o);
+            trans(els, s);
 		} else {
 			els.forEach(function(el){
 				el.stop();
+                trans(el, s);
 			}).attr(states[selector].o);
 		}
 	}
 
 	function animate(selector, duration, ease, callback) {
-		_(selector).animate(states[selector].n, duration || 1200, ease || mina.easeinout, callback);
+        var s = states[selector],
+        d = duration || s.d || defDuration,
+        e = ease || defEase,
+        t = s.t || 0;
+        els = _(selector);
+
+        if (t) {
+            timeouts.push(setTimeout(function() {
+                if (s.n) {
+                    if (s.q && !els.stop) {
+                        var tg = -t;
+                        els.forEach(function(el){
+                            tg += t;
+                            timeouts.push(setTimeout(function() {
+                                el.animate(s.n, d, e, callback);
+                            }, tg));
+                        });
+                    } else {
+                        els.animate(s.n, d, e, callback);
+                    }
+                }
+                    
+                if (s.scale || s.rotate) {
+                    if (els.stop) {
+                        trans(els, s, d, e, callback);
+                    } else {
+                        if (s.q) {
+                            var ti = -t;
+                            els.forEach(function(el){
+                                ti += t;
+                                timeouts.push(setTimeout(function() {
+                                    trans(el, s, d, e, callback);
+                                }, ti));
+                            });
+                        } else {
+                            els.forEach(function(el){
+                                trans(el, s, d, e, callback);
+                            });
+                        }
+                    }
+                }
+            }, t));
+        } else {
+            if (s.n)
+                els.animate(s.n, d, e, callback);
+            if (s.scale || s.rotate) {
+                if (els.stop) {
+                    trans(els, s, d, e, callback);
+                } else {
+                    els.forEach(function(el){
+                        trans(el, s, d, e, callback);
+                    });
+                }
+            }
+        }
 	}
 
     $(function() {
     	var count = _('.section', 1).length,
-    	preload = 4,
-    	timeouts = [];
+    	preload = 4;
 
         $('#fullpage').fullpage({
         	verticalCentered: false,
@@ -327,30 +368,6 @@
             	if (preIndex <= count)
             		loadSvg(preIndex);
 
-                // if (index == 1) {
-                //     _('#path1-1').animate({
-                //     	transform: 'translate(0,200)',
-                //     	'fill-opacity': 1
-                //     }, 1200, mina.easein);
-                // } else if (index == 2) {
-                // 	_('#text2-1, #g2-1').animate({
-                // 		transform: 'translate(0,0)',
-                // 		'fill-opacity': 1,
-                // 		'stroke-opacity': 1
-                // 	}, 1200, mina.easeinout);
-                // 	var t = setTimeout(function() {
-                // 		_('#text2-2').animate({
-	               //  		transform: 'translate(0,0)',
-	               //  		'fill-opacity': 1
-	               //  	}, 1200, mina.easeinout, function() {
-	               //  		_('#text2-3').animate({
-		              //   		transform: 'translate(0,0)',
-		              //   		'fill-opacity': 1
-		              //   	}, 1200, mina.easeinout);
-	               //  	});
-                // 	}, 500);
-                // 	timeouts.push(t);
-                // }
                 for (var j = 0, l = comp.length; j < l; j++) {
                 	animate(comp[j]);
                 };

@@ -1,14 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1024" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="layer1" transform="translate(0 -28.362)">
+    <g transform="translate(0 -28.362)">
         <image width="768" xlink:href="../wasion/img/p4_bj.png" height="1024.8" y="27.562" x="0" preserveAspectRatio="none" />
 
         <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0"/>
         <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">企业精神</text>
         <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="210"/>
 
-        <text id="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="385.58606" x="235.79262" transform="translate(0,-200)" fill-opacity="0">厚德</text>
-        <text id="text4-2" style="font-size:50px;fill:#000" xml:space="preserve" y="517.08319" x="538.6723" transform="translate(0,-200)" fill-opacity="0">进取</text>
-        <text id="text4-3" style="font-size:50px;fill:#000" xml:space="preserve" y="824.22601" x="431.52939" transform="translate(0,-200)" fill-opacity="0">日新</text>
-        <text id="text4-4" style="font-size:50px;fill:#000" xml:space="preserve" y="712.79742" x="140.10081" transform="translate(0,-200)" fill-opacity="0">务实</text>
+        <text class="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="385.58606" x="235.79262">厚德</text>
+        <text class="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="517.08319" x="538.6723">进取</text>
+        <text class="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="824.22601" x="431.52939">日新</text>
+        <text class="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="712.79742" x="140.10081">务实</text>
     </g>
 </svg>
