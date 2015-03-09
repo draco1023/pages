@@ -1,53 +1,53 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 768 1024" xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <g transform="translate(0,-28.36218)">
-        <image xlink:href="../wasion/img/p8_bj.png" height="1006" width="640" y="37.362" x="64" />
+        <image xlink:href="../wasion/img/p8_bj.png" height="1024" width="768" y="0" x="0" />
 
-        <text xml:space="preserve" style="font-size:40px;fill:#ff9600;" x="422.85715" y="92.36219">系统逻辑架构</text>
-        <text xml:space="preserve" style="font-size:24px;fill:#FF6866;" x="72" y="138.93361" id="text8-1">
-            <tspan x="72" y="138.93361">重点用能企业能源利用</tspan>
-            <tspan x="72" y="168.93361">监测管理系统门户</tspan>
-            <tspan x="72" y="205.30585" style="font-size:20px">政策与公告</tspan>
-            <tspan x="72" y="230.30585" style="font-size:20px">节能产品与厂家介绍</tspan>
-            <tspan x="72" y="255.30585" style="font-size:20px">能耗行业分析</tspan>
-            <tspan x="72" y="280.30585" style="font-size:20px">论坛</tspan>
-            <tspan x="72" y="305.30585" style="font-size:20px">知识下载</tspan>
+        <text xml:space="preserve" style="font-size:40px;fill:#ff9600;" x="422.85715" y="60.36219">系统逻辑架构</text>
+        <text xml:space="preserve" style="font-size:24px;fill:#FF6866;" x="72" y="118.93361" id="text8-1">
+            <tspan x="72" y="118.93361">重点用能企业能源利用</tspan>
+            <tspan x="72" y="148.93361">监测管理系统门户</tspan>
+            <tspan x="72" y="185.30585" style="font-size:20px">政策与公告</tspan>
+            <tspan x="72" y="210.30585" style="font-size:20px">节能产品与厂家介绍</tspan>
+            <tspan x="72" y="235.30585" style="font-size:20px">能耗行业分析</tspan>
+            <tspan x="72" y="260.30585" style="font-size:20px">论坛</tspan>
+            <tspan x="72" y="285.30585" style="font-size:20px">知识下载</tspan>
         </text>
-        <text xml:space="preserve" style="font-size:24px;fill:#ABB901;text-align:end;text-anchor:end;" x="848" y="272.42493" class="text8-2">
-            <tspan x="848" y="272.42493">重点用能企业能源利用</tspan>
-            <tspan x="848" y="302.42493">监测管理系统功能</tspan>
-            <tspan x="848" y="338.79718" style="font-size:20px;text-align:end;text-anchor:end;">统计分析</tspan>
-            <tspan x="848" y="363.79718" style="font-size:20px;text-align:end;text-anchor:end;">业务管理</tspan>
-            <tspan x="848" y="388.79718" style="font-size:20px;text-align:end;text-anchor:end;">实时监测</tspan>
-            <tspan x="848" y="413.79718" style="font-size:20px;text-align:end;text-anchor:end;">运维管理</tspan>
-            <tspan x="848" y="438.79718" style="font-size:20px;text-align:end;text-anchor:end;"> </tspan>
+        <text xml:space="preserve" style="font-size:24px;fill:#ABB901;text-align:end;text-anchor:end;" x="780" y="252.42493" class="text8-2">
+            <tspan x="780" y="252.42493">重点用能企业能源利用</tspan>
+            <tspan x="780" y="282.42493">监测管理系统功能</tspan>
+            <tspan x="780" y="318.79718" style="font-size:20px;text-align:end;text-anchor:end;">统计分析</tspan>
+            <tspan x="780" y="343.79718" style="font-size:20px;text-align:end;text-anchor:end;">业务管理</tspan>
+            <tspan x="780" y="368.79718" style="font-size:20px;text-align:end;text-anchor:end;">实时监测</tspan>
+            <tspan x="780" y="393.79718" style="font-size:20px;text-align:end;text-anchor:end;">运维管理</tspan>
+            <tspan x="780" y="418.79718" style="font-size:20px;text-align:end;text-anchor:end;"> </tspan>
         </text>
-        <text xml:space="preserve" style="font-size:24px;fill:#05AECD;" x="72" y="432.71066" class="text8-2">
-            <tspan x="72" y="432.71066">数据处理</tspan>
-            <tspan x="72" y="469.08292" style="font-size:20px">自动计算/手动计算</tspan>
-            <tspan x="72" y="494.08292" style="font-size:20px">计算任务</tspan>
-            <tspan x="72" y="519.08292" style="font-size:20px">计算进度管理</tspan>
-            <tspan x="72" y="544.08289" style="font-size:20px">单采集点/分析对象</tspan>
-            <tspan x="72" y="569.08289" style="font-size:20px">报警处理/数据存储</tspan>
-        </text>
-
-        <text xml:space="preserve" style="font-size:24px;fill:#767171;text-align:end;text-anchor:end;" x="848" y="577.40594" id="text8-3">
-            <tspan x="848" y="577.40594">数据采集</tspan>
-            <tspan x="848" y="613.7782" style="font-size:20px">随抄 定抄 补抄</tspan>
-            <tspan x="848" y="638.7782" style="font-size:20px;text-align:end;text-anchor:end;">任务产生及调度管理</tspan>
-            <tspan x="848" y="663.7782" style="font-size:20px;text-align:end;text-anchor:end;">采集进度管理</tspan>
-            <tspan x="848" y="688.7782" style="font-size:20px;text-align:end;text-anchor:end;">规约报文解析</tspan>
-            <tspan x="848" y="713.7782" style="font-size:20px;text-align:end;text-anchor:end;">日志管理</tspan>
-            <tspan x="848" y="738.7782" style="font-size:20px;text-align:end;text-anchor:end;"> </tspan>
+        <text xml:space="preserve" style="font-size:24px;fill:#05AECD;" x="72" y="412.71066" class="text8-2">
+            <tspan x="72" y="412.71066">数据处理</tspan>
+            <tspan x="72" y="449.08292" style="font-size:20px">自动计算/手动计算</tspan>
+            <tspan x="72" y="474.08292" style="font-size:20px">计算任务</tspan>
+            <tspan x="72" y="499.08292" style="font-size:20px">计算进度管理</tspan>
+            <tspan x="72" y="524.08289" style="font-size:20px">单采集点/分析对象</tspan>
+            <tspan x="72" y="549.08289" style="font-size:20px">报警处理/数据存储</tspan>
         </text>
 
-        <text xml:space="preserve" style="font-size:24px;fill:#F29702;" x="72" y="726.58789" id="text8-4">
-            <tspan x="72" y="726.58789">通讯管理</tspan>
-            <tspan x="72" y="762.96014" style="font-size:20px">终端管理</tspan>
-            <tspan x="72" y="787.96014" style="font-size:20px">报文日志管理</tspan>
-            <tspan x="72" y="812.96014" style="font-size:20px">终端状态管理</tspan>
-            <tspan x="72" y="837.96014" style="font-size:20px">终端通讯接入</tspan>
-            <tspan x="72" y="862.96014" style="font-size:20px">链路管理</tspan>
+        <text xml:space="preserve" style="font-size:24px;fill:#767171;text-align:end;text-anchor:end;" x="780" y="557.40594" id="text8-3">
+            <tspan x="780" y="557.40594">数据采集</tspan>
+            <tspan x="780" y="593.7782" style="font-size:20px">随抄 定抄 补抄</tspan>
+            <tspan x="780" y="618.7782" style="font-size:20px;text-align:end;text-anchor:end;">任务产生及调度管理</tspan>
+            <tspan x="780" y="643.7782" style="font-size:20px;text-align:end;text-anchor:end;">采集进度管理</tspan>
+            <tspan x="780" y="668.7782" style="font-size:20px;text-align:end;text-anchor:end;">规约报文解析</tspan>
+            <tspan x="780" y="693.7782" style="font-size:20px;text-align:end;text-anchor:end;">日志管理</tspan>
+            <tspan x="780" y="718.7782" style="font-size:20px;text-align:end;text-anchor:end;"> </tspan>
+        </text>
+
+        <text xml:space="preserve" style="font-size:24px;fill:#F29702;" x="72" y="706.58789" id="text8-4">
+            <tspan x="72" y="706.58789">通讯管理</tspan>
+            <tspan x="72" y="742.96014" style="font-size:20px">终端管理</tspan>
+            <tspan x="72" y="767.96014" style="font-size:20px">报文日志管理</tspan>
+            <tspan x="72" y="792.96014" style="font-size:20px">终端状态管理</tspan>
+            <tspan x="72" y="817.96014" style="font-size:20px">终端通讯接入</tspan>
+            <tspan x="72" y="842.96014" style="font-size:20px">链路管理</tspan>
         </text>
     </g>
 </svg>

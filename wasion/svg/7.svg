@@ -8,6 +8,12 @@
 
         <image xlink:href="../wasion/img/p7_2.png" height="94" width="640" y="658.7" x="64" class="img7-2"/>
 
+        <g class="img7-2">
+            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="86.267" />
+            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="297.73" />
+            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="509.2" />
+        </g>
+
         <g class="g7-1">
             <text style="font-size:36px;fill:#41b2ec;" y="648.40271" x="276.28125" xml:space="preserve">监控管理中心
             </text>
@@ -25,12 +31,6 @@
             <text style="font-size:36px;fill:#41b2ec;" y="1033.156" x="294.35159" xml:space="preserve">计量表计层</text>
             <path d="m25.004,994.64,717.99,0"/>
             <!-- <path d="m25.004,1046.8,717.99,0" style="stroke-width:0" /> -->
-        </g>
-
-        <g class="img7-2">
-            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="86.267" />
-            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="297.73" />
-            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="509.2" />
         </g>
     </g>
 </svg>
