@@ -1,8 +1,8 @@
 /* 
 * @Author: Draco
 * @Date:   2015-03-03 15:28:46
-* @Last Modified by:   Draco
-* @Last Modified time: 2015-03-07 17:10:24
+* @Last Modified by:   Administrator
+* @Last Modified time: 2015-03-09 15:56:43
 */
 
 body {
@@ -52,11 +52,12 @@ svg text {
 	fill:none;
 }
 
-/********** 02 **********/
+/********** 03 **********/
 #section03 {
 	background: rgb(219,254,255);
 }
 
+/********** 04 **********/
 #section04 {
 	background: #d6e1f2; /* Old browsers */
 	background: -moz-linear-gradient(left,  #d6e1f2 0%, #ffffff 75%, #effafe 100%); /* FF3.6+ */
@@ -68,6 +69,7 @@ svg text {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d6e1f2', endColorstr='#effafe',GradientType=1 ); /* IE6-9 */
 }
 
+/********** 05 **********/
 #section05 {
 	background: #898a8d;
 	background: -moz-linear-gradient(45deg,  #898a8d 0%, #ffffff 90%);
@@ -77,4 +79,39 @@ svg text {
 	background: -ms-linear-gradient(45deg,  #898a8d 0%,#ffffff 90%);
 	background: linear-gradient(45deg,  #898a8d 0%,#ffffff 90%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#898a8d', endColorstr='#ffffff',GradientType=1 );
+}
+
+/********** 07 **********/
+.g7-1 path {
+	stroke-linejoin:miter;
+	stroke:#41b2ec;
+	stroke-linecap:butt;
+	stroke-miterlimit:4;
+	stroke-dasharray:none;
+	stroke-width:2px;
+	fill:none;
+}
+
+/********** 08 **********/
+/*#section08 {
+	background: rgb(233,233,233);
+	background: -moz-linear-gradient(left,  rgba(233,233,233,1) 0%, rgba(246,246,246,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(233,233,233,1)), color-stop(100%,rgba(246,246,246,1)));
+	background: -webkit-linear-gradient(left,  rgba(233,233,233,1) 0%,rgba(246,246,246,1) 100%);
+	background: -o-linear-gradient(left,  rgba(233,233,233,1) 0%,rgba(246,246,246,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(233,233,233,1) 0%,rgba(246,246,246,1) 100%);
+	background: linear-gradient(to right,  rgba(233,233,233,1) 0%,rgba(246,246,246,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9e9e9', endColorstr='#f6f6f6',GradientType=1 );
+}*/
+
+/********** 09 **********/
+#section08, #section09 {
+	background: rgb(221,227,230);
+	background: -moz-linear-gradient(left,  rgba(221,227,230,1) 0%, rgba(245,245,248,1) 100%);
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(221,227,230,1)), color-stop(100%,rgba(245,245,248,1)));
+	background: -webkit-linear-gradient(left,  rgba(221,227,230,1) 0%,rgba(245,245,248,1) 100%);
+	background: -o-linear-gradient(left,  rgba(221,227,230,1) 0%,rgba(245,245,248,1) 100%);
+	background: -ms-linear-gradient(left,  rgba(221,227,230,1) 0%,rgba(245,245,248,1) 100%);
+	background: linear-gradient(to right,  rgba(221,227,230,1) 0%,rgba(245,245,248,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dde3e6', endColorstr='#f5f5f8',GradientType=1 );
 }

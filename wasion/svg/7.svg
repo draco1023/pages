@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1024" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g transform="translate(0 -28.362)">
+        <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0" />
+        <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">核心能力</text>
+        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="210" />
+
+        <image xlink:href="../wasion/img/p7_1.png" height="433" width="640" y="176" x="64" id="img7-1"/>
+
+        <image xlink:href="../wasion/img/p7_2.png" height="94" width="640" y="658.7" x="64" class="img7-2"/>
+
+        <g class="g7-1">
+            <text style="font-size:36px;fill:#41b2ec;" y="648.40271" x="276.28125" xml:space="preserve">监控管理中心
+            </text>
+            <path d="m25.004,609.89,717.99,0"/>
+            <path d="m25.004,662.06,717.99,0"/>
+        </g>
+
+        <g class="g7-1">
+            <text style="font-size:36px;fill:#41b2ec;" y="792.11029" x="294" xml:space="preserve">数据采集层</text>
+            <path d="m25.004,753.6,717.99,0"/>
+            <path d="m25.004,805.77,717.99,0"/>
+        </g>
+
+        <g class="g7-1">
+            <text style="font-size:36px;fill:#41b2ec;" y="1033.156" x="294.35159" xml:space="preserve">计量表计层</text>
+            <path d="m25.004,994.64,717.99,0"/>
+            <!-- <path d="m25.004,1046.8,717.99,0" style="stroke-width:0" /> -->
+        </g>
+
+        <g class="img7-2">
+            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="86.267" />
+            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="297.73" />
+            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="509.2" />
+        </g>
+    </g>
+</svg>

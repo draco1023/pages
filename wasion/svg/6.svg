@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1024" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g transform="translate(0 -28.362)">
+        <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0" />
+        <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">产品方案</text>
+        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="210" />
+
+        <image xlink:href="../wasion/img/p6_bj.png" height="748" width="359" y="248.04" x="38.693"/>
+
+        <image xlink:href="../wasion/img/p6_l_1.png" height="134" width="199" y="262.09" x="165.16" class="img6-1"/>
+        <image xlink:href="../wasion/img/p6_l_2.png" height="148" width="111" y="400.55" x="69.759" class="img6-1"/>
+        <image xlink:href="../wasion/img/p6_l_3.png" height="93" width="195" y="571.5" x="167.16" class="img6-1"/>
+        <image xlink:href="../wasion/img/p6_l_4.png" height="114" width="169" y="680.19" x="46.82" class="img6-1"/>
+        <image xlink:href="../wasion/img/p6_l_5.png" height="141" width="125" y="783.87" x="232.46" class="img6-1"/>
+
+        <g class="g6-1">
+            <text style="font-size:36px;fill:#FF6866" xml:space="preserve" y="358.58823" x="397.41125">流体节能协管方案</text>
+            <image xlink:href="../wasion/img/p6_r_1.png" height="54" width="57" y="320.28" x="688.4"/>
+        </g>
+
+        <g class="g6-1">
+            <text style="font-size:36px;fill:#FF6B66" xml:space="preserve" y="489.97055" x="394.16125">电务维保协管方案</text>
+            <image xlink:href="../wasion/img/p6_r_2.png" height="54" width="57" y="451.6" x="688.4"/>
+        </g>
+
+        <g class="g6-1">
+            <text style="font-size:36px;fill:#FF6B66" xml:space="preserve" y="621.22791" x="397.41125">终端用户自管方案</text>
+            <image xlink:href="../wasion/img/p6_r_3.png" height="54" width="57" y="582.92" x="688.4"/>
+        </g>
+
+        <g class="g6-1">
+            <text style="font-size:36px;fill:#FF6B66" xml:space="preserve" y="752.54773" x="397.41125">数据采集模组方案</text>
+            <image xlink:href="../wasion/img/p6_r_4.png" height="54" width="57" y="714.24" x="688.4"/>
+        </g>
+
+        <g class="g6-1">
+            <text style="font-size:36px;fill:#FF6B66" xml:space="preserve" y="883.86755" x="397.41125">其它前瞻性方案</text>
+            <image xlink:href="../wasion/img/p6_r_5.png" height="54" width="57" y="845.56" x="688.4"/>
+        </g>
+    </g>
+</svg>

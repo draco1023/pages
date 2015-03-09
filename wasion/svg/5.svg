@@ -1,11 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1024" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <g id="layer1" transform="translate(0 -28.362)">
+    <g transform="translate(0 -28.362)">
         <image width="768" xlink:href="../wasion/img/p5_bj.png" height="1024.8" y="27.562" x="0" preserveAspectRatio="none" />
 
         <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0" />
-
         <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">核心能力</text>
-
         <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="210" />
 
         <image id="img5-1" width="186.25" xlink:href="../wasion/img/p5_1.png" height="218.75" y="252.99" x="150.88" preserveAspectRatio="none"/>
@@ -19,16 +17,22 @@
             <tspan x="131.79262" style="font-size:35px;" y="601.33606">技术的融合</tspan>
         </text>
         <text style="fill:#fff" xml:space="preserve" class="text5-1" x="439.81506" y="518.79749">
-            <tspan x="439.81506" style="font-size:35px;" y="518.79749">    基于互联网的</tspan>
+            <tspan x="474.81506" style="font-size:35px;" y="518.79749">基于互联网的</tspan>
             <tspan x="439.81506" style="font-size:35px;" y="562.04749">大数据采集和存储</tspan>
+        </text>
+        <text style="fill:#fff" xml:space="preserve" class="text5-1" x="177.95796" y="879.94031">
+            <tspan x="177.95796" style="font-size:35px;" y="879.94031">数据挖掘分析</tspan>
+        </text>
+        <text style="fill:#ff9600" xml:space="preserve" class="text5-1" x="439.81506" y="798.51172">
+            <tspan x="439.81506" style="font-size:35px;" y="798.51172">快速灵活的服务</tspan>
+        </text>
+        <!-- <text style="fill:#fff" xml:space="preserve" class="text5-1" x="172.95796" y="869.94031">
+            <tspan x="172.95796" style="font-size:25px;" y="869.94031">  深度数据挖掘分析</tspan>
+            <tspan x="172.95796" style="font-size:25px;" y="901.19031">诊断并提供技术支持</tspan>
         </text>
         <text style="fill:#ff9600" xml:space="preserve" class="text5-1" x="439.81506" y="778.51172">
             <tspan x="439.81506" style="font-size:25px;" y="778.51172">快速灵活的交付能力</tspan>
             <tspan x="439.81506" style="font-size:25px;" y="809.76172">更低成本的平台构架</tspan>
-        </text>
-        <text style="fill:#fff" xml:space="preserve" class="text5-1" x="172.95796" y="869.94031">
-            <tspan x="172.95796" style="font-size:25px;" y="869.94031">  深度数据挖掘分析</tspan>
-            <tspan x="172.95796" style="font-size:25px;" y="901.19031">诊断并提供技术支持</tspan>
-        </text>
+        </text> -->
     </g>
 </svg>

@@ -194,6 +194,176 @@
                 n: 360
             },
             t: defDuration
+        },
+        '.img6-1': {
+        	o: {
+        		transform: 'translate(-400,0)'
+        	},
+        	n: {
+        		transform: 'translate(0,0)'
+        	},
+        	e: mina.backout
+        },
+        '.g6-1': {
+        	o: {
+        		transform: 'translate(-800,0)'
+        	},
+        	n: {
+        		transform: 'translate(0,0)'
+        	},
+        	t: 900,
+        	q: 1,
+        	e: mina.backout
+        },
+        '#img7-1': {
+        	o: {
+        		transform: 'translate(1280,0)',
+        		opacity: 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	}
+        },
+        '.img7-2': {
+        	o: {
+        		opacity: 0
+        	},
+        	n: {
+        		opacity: 1
+        	},
+        	scale: {
+        		o: 0,
+        		n: 1
+        	},
+        	t: defDuration,
+        	q: 1,
+        	e: mina.bounce
+        },
+        '.g7-1': {
+        	o: {
+        		opacity: 0
+        	},
+        	n: {
+        		opacity: 1
+        	},
+        	scale: {
+        		o: 0,
+        		n: 1
+        	},
+        	d: defDuration,
+        	t: defDuration * 3,
+        	e: mina.bounce
+        },
+        '#text8-1': {
+        	o: {
+        		transform: 'translate(0,-300)',
+        		'fill-opacity': 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		'fill-opacity': 1
+        	}
+        },
+        '.text8-2': {
+        	o: {
+        		transform: 'translate(0,-300)',
+        		'fill-opacity': 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		'fill-opacity': 1
+        	},
+        	t: defDuration,
+        	q: 1
+        },
+        '#text8-3': {
+        	o: {
+        		transform: 'translate(0,-720)',
+        		'fill-opacity': 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		'fill-opacity': 1
+        	},
+        	t: defDuration * 3,
+        	e: mina.backout
+        },
+        '#text8-4': {
+        	o: {
+				transform: 'translate(0,300)',
+        		'fill-opacity': 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		'fill-opacity': 1
+        	},
+        	t: defDuration * 4,
+        	e: mina.backout
+        },
+        '#img9-1': {
+        	o: {
+        		opacity: 0
+        	},
+        	n: {
+        		opacity: 1
+        	}
+        },
+        '#img9-2': {
+        	o: {
+        		transform: 'translate(0,-240)',
+        		opacity: 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	t: defDuration
+        },
+        '.img9-3': {
+        	o: {
+        		transform: 'translate(-1280,0)',
+        		opacity: 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	t: defDuration * 2,
+        	q: 1,
+        	e: mina.backout
+        },
+        '#img10-1': {
+        	o: {
+        		transform: 'translate(0,-500)',
+        		opacity: 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	}
+        },
+        '.g10-1': {
+        	o: {
+        		opacity: 0
+        	},
+        	n: {
+        		opacity: 1
+        	},
+        	t: defDuration,
+        	q: 1
+        },
+        '#text10-1': {
+        	o: {
+        		transform: 'translate(-768,0)',
+        		'fill-opacity': 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		'fill-opacity': 1
+        	},
+        	t: defDuration * 2,
+        	e: mina.backout
         }
     },
     components = [
@@ -202,11 +372,11 @@
     	['#text3-1', '#img3-1', '.text3-2'],
     	['.text4-1'],
     	['#img5-1', '#img5-2', '#img5-3', '#img5-4', '#img5-5', '.text5-1'],
-    	[],
-    	[],
-    	[],
-    	[],
-    	[],
+    	['.img6-1', '.g6-1'],
+    	['#img7-1', '.img7-2', '.g7-1'],
+    	['#text8-1', '.text8-2', '#text8-3', '#text8-4'],
+    	['#img9-1', '#img9-2', '.img9-3'],
+    	['#img10-1', '.g10-1', '#text10-1'],
     	[],
     	[],
     	[],
@@ -290,9 +460,9 @@
         timeouts.push(setTimeout(function() {
             if (s.n) {
                 if (s.q && !els.stop) {
-                    var tg = -t;
+                    var tg = -d;
                     els.forEach(function(el){
-                        tg += t;
+                        tg += d;
                         timeouts.push(setTimeout(function() {
                             el.animate(s.n, d, e, callback);
                         }, tg));
@@ -307,9 +477,9 @@
                     trans(els, s, d, e, callback);
                 } else {
                     if (s.q) {
-                        var ti = -t;
+                        var ti = -d;
                         els.forEach(function(el){
-                            ti += t;
+                            ti += d;
                             timeouts.push(setTimeout(function() {
                                 trans(el, s, d, e, callback);
                             }, ti));
@@ -327,7 +497,7 @@
 	function animate(selector, duration, ease, callback) {
         var s = states[selector],
         d = duration || s.d || defDuration,
-        e = ease || defEase,
+        e = ease || s.e || defEase,
         t = s.t || 0;
         els = _(selector);
 

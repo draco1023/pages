@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 768 1024" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g transform="translate(0 -28.362)">
+        <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0" />
+        <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">主要业务范围</text>
+        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="310" />
+
+        <image xlink:href="../wasion/img/p10_bj.png" height="718.73" width="720" y="313.64" x="24" id="img10-1"/>
+
+        <text style="font-size:56px;fill:#e64f1c;" xml:space="preserve" y="268.4838" x="45.59375" id="text10-1">自管、协管、监管三大部分</text>
+
+        <g transform="matrix(0.92959298,0.36858768,-0.36858768,0.92959298,173.76899,-109.43759)" class="g10-1">
+            <text style="font-size:48px;fill:#fff;" y="381.62088" x="313.78946" xml:space="preserve">政府部门监管</text>
+            <text style="font-size:36px;fill:#fff;" y="432.12851" x="315.19571" xml:space="preserve">节能降耗管理抓手</text>
+        </g>
+
+        <g transform="matrix(0.52241232,0.85269301,-0.85269301,0.52241232,245.63805,156.94742)" class="g10-1">
+            <text style="font-size:48px;fill:#fff;" y="381.62088" x="313.78946" xml:space="preserve">节能公司协管</text>
+            <text style="font-size:36px;fill:#fff;" y="432.12851" x="315.19571" xml:space="preserve">能效项目管理助手</text>
+        </g>
+
+        <g transform="matrix(0.70847807,-0.70573282,0.70573282,0.70847807,-33.727394,896.33311)" class="g10-1">
+            <text style="font-size:48px;fill:#fff;" y="381.62088" x="313.78946" xml:space="preserve">用能单位自管</text>
+            <text style="font-size:36px;fill:#fff;" y="432.12851" x="315.19571" xml:space="preserve">管理降耗运维帮手</text>
+        </g>
+    </g>
+</svg>
