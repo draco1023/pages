@@ -5,14 +5,14 @@
         <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">三者合一的RESP必能助您成功！</text>
 
         <g id="g17-1">
-            <image xlink:href="../wasion/img/p17_left.png" height="202" width="297" y="308.91" x="59.591" id="img17-1"/>
+            <image xlink:href="../../../wasion/img/p17_left.png" height="202" width="297" y="308.91" x="59.591" id="img17-1"/>
         </g>
         <g id="g17-2">
-            <image xlink:href="../wasion/img/p17_right.png" height="243" width="141" y="282.34" x="547.71" id="img17-2"/>
+            <image xlink:href="../../../wasion/img/p17_right.png" height="243" width="141" y="282.34" x="547.71" id="img17-2"/>
         </g>
         <g id="g17-3">
-            <image xlink:href="../wasion/img/p17_bottom.png" height="238" width="315" y="717.19" x="244.54" id="img17-3"/>
+            <image xlink:href="../../../wasion/img/p17_bottom.png" height="238" width="315" y="717.19" x="244.54" id="img17-3"/>
         </g>
-        <image xlink:href="../wasion/img/p17_center.png" height="694.4" width="480" y="268.23108" x="160.04074" id="img17-4"/>
+        <image xlink:href="../../../wasion/img/p17_center.png" height="694.4" width="480" y="268.23108" x="160.04074" id="img17-4"/>
     </g>
 </svg>

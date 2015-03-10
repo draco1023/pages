@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 768 1024" xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <g transform="translate(0,-28.36218)">
-        <image xlink:href="../wasion/img/p8_bj.png" height="1024" width="768" y="0" x="0" />
+        <image xlink:href="../../../wasion/img/p8_bj.png" height="1024" width="768" y="0" x="0" />
 
         <text xml:space="preserve" style="font-size:40px;fill:#ff9600;" x="422.85715" y="60.36219">系统逻辑架构</text>
         <text xml:space="preserve" style="font-size:24px;fill:#FF6866;" x="72" y="118.93361" id="text8-1">

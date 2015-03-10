@@ -2,16 +2,16 @@
     <g transform="translate(0 -28.362)">
         <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0" />
         <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">核心能力</text>
-        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="210" />
+        <image xlink:href="../../../wasion/img/jqr.png" height="180" width="180" y="0" x="210" />
 
-        <image xlink:href="../wasion/img/p7_1.png" height="433" width="640" y="176" x="64" id="img7-1"/>
+        <image xlink:href="../../../wasion/img/p7_1.png" height="433" width="640" y="176" x="64" id="img7-1"/>
 
-        <image xlink:href="../wasion/img/p7_2.png" height="94" width="640" y="658.7" x="64" class="img7-2"/>
+        <image xlink:href="../../../wasion/img/p7_2.png" height="94" width="640" y="658.7" x="64" class="img7-2"/>
 
         <g class="img7-2">
-            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="86.267" />
-            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="297.73" />
-            <image xlink:href="../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="509.2" />
+            <image xlink:href="../../../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="86.267" />
+            <image xlink:href="../../../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="297.73" />
+            <image xlink:href="../../../wasion/img/p7_3.png" height="201" width="179" y="804.36" x="509.2" />
         </g>
 
         <g class="g7-1">

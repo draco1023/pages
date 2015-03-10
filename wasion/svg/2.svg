@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 768 1024" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <image xlink:href="../wasion/img/p2_nx.png" height="335" width="515" y="20" x="160" />
+    <image xlink:href="../../../wasion/img/p2_nx.png" height="335" width="515" y="20" x="160" />
 
     <text style="font-size:32px;" xml:space="preserve" id="text2-1">
         <tspan y="130.677" x="258.10526">能效业务</tspan>

@@ -2,9 +2,9 @@
     <g transform="translate(0 -28.362)">
         <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0" />
         <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">主要业务范围</text>
-        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="310" />
+        <image xlink:href="../../../wasion/img/jqr.png" height="180" width="180" y="0" x="310" />
 
-        <image xlink:href="../wasion/img/p10_bj.png" height="718.73" width="720" y="313.64" x="24" id="img10-1"/>
+        <image xlink:href="../../../wasion/img/p10_bj.png" height="718.73" width="720" y="313.64" x="24" id="img10-1"/>
 
         <text style="font-size:56px;fill:#e64f1c;" xml:space="preserve" y="268.4838" x="45.59375" id="text10-1">自管、协管、监管三大部分</text>
 

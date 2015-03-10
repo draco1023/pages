@@ -2,14 +2,14 @@
     <g transform="translate(0 -28.362)">
         <rect style="fill:#ff9600;" height="96" width="768" y="54.36" x="0" />
         <text style="font-size:40px;" xml:space="preserve" y="119.70593" x="40.406101">应用功能</text>
-        <image xlink:href="../wasion/img/jqr.png" height="180" width="180" y="0" x="210" />
+        <image xlink:href="../../../wasion/img/jqr.png" height="180" width="180" y="0" x="210" />
 
-        <image xlink:href="../wasion/img/p9_1.png" height="189.53" width="700" y="210.86" x="34" id="img9-1"/>
+        <image xlink:href="../../../wasion/img/p9_1.png" height="189.53" width="700" y="210.86" x="34" id="img9-1"/>
 
-        <image xlink:href="../wasion/img/p9_2.png" height="189.53" width="700" y="416.98" x="34" id="img9-2"/>
+        <image xlink:href="../../../wasion/img/p9_2.png" height="189.53" width="700" y="416.98" x="34" id="img9-2"/>
 
-        <image xlink:href="../wasion/img/p9_3.png" height="189.53" width="700" y="623.11" x="34" class="img9-3"/>
+        <image xlink:href="../../../wasion/img/p9_3.png" height="189.53" width="700" y="623.11" x="34" class="img9-3"/>
 
-        <image xlink:href="../wasion/img/p9_4.png" height="189.53" width="700" y="829.23" x="34" class="img9-3"/>
+        <image xlink:href="../../../wasion/img/p9_4.png" height="189.53" width="700" y="829.23" x="34" class="img9-3"/>
     </g>
 </svg>
