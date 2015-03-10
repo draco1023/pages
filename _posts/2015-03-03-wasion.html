@@ -7,29 +7,30 @@
     <title>睿胜能效</title>
     <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
     <meta name="author" content="Draco">
+    <meta name="email" content="pengch1023@163.com">
     <link rel="stylesheet" href="../wasion/jquery.fullPage.css">
     <link rel="stylesheet" href="../wasion/wasion.css">
 </head>
 
 <body>
     <div id="fullpage">
-        <div class="section" id="section01"></div>
-        <div class="section" id="section02"></div>
-        <div class="section" id="section03"></div>
-        <div class="section" id="section04"></div>
-        <div class="section" id="section05"></div>
-        <div class="section" id="section06"></div>
-        <div class="section" id="section07"></div>
-        <div class="section" id="section08"></div>
-        <div class="section" id="section09"></div>
-        <div class="section" id="section10"></div>
-        <div class="section" id="section11"></div>
-        <div class="section" id="section12"></div>
-        <div class="section" id="section13"></div>
-        <div class="section" id="section14"></div>
-        <div class="section" id="section15"></div>
-        <div class="section" id="section16"></div>
-        <div class="section" id="section17"></div>
+    	<div class="section" id="section01" data-index="1"></div>
+    	<div class="section" id="section02" data-index="2"></div>
+    	<div class="section" id="section03" data-index="3"></div>
+    	<div class="section" id="section04" data-index="4"></div>
+    	<div class="section" id="section05" data-index="5"></div>
+    	<div class="section" id="section06" data-index="6"></div>
+    	<div class="section" id="section07" data-index="7"></div>
+    	<div class="section" id="section08" data-index="8"></div>
+    	<div class="section" id="section09" data-index="9"></div>
+    	<div class="section" id="section10" data-index="10"></div>
+    	<div class="section" id="section11" data-index="11"></div>
+    	<div class="section" id="section12" data-index="12"></div>
+    	<div class="section" id="section13" data-index="13"></div>
+    	<div class="section" id="section14" data-index="14"></div>
+    	<!-- <div class="section" id="section15" data-index="15"></div>
+    	<div class="section" id="section16" data-index="16"></div> -->
+    	<div class="section" id="section17" data-index="17"></div>
     </div>
 
     <script src="../wasion/jquery.min.js"></script>
@@ -364,6 +365,132 @@
         	},
         	t: defDuration * 2,
         	e: mina.backout
+        },
+        '#img17-1': {
+        	o: {
+        		transform: 'translate(0,-800)',
+        		opacity: 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	e: mina.bounce
+        },
+        '#img17-2': {
+        	o: {
+        		transform: 'translate(0,-800)',
+        		opacity: 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	t: defDuration,
+        	e: mina.bounce
+        },
+        '#img17-3': {
+        	o: {
+        		transform: 'translate(0,-800)',
+        		opacity: 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	t: defDuration * 2,
+        	e: mina.bounce
+        },
+        '#g17-1': {
+        	o: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	n: {
+        		transform: 'translate(224.25,179.80)',
+        		opacity: 0
+        	},
+        	t: defDuration * 4
+        },
+        '#g17-2': {
+        	o: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	n: {
+        		transform: 'translate(-220.21,193.95)',
+        		opacity: 0
+        	},
+        	t: defDuration * 4
+        },
+        '#g17-3': {
+        	o: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	n: {
+        		transform: 'translate(0,-236.38)',
+        		opacity: 0
+        	},
+        	t: defDuration * 4
+        },
+        '#img17-4': {
+        	o: {
+        		opacity: 0
+        	},
+        	n: {
+        		opacity: 1
+        	},
+        	t: defDuration * 4.5
+        },
+        '#img13-1': {
+        	o: {
+        		transform: 'translate(0,-700)',
+        		opacity: 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		opacity: 1
+        	},
+        	e: mina.backout
+        },
+        '#text13-1': {
+        	o: {
+        		transform: 'translate(0,-700)',
+        		'fill-opacity': 0
+        	},
+        	n: {
+        		transform: 'translate(0,0)',
+        		'fill-opacity': 1
+        	},
+        	e: mina.backout
+        },
+        '#text13-2': {
+        	o: {
+        		'fill-opacity': 0
+        	},
+        	n: {
+        		'fill-opacity': 1
+        	},
+        	t: defDuration
+        },
+        '#img13-2': {
+        	o: {
+        		opacity: 0
+        	},
+        	n: {
+        		opacity: 1
+        	},
+        	t: defDuration * 2
+        },
+        '#text13-3': {
+        	o: {
+        		'fill-opacity': 0
+        	},
+        	n: {
+        		'fill-opacity': 1
+        	},
+        	t: defDuration * 3
         }
     },
     components = [
@@ -379,15 +506,11 @@
     	['#img10-1', '.g10-1', '#text10-1'],
     	[],
     	[],
+    	['#img13-1', '#text13-1', '#text13-2', '#img13-2', '#text13-3'],
     	[],
     	[],
     	[],
-    	[],
-    	[],
-    	[],
-    	[],
-    	[],
-    	[]
+    	['#img17-1', '#img17-2', '#img17-3', '#g17-1', '#g17-2', '#g17-3', '#img17-4']
 	];
 
     function _(selector, isJquery) {
@@ -410,13 +533,15 @@
 
 	function loadSvg(index, loaded) {
 		var i = index - 1,
+		dataIndex = _('.section', 1).eq(i).data('index'),
+		compIndex = parseInt(dataIndex) - 1,
 		cur = flag;
 		if (!(cur >> i & 1))
-			Snap.load('../wasion/svg/' + index + '.svg?d=' + (+new Date), function(d) {
+			Snap.load('../wasion/svg/' + dataIndex + '.svg?d=' + (+new Date), function(d) {
 				this.appendChild(d.node);
 				flag |= 1 << i;
-				var comp = components[i];
-				for (var j = 0, l = comp.length; j < l; j++)
+				var comp = components[compIndex];
+				for (var j = comp.length - 1; j >= 0; j--)
 					attr(comp[j]);
 				loaded && loaded(d);
 			}, _('.section', 1)[i]);
@@ -425,7 +550,8 @@
     function trans(el, state, duration, ease, callback) {
         var r = state.rotate,
         s = state.scale,
-        bbox = r || s ? el.getBBox() : null;
+        xy = state.translate,
+        bbox = r || s || xy ? el.getBBox() : null;
         if (bbox) {
             Snap.animate(0, 1, function(v) {
                 var matrix = new Snap.Matrix();
@@ -437,8 +563,35 @@
                     var rate = s.o + (s.n - s.o) * v;
                     matrix.scale(rate, rate, bbox.cx, bbox.cy);
                 }
+                if (xy) {
+                	var x = (xy.xn - xy.xo) * v,
+                	y = (xy.yn - xy.yo) * v;
+                	matrix.translate(x, y);
+                }
                 el.transform(matrix);
             }, duration || 0, ease, callback);
+        }
+    }
+
+    function reverse(el, state) {
+    	var r = state.rotate,
+        s = state.scale,
+        xy = state.translate,
+        bbox = r || s || xy ? el.getBBox() : null;
+        if (bbox) {
+        	var matrix = new Snap.Matrix();
+        	if (r) {
+                matrix.rotate(r.o, bbox.cx, bbox.cy);
+            }
+            if (s) {
+                matrix.scale(s.o, s.o, bbox.cx, bbox.cy);
+            }
+            if (xy) {
+            	var x = xy.xo - xy.xn,
+            	y = xy.yo - xy.yn;
+            	matrix.translate(x, y);
+            }
+            el.transform(matrix);
         }
     }
 
@@ -446,13 +599,13 @@
 		var els = _(selector),
         s = states[selector];
 		if (els.stop) {
-			els.stop().attr(s.o);
-            trans(els, s);
+			els.stop().attr(s.o || {});
+            reverse(els, s);
 		} else {
 			els.forEach(function(el){
 				el.stop();
-                trans(el, s);
-			}).attr(states[selector].o);
+                reverse(el, s);
+			}).attr(s.o || {});
 		}
 	}
 
@@ -518,6 +671,12 @@
         }
 	}
 
+	function getComponent(index) {
+		var i = index - 1,
+		dataIndex = parseInt(_('.section', 1).eq(i).data('index'));
+		return components[dataIndex - 1];
+	}
+
     $(function() {
     	var count = _('.section', 1).length,
     	preload = 4;
@@ -536,8 +695,7 @@
 
             afterLoad: function(anchorLink, index) {
             	var preIndex = index + preload,
-            	i = index - 1,
-                comp = components[i];
+                comp = getComponent(index);
             	if (preIndex <= count)
             		loadSvg(preIndex);
 
@@ -552,9 +710,8 @@
             	}
                 // if (index == 1 && direction == 'down') {
                 // }
-                var i = index - 1,
-                comp = components[i];
-                for (var j = 0, l = comp.length; j < l; j++) {
+                var comp = getComponent(index);
+                for (var j = comp.length - 1; j >= 0; j--) {
                 	attr(comp[j]);
                 };
             }

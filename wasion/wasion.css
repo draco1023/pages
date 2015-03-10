@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 15:28:46
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-09 15:56:43
+* @Last Modified time: 2015-03-10 13:43:42
 */
 
 body {
@@ -114,4 +114,9 @@ svg text {
 	background: -ms-linear-gradient(left,  rgba(221,227,230,1) 0%,rgba(245,245,248,1) 100%);
 	background: linear-gradient(to right,  rgba(221,227,230,1) 0%,rgba(245,245,248,1) 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dde3e6', endColorstr='#f5f5f8',GradientType=1 );
+}
+
+/********** 14 **********/
+#section14 {
+	background: #E2E2E2;
 }
