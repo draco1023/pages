@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-10 15:28:22
+* @Last Modified time: 2015-03-10 17:17:27
 */
 
 var flag = 0,
@@ -670,6 +670,10 @@ $(function() {
             for (var j = 0, l = comp.length; j < l; j++) {
             	animate(comp[j]);
             };
+
+            if (index ===14) {
+            	_('.section', 1).eq(13).append('<img src="../../../wasion/img/p14_1.gif" style="position:absolute;left:20px;top:200px;"/>');
+            }
         },
 
         onLeave: function(index, newIndex, direction) {
