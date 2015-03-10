@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-10 14:57:19
+* @Last Modified time: 2015-03-10 15:17:47
 */
 
 'use strict';
@@ -505,8 +505,8 @@ function loadSvg(index, loaded) {
 	compIndex = parseInt(dataIndex) - 1,
 	cur = flag;
 	if (!(cur >> i & 1))
-		//Snap.load('{{ site.baseurl }}/wasion/svg/' + dataIndex + '.svg' + (+new Date), function(d) {
-		Snap.load('{{ site.baseurl }}/wasion/svg/' + dataIndex + '.svg', function(d) {
+		//Snap.load('../../../wasion/svg/' + dataIndex + '.svg' + (+new Date), function(d) {
+		Snap.load('../../../wasion/svg/' + dataIndex + '.svg', function(d) {
 			this.appendChild(d.node);
 			flag |= 1 << i;
 			var comp = components[compIndex];
