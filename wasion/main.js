@@ -2,10 +2,9 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-10 15:17:47
+* @Last Modified time: 2015-03-10 15:24:03
 */
 
-'use strict';
 var flag = 0,
 defDuration = 1200,
 defEase = mina.easeinout,
