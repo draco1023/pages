@@ -2,14 +2,16 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-10 17:17:27
+* @Last Modified time: 2015-03-11 11:07:29
 */
 
-var flag = 0,
+var ua = navigator.userAgent,
+flag = 0,
 defDuration = 1200,
 defEase = mina.easeinout,
 jqCache = {},
 svgCache = {},
+masked = [],
 timeouts = [],
 states = {
 	'#path1-1': {
@@ -165,19 +167,23 @@ states = {
     },
     '.img6-1': {
     	o: {
-    		transform: 'translate(-400,0)'
+    		transform: 'translate(-400,0)',
+    		opacity: 0
     	},
     	n: {
-    		transform: 'translate(0,0)'
+    		transform: 'translate(0,0)',
+    		opacity: 1
     	},
     	e: mina.backout
     },
     '.g6-1': {
     	o: {
-    		transform: 'translate(-800,0)'
+    		transform: 'translate(-800,0)',
+    		opacity: 0
     	},
     	n: {
-    		transform: 'translate(0,0)'
+    		transform: 'translate(0,0)',
+    		opacity: 1
     	},
     	t: 900,
     	q: 1,
@@ -500,13 +506,19 @@ function _(selector, isJquery) {
 
 function loadSvg(index, loaded) {
 	var i = index - 1,
-	dataIndex = _('.section', 1).eq(i).data('index'),
-	compIndex = parseInt(dataIndex) - 1,
+	di = dataIndex(index),
+	compIndex = di - 1,
 	cur = flag;
 	if (!(cur >> i & 1))
-		//Snap.load('../../../wasion/svg/' + dataIndex + '.svg' + (+new Date), function(d) {
-		Snap.load('../../../wasion/svg/' + dataIndex + '.svg', function(d) {
-			this.appendChild(d.node);
+		var path = '../../../wasion/svg/' + di + '.svg';
+		path += '?d=' + (+new Date);
+		Snap.load(path, function(d) {
+			var fc = this.firstChild,
+			n = d.node;
+			if (fc)
+				this.insertBefore(n, fc);
+			else
+				this.appendChild(n);
 			flag |= 1 << i;
 			var comp = components[compIndex];
 			for (var j = comp.length - 1; j >= 0; j--)
@@ -639,10 +651,26 @@ function animate(selector, duration, ease, callback) {
     }
 }
 
+function dataIndex(index) {
+	var i = index - 1;
+	return _('.section', 1).eq(i).data('index');
+}
+
 function getComponent(index) {
-	var i = index - 1,
-	dataIndex = parseInt(_('.section', 1).eq(i).data('index'));
-	return components[dataIndex - 1];
+	return components[dataIndex(index) - 1];
+}
+
+function genGif(selector) {
+	if (masked.indexOf(selector) >= 0)
+		return null;
+	masked.push(selector);
+
+	var gif = _(selector, 1),
+	box = gif[0].getBoundingClientRect(),
+	offset = gif.offset(),
+	href = gif.attr('xlink:href'),
+	src = href.substring(href.lastIndexOf('/') + 1);
+	return '<img src="../../../wasion/img/' + src + '" width="' + box.width + '" height="' + box.height + '" style="position:absolute;left:' + offset.left + 'px;top:' + offset.top + 'px;"/>';
 }
 
 $(function() {
@@ -671,8 +699,14 @@ $(function() {
             	animate(comp[j]);
             };
 
-            if (index ===14) {
-            	_('.section', 1).eq(13).append('<img src="../../../wasion/img/p14_1.gif" style="position:absolute;left:20px;top:200px;"/>');
+            if (ua.match(/AppleWebKit/i)) {
+            	var di = dataIndex(index),
+            	gif;
+            	if (di === 14) {
+            		gif = genGif('#img14-1');
+	            	if (gif)
+	            		_('.section', 1).eq(index - 1).append(gif);
+	            }
             }
         },
 
