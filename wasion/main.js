@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-10 15:24:03
+* @Last Modified time: 2015-03-10 15:28:22
 */
 
 var flag = 0,
@@ -647,7 +647,7 @@ function getComponent(index) {
 
 $(function() {
 	var count = _('.section', 1).length,
-	preload = 4;
+	preload = 3;
 
     $('#fullpage').fullpage({
     	verticalCentered: false,
