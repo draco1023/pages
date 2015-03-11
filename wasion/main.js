@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-11 11:07:29
+* @Last Modified time: 2015-03-11 13:22:52
 */
 
 var ua = navigator.userAgent,
@@ -699,15 +699,17 @@ $(function() {
             	animate(comp[j]);
             };
 
-            if (ua.match(/AppleWebKit/i)) {
+            // if (ua.match(/iPhone|iPad|iPod/i)) {
             	var di = dataIndex(index),
             	gif;
             	if (di === 14) {
             		gif = genGif('#img14-1');
 	            	if (gif)
-	            		_('.section', 1).eq(index - 1).append(gif);
+	            		setTimeout(function() {
+	            			_('.section', 1).eq(index - 1).append(gif);
+	            		}, 300);
 	            }
-            }
+            // }
         },
 
         onLeave: function(index, newIndex, direction) {
