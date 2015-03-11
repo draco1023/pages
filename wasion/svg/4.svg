@@ -6,9 +6,9 @@
         <text style="font-size:48px;" xml:space="preserve" y="119.70593" x="40.406101">企业精神</text>
         <image xlink:href="../../../wasion/img/jqr.png" height="180" width="180" y="0" x="210"/>
 
-        <text class="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="385.58606" x="235.79262">厚德</text>
-        <text class="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="517.08319" x="538.6723">进取</text>
-        <text class="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="824.22601" x="431.52939">日新</text>
-        <text class="text4-1" style="font-size:50px;fill:#000" xml:space="preserve" y="712.79742" x="140.10081">务实</text>
+        <text class="text4-1" style="font-size:64px;fill:#000" xml:space="preserve" y="400" x="250">厚德</text>
+        <text class="text4-1" style="font-size:64px;fill:#000" xml:space="preserve" y="520" x="500">进取</text>
+        <text class="text4-1" style="font-size:64px;fill:#000" xml:space="preserve" y="820" x="400">日新</text>
+        <text class="text4-1" style="font-size:64px;fill:#000" xml:space="preserve" y="700" x="140">务实</text>
     </g>
 </svg>
