@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-11 13:40:28
+* @Last Modified time: 2015-03-11 14:29:54
 */
 
 var ua = navigator.userAgent,
@@ -11,7 +11,6 @@ defDuration = 1200,
 defEase = mina.easeinout,
 jqCache = {},
 svgCache = {},
-masked = [],
 timeouts = [],
 states = {
 	'#path1-1': {
@@ -661,16 +660,18 @@ function getComponent(index) {
 }
 
 function genGif(selector) {
-	if (masked.indexOf(selector) >= 0)
-		return null;
-	masked.push(selector);
-
 	var gif = _(selector, 1),
 	box = gif[0].getBoundingClientRect(),
 	offset = gif.offset(),
 	href = gif.attr('xlink:href'),
 	src = href.substring(href.lastIndexOf('/') + 1);
-	return '<img src="../../../wasion/img/' + src + '" width="' + box.width + '" height="' + box.height + '" style="position:absolute;left:' + offset.left + 'px;top:' + offset.top + 'px;"/>';
+	return '<img class="gen_gif" src="../../../wasion/img/' + src + '" width="' + box.width + '" height="' + box.height + '" style="position:absolute;left:' + offset.left + 'px;top:' + offset.top + 'px;"/>';
+}
+
+function maskGif(index, selector) {
+	timeouts.push(setTimeout(function() {
+		_('.section', 1).eq(index - 1).append(genGif(selector));
+	}, 800));
 }
 
 $(function() {
@@ -699,17 +700,12 @@ $(function() {
             	animate(comp[j]);
             };
 
-            // if (ua.match(/iPhone|iPad|iPod/i)) {
-            	var di = dataIndex(index),
-            	gif;
+            if (ua.match(/iPhone|iPad|iPod/i)) {
+            	var di = dataIndex(index);
             	if (di === 14) {
-            		gif = genGif('#img14-1');
-	            	if (gif)
-	            		setTimeout(function() {
-	            			_('.section', 1).eq(index - 1).append(gif);
-	            		}, 2000);
+            		maskGif(index, '#img14-1');
 	            }
-            // }
+            }
         },
 
         onLeave: function(index, newIndex, direction) {
@@ -722,6 +718,8 @@ $(function() {
             for (var j = comp.length - 1; j >= 0; j--) {
             	attr(comp[j]);
             };
+
+            _('.section', 1).eq(index - 1).find('.gen_gif').remove();
         }
     });
 });
