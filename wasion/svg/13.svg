@@ -4,16 +4,16 @@
         <text style="font-size:48px;" xml:space="preserve" y="119.70593" x="40.406101">协管业务</text>
         <image xlink:href="../../../wasion/img/jqr.png" height="180" width="180" y="0" x="210"/>
 
-        <image xlink:href="../../../wasion/img/p15_top.png" height="263" width="394" y="233.92" x="187" id="img13-1"/>
+        <image xlink:href="../../../wasion/img/p15_top.png" height="300.38" width="450" y="216.54" x="159" id="img13-1"/>
 
         <text style="font-size:40px;fill:#000000;" xml:space="preserve" y="555.34686" x="122.75" id="text13-1">
         	<tspan x="122.75" style="font-size:32px;" y="555.34686">过去的泵节能行业全靠人工统计数据，</tspan>
         	<tspan x="122.75" style="font-size:32px;" y="595.34686">不但不准确，而且辛苦</tspan>
         </text>
 
-        <text style="font-size:48px;fill:#ef4d48;" xml:space="preserve" y="679.2149" x="192.9375" id="text13-2">现在我们有了RESP</text>
+        <text style="font-size:48px;fill:#ef4d48;" xml:space="preserve" y="669.2149" x="192.9375" id="text13-2">现在我们有了RESP</text>
 
-        <image xlink:href="../../../wasion/img/p15_down.png" height="233" width="393" y="709.59" x="187.5" id="img13-2"/>
+        <image xlink:href="../../../wasion/img/p15_down.png" height="266.79" width="450" y="689.79" x="159" id="img13-2"/>
 
         <text style="font-size:48px;fill:#ef4d48;" xml:space="preserve" y="1017.8952" x="192.28125" id="text13-3">协管业务从此开始</text>
     </g>
