@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-11 13:33:49
+* @Last Modified time: 2015-03-11 13:38:04
 */
 
 var ua = navigator.userAgent,
@@ -383,7 +383,7 @@ states = {
     		transform: 'translate(224.25,179.80)',
     		opacity: 0
     	},
-    	t: defDuration * 4
+    	t: defDuration * 3.5
     },
     '#g17-2': {
     	o: {
@@ -394,7 +394,7 @@ states = {
     		transform: 'translate(-220.21,193.95)',
     		opacity: 0
     	},
-    	t: defDuration * 4
+    	t: defDuration * 3.5
     },
     '#g17-3': {
     	o: {
@@ -405,7 +405,7 @@ states = {
     		transform: 'translate(0,-236.38)',
     		opacity: 0
     	},
-    	t: defDuration * 4
+    	t: defDuration * 3.5
     },
     '#img17-4': {
     	o: {
@@ -414,7 +414,7 @@ states = {
     	n: {
     		opacity: 1
     	},
-    	t: defDuration * 4.5
+    	t: defDuration * 4
     },
     '#img13-1': {
     	o: {
@@ -707,7 +707,7 @@ $(function() {
 	            	if (gif)
 	            		setTimeout(function() {
 	            			_('.section', 1).eq(index - 1).append(gif);
-	            		}, 700);
+	            		}, defDuration);
 	            }
             // }
         },
