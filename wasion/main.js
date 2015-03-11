@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-11 14:29:54
+* @Last Modified time: 2015-03-11 16:20:05
 */
 
 var ua = navigator.userAgent,
@@ -671,7 +671,7 @@ function genGif(selector) {
 function maskGif(index, selector) {
 	timeouts.push(setTimeout(function() {
 		_('.section', 1).eq(index - 1).append(genGif(selector));
-	}, 800));
+	}, defDuration));
 }
 
 $(function() {
