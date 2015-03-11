@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-11 16:44:11
+* @Last Modified time: 2015-03-11 17:02:25
 */
 
 var ua = navigator.userAgent,
@@ -665,13 +665,13 @@ function genGif(selector) {
 	offset = gif.offset(),
 	href = gif.attr('xlink:href'),
 	src = href.substring(href.lastIndexOf('/') + 1);
-	return '<img class="gen_gif" src="../../../wasion/img/' + src + '" width="' + box.width + '" height="' + box.height + '" style="position:absolute;left:' + offset.left + 'px;top:' + (offset.top + 28.362) + 'px;"/>';
+	return '<img class="gen_gif" src="../../../wasion/img/' + src + '" width="' + box.width + '" height="' + box.height + '" style="visibility:hidden;position:absolute;left:' + offset.left + 'px;top:' + offset.top + 'px;"/>';
 }
 
 function maskGif(index, selector) {
 	timeouts.push(setTimeout(function() {
 		_('.section', 1).eq(index - 1).append(genGif(selector));
-	}, defDuration));
+	}, 800));
 }
 
 $(function() {
