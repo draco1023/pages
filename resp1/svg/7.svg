@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 1000" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g transform="translate(0,-52.362092)">
+        <image xlink:href="../img/img_701.png" height="284.5" width="383.4" y="469.8" x="170.8"/>
+        <g class="g7-1">
+        	<image xlink:href="../img/img_702.png" height="296.2" width="197.8" y="63.83" x="389.4" class="img7-2"/>
+    	</g>
+    	<g class="g7-1">
+        	<image xlink:href="../img/img_703.png" height="144.9" width="222.1" y="381.7" x="565.4" class="img7-2"/>
+		</g>
+		<g class="g7-1">
+        	<image xlink:href="../img/img_704.png" height="199.2" width="215.6" y="233" x="36.34" class="img7-2"/>
+        </g>
+        <g class="g7-1">
+        	<image xlink:href="../img/img_705.png" height="152.6" width="232.2" y="742.9" x="86.85" class="img7-2"/>
+        </g>
+        <g class="g7-1">
+        	<image xlink:href="../img/img_706.png" height="280.7" width="185.8" y="688.7" x="508.2" class="img7-2"/>
+        </g>
+        <g id="g7-2">
+        	<image xlink:href="../img/img_hand.png" height="435" width="268" y="617.4" x="531" id="img7-1"/>
+        </g>
+    </g>
+</svg>
