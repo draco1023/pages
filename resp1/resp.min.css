@@ -16,3 +16,7 @@ svg{width:100%;height:100%}svg text{line-height:125%;fill:#fff}#section01,#secti
 #g8-0 path{fill:none;stroke-width:5;stroke-linejoin:miter;stroke:#fff;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none}#section09,#section10,#section11,#section12,#section13{background:#dbfeff}
 path.text11-1,path.text12-1{stroke-linejoin:miter;stroke:#000;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:5;fill:none}#section14,#section15{background:#ff6b66}
 #g16-1 path,#g17-1 path,#g18-1 path,#g19-1 path,#g20-1 path,#g21-1 path{fill:#ff8100}path.arrow{stroke-linejoin:miter;stroke:#00f;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:10;fill:none}
+rect.shadow{stroke-linejoin:miter;stroke:#fff;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:5}@-webkit-keyframes pulse{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes pulse{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
+50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}.pulse{-webkit-animation-name:pulse;animation-name:pulse}
+#nav-arrow{position:absolute;bottom:20px;width:15%;left:42.5%;-webkit-animation:pulse 1.5s 3s infinite ease both;animation:pulse 1.5s 3s infinite ease both}

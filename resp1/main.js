@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-17 13:16:50
+* @Last Modified time: 2015-03-17 16:22:46
 */
 
 function easeRepeat(easing, times) {
@@ -1007,7 +1007,9 @@ $(function() {
 
         afterLoad: function(anchorLink, index) {
         	var preIndex = index + preload,
-            comp = getComponent(index);
+            comp = getComponent(index),
+            nav = _('#nav-arrow', 1);
+            nav.hide();
         	if (preIndex <= count)
         		loadSvg(preIndex);
 
@@ -1033,13 +1035,15 @@ $(function() {
                     }));
                 }, defDuration));
             }
+            if (index !== 21)
+                nav.show();
 
-            if (ua.match(/iPhone|iPad|iPod/i)) {
-            	// var di = dataIndex(index);
-            	// if (di === 4) {
-            	// 	maskGif(index, '#img4-2');
-	            // }
-            }
+            // if (ua.match(/iPhone|iPad|iPod/i)) {
+            // 	var di = dataIndex(index);
+            // 	if (di === 4) {
+            // 		maskGif(index, '#img4-2');
+	           //  }
+            // }
         },
 
         onLeave: function(index, newIndex, direction) {
