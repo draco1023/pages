@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-17 16:47:43
+* @Last Modified time: 2015-03-17 17:22:25
 */
 
 function easeRepeat(easing, times) {
@@ -815,7 +815,7 @@ function loadSvg(index, loaded) {
 	di = dataIndex(index),
 	compIndex = di - 1,
 	cur = flag;
-	if (!(cur >> i & 1))
+	if (!(cur >> i & 1)) {
 		var path = 'svg/' + di + '.svg';
 		path += '?d=' + (+new Date);
 		Snap.load(path, function(d) {
@@ -831,6 +831,7 @@ function loadSvg(index, loaded) {
 				attr(comp[j]);
 			loaded && loaded(d);
 		}, _('.section', 1)[i]);
+    }
 }
 
 function trans(el, state, duration, ease, callback) {
@@ -1037,6 +1038,7 @@ $(function() {
             }
             if (index !== 21)
                 nav.show();
+            _('body', 1).css('background-color', _('.section', 1).eq(index - 1).css('background-color'));
 
             // if (ua.match(/iPhone|iPad|iPod/i)) {
             // 	var di = dataIndex(index);
