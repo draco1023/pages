@@ -19,4 +19,4 @@ path.text11-1,path.text12-1{stroke-linejoin:miter;stroke:#000;stroke-linecap:but
 rect.shadow{stroke-linejoin:miter;stroke:#ccc;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:5}@-webkit-keyframes pulse{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
 50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}@keyframes pulse{0%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}
 50%{-webkit-transform:scale3d(1.05,1.05,1.05);transform:scale3d(1.05,1.05,1.05)}100%{-webkit-transform:scale3d(1,1,1);transform:scale3d(1,1,1)}}.pulse{-webkit-animation-name:pulse;animation-name:pulse}
-#nav-arrow{position:absolute;bottom:20px;width:15%;left:42.5%;-webkit-animation:pulse 1.5s 3s infinite ease both;animation:pulse 1.5s 3s infinite ease both}
+#nav-arrow{position:absolute;bottom:10px;width:15%;left:42.5%;-webkit-animation:pulse 1.5s 3s infinite ease both;animation:pulse 1.5s 3s infinite ease both}

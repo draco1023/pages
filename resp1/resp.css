@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-12 11:05:16
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-17 16:38:31
+* @Last Modified time: 2015-03-17 16:42:43
 */
 html, body {
     margin: 0;
@@ -302,7 +302,7 @@ rect.shadow {
 
 #nav-arrow {
 	position: absolute;
-	bottom: 20px;
+	bottom: 10px;
 	width: 15%;
 	left: 42.5%;
 	-webkit-animation: pulse 1.5s 3s infinite ease both;

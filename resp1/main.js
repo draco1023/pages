@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-17 16:22:46
+* @Last Modified time: 2015-03-17 16:41:36
 */
 
 function easeRepeat(easing, times) {
@@ -758,11 +758,11 @@ states = {
     '#rect21-1': {
         o: {
             transform: 'translate(0,900)',
-            opacity: 0
+            'fill-opacity': 0
         },
         n: {
             transform: 'translate(0,0)',
-            opacity: 1
+            'fill-opacity': 1
         },
         t: defDuration,
         d: defDuration * 2
