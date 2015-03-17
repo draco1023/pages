@@ -13,21 +13,21 @@
 	        <path d="m185.8,645.3c-6.077,0-11,4.923-11,11v149.7c0,6.077,4.923,11,11,11h484.1c6.077,0,11-4.923,11-11v-149.7c0-6.077-4.923-11-11-11h-484.1zm0,2,484.1,0c5.003,0,9,3.997,9,9v149.7c0,5.003-3.997,9-9,9h-484.1c-5.003,0-9-3.997-9-9v-149.7c0-5.003,3.997-9,9-9z" />
 	        <path transform="translate(0,52.362092)" d="M239.4,592.9h1.8v-2h-1.8v2z" />
 	        <path transform="translate(0,52.362092)" d="M601.9,590.9h-1.8v2h1.8v-2z" />
-	        <image xlink:href="../resp1/img/ebox623.png" height="68.29" width="149.5" y="512.1" x="345.8" />
-	        <image xlink:href="../resp1/img/p5_2.png" height="111.8" width="81.5" y="334.8" x="305.8" />
-	        <image xlink:href="../resp1/img/19.png" height="91.37" width="134.7" y="687.5" x="273.6" />
-	        <image xlink:href="../resp1/img/7KfRRxtn1.png" height="88.6" width="125.5" y="688.9" x="605.9" />
-	        <image xlink:href="../resp1/img/WEGW-1000S.png" height="121.4" width="78.05" y="672.5" x="138.2" />
-	        <image xlink:href="../resp1/img/WEGW-1000S.png" height="121.4" width="78.05" y="672.5" x="465.8" />
-	        <image xlink:href="../resp1/img/WEGW-1000S.png" height="121.4" width="78.05" y="485.5" x="208.1" />
-	        <image xlink:href="../resp1/img/WEGW-1000S.png" height="121.4" width="78.05" y="485.5" x="554.9" />
-	        <image xlink:href="../resp1/img/p5_2.png" height="111.8" width="81.5" y="334.8" x="451" />
+	        <image xlink:href="img/ebox623.png" height="68.29" width="149.5" y="512.1" x="345.8" />
+	        <image xlink:href="img/p5_2.png" height="111.8" width="81.5" y="334.8" x="305.8" />
+	        <image xlink:href="img/19.png" height="91.37" width="134.7" y="687.5" x="273.6" />
+	        <image xlink:href="img/7KfRRxtn1.png" height="88.6" width="125.5" y="688.9" x="605.9" />
+	        <image xlink:href="img/img_jiqi02.png" height="121.4" width="78.05" y="672.5" x="138.2" />
+	        <image xlink:href="img/img_jiqi04.png" height="121.4" width="78.05" y="672.5" x="465.8" />
+	        <image xlink:href="img/WEGW-1000S.png" height="121.4" width="78.05" y="485.5" x="208.1" />
+	        <image xlink:href="img/WEGW-1000S.png" height="121.4" width="78.05" y="485.5" x="554.9" />
+	        <image xlink:href="img/p5_2.png" height="111.8" width="81.5" y="334.8" x="451" />
     	</g>
 
         <rect style="fill:#4CD0FF;" height="580" width="669.6" y="280" x="77.94" id="rect8-1"/>
 
-        <image xlink:href="../resp1/img/p6_l_4.png" height="129.4" width="191.9" y="173.1" x="327.5" id="img8-2"/>
-        <image xlink:href="../resp1/img/p6_l_5.png" height="173" width="153.4" y="836" x="357.2" id="img8-1"/>
+        <image xlink:href="img/p6_l_4.png" height="129.4" width="191.9" y="173.1" x="327.5" id="img8-2"/>
+        <image xlink:href="img/p6_l_5.png" height="173" width="153.4" y="836" x="357.2" id="img8-1"/>
 
         <!-- <text style="font-size:72px;" xml:space="preserve" y="141.24512" x="28.345184">系统架构</text> -->
         <g id="g8-1">
