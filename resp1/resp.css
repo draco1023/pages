@@ -2,13 +2,13 @@
 * @Author: Draco
 * @Date:   2015-03-12 11:05:16
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-17 16:42:43
+* @Last Modified time: 2015-03-17 17:00:33
 */
 html, body {
     margin: 0;
     padding: 0;
     overflow:hidden;
-
+	background: red;
     /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
