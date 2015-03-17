@@ -1,99 +1,4 @@
 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 800 1000" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <defs>
-        <filter id="filter4314" color-interpolation-filters="sRGB">
-            <feGaussianBlur stdDeviation="1.5" result="result6" />
-            <feComposite operator="atop" result="result8" in2="result6" in="SourceGraphic" />
-            <feComposite operator="atop" result="result9" in2="SourceAlpha" in="result8" />
-        </filter>
-        <filter id="filter4322" color-interpolation-filters="sRGB">
-            <feGaussianBlur stdDeviation="1.5" result="result6" />
-            <feComposite operator="atop" result="result8" in2="result6" in="SourceGraphic" />
-            <feComposite operator="atop" result="result9" in2="SourceAlpha" in="result8" />
-        </filter>
-        <filter id="filter4314-9" color-interpolation-filters="sRGB">
-            <feGaussianBlur stdDeviation="1.5" result="result6" />
-            <feComposite operator="atop" result="result8" in2="result6" in="SourceGraphic" />
-            <feComposite operator="atop" result="result9" in2="SourceAlpha" in="result8" />
-        </filter>
-        <filter id="filter4504" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4564" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4579" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4601" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4625" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4648" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4669" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4689" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4709" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4729" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-        <filter id="filter4754" style="color-interpolation-filters:sRGB;">
-            <feFlood result="flood" flood-opacity="0.5" flood-color="rgb(0,0,0)" />
-            <feComposite operator="in" result="composite1" in2="SourceGraphic" in="flood" />
-            <feGaussianBlur stdDeviation="2" result="blur" in="composite" />
-            <feOffset result="offset" dx="4" dy="4" />
-            <feComposite operator="over" result="composite2" in2="offset" in="SourceGraphic" />
-        </filter>
-    </defs>
-
     <g transform="translate(0,-52.362092)">
         <g id="g17-1">
             <path d="m84.34,112.6c-1.875,2.813-4.781,6.188-8.719,10.12,2.437,0.00004,5.625,0.00004,9.562,0,3.75-0.1875,6.562-0.375,8.438-0.5625-1.688-2.062-3-3.844-3.938-5.344-1.125-1.312-1.125-2.531,0-3.656,1.312-0.9374,2.625-0.75,3.938,0.5625,3.562,4.313,6.656,8.906,9.281,13.78,0.5625,1.688,0.1875,2.906-1.125,3.656-1.313,0.75-2.438,0.375-3.375-1.125-0.375-0.5625-0.75-1.125-1.125-1.688-0.1875-0.375-0.375-0.75-0.5625-1.125-9,0.5625-17.34,0.75-25.03,0.5625-2.438,0.00003-3.844-0.5625-4.219-1.688-0.5625-1.125-0.000002-2.531,1.688-4.219,3.75-3.75,7.312-7.969,10.69-12.66,0.9375-1.312,2.156-1.5,3.656-0.5625,1.5,1.125,1.781,2.438,0.8438,3.938zm25.03-1.125,0,9.281c5.812-1.5,11.91-3.937,18.28-7.312,1.687-0.5624,2.906-0.0937,3.656,1.406,0.5624,1.5-0.00007,2.719-1.688,3.656-6.188,3.188-12.94,5.625-20.25,7.312v8.156c-0.1876,1.875,1.031,2.813,3.656,2.812h9.562c3.562,0.75,5.625-1.687,6.188-7.312,0.1874-1.687,1.125-2.437,2.812-2.25,1.5,0.375,2.156,1.5,1.969,3.375-0.1876,7.688-3.844,11.34-10.97,10.97h-9.562c-6,0.1875-8.906-2.156-8.719-7.031v-23.06c-0.00004-1.687,0.8437-2.625,2.531-2.812,1.5,0.1876,2.344,1.125,2.531,2.812zm-33.75,19.69,17.72,0c3,0.5625,4.781,2.344,5.344,5.344v32.62c-0.75,5.812-5.625,7.312-14.62,4.5-2.063-0.75-3-1.875-2.812-3.375,0.5625-1.688,1.875-2.25,3.938-1.688,5.25,1.875,8.062,1.781,8.438-0.2812v-9.562h-18.56v13.22c-0.1875,1.5-1.031,2.344-2.531,2.531-1.688-0.1875-2.531-1.031-2.531-2.531v-35.16c0.1875-3.562,2.062-5.437,5.625-5.625zm1.125,4.781c-1.125,0.00003-1.688,0.4688-1.688,1.406v5.344h18.56v-5.344c-0.1875-0.75-0.6563-1.219-1.406-1.406zm-1.688,11.25,0,7.031,18.56,0,0-7.031zm34.31-0.8438,0,7.594c5.812-1.5,11.91-3.937,18.28-7.312,1.687-0.5625,2.906-0.0937,3.656,1.406,0.5624,1.5-0.00007,2.719-1.688,3.656-6.188,3.188-12.94,5.531-20.25,7.031v8.156c-0.1876,1.5,1.031,2.344,3.656,2.531h9.562c3.562,0.5625,5.625-1.781,6.188-7.031,0.1874-1.688,1.125-2.344,2.812-1.969,1.5,0.375,2.156,1.5,1.969,3.375-0.3751,7.125-4.031,10.59-10.97,10.41h-9.562c-6-0.00001-8.906-2.25-8.719-6.75v-21.09c-0.00004-1.687,0.8437-2.625,2.531-2.812,1.5,0.1875,2.344,1.125,2.531,2.812z" />
@@ -106,24 +11,24 @@
         </g>
 
         <g transform="translate(18,-10)">
-            <rect class="shadow" style="filter:url(#filter4504);fill:#008000;" height="82.83" width="129.3" y="327.8" x="14.4" />
+            <rect class="shadow" style="fill:#008000;" height="82.83" width="129.3" y="327.8" x="14.4" />
             <text style="font-size:28px;fill:#fff;" y="361.52936" x="36.442104" xml:space="preserve">选择待</text>
             <text style="font-size:28px;fill:#fff;" y="393.86447" x="22.223354" xml:space="preserve">审计建筑</text>
         </g>
 
         <g transform="translate(8.342619,-29.294401)">
-            <rect class="shadow" style="filter:url(#filter4579);fill:#d4aa00;" height="112.6" width="183.3" y="327.3" x="212.4" />
+            <rect class="shadow" style="fill:#d4aa00;" height="112.6" width="183.3" y="327.3" x="212.4" />
             <text style="font-size:28px;fill:#fff;" y="393.7583" x="248.16528" xml:space="preserve">审计目的</text>
 
         </g>
 
         <g transform="translate(5.6048451,7.6293945e-6)">
-            <rect class="shadow" style="filter:url(#filter4669);fill:#008000;" height="74.75" width="181.8" y="319" x="471.7" />
+            <rect class="shadow" style="fill:#008000;" height="74.75" width="181.8" y="319" x="471.7" />
             <text style="font-size:28px;fill:#fff;" y="366.04669" x="535.03778" xml:space="preserve">概况</text>
         </g>
 
         <g transform="translate(22.09009,51.879433)">
-            <rect class="shadow" style="filter:url(#filter4601);fill:#d4aa00;" height="112.6" width="183.3" y="441.1" x="198.6" />
+            <rect class="shadow" style="fill:#d4aa00;" height="112.6" width="183.3" y="441.1" x="198.6" />
             <text style="font-size:28px;fill:#fff;" y="472.48917" x="206.30846" xml:space="preserve">
                 <tspan y="472.48917" x="206.30846">提取建筑信息</tspan>
                 <tspan y="507.48917" x="206.30846">建筑用能概况</tspan>
@@ -132,13 +37,13 @@
         </g>
 
         <g transform="translate(-10.850273,-11.111744)">
-            <rect class="shadow" style="filter:url(#filter4625);fill:#d4aa00;" height="112.6" width="183.3" y="699.1" x="231.6" />
+            <rect class="shadow" style="fill:#d4aa00;" height="112.6" width="183.3" y="699.1" x="231.6" />
             <text style="font-size:28px;fill:#fff;" y="748.11578" x="267.3035" xml:space="preserve">生产建筑</text>
             <text style="font-size:28px;fill:#fff;" y="784.31195" x="239.46756" xml:space="preserve">能耗分析报告</text>
         </g>
 
         <g transform="translate(195.22085,90.408652)">
-            <rect class="shadow" style="filter:url(#filter4648);fill:#d4aa00;" height="112.6" width="183.3" y="792.5" x="25.51" />
+            <rect class="shadow" style="fill:#d4aa00;" height="112.6" width="183.3" y="792.5" x="25.51" />
             <text style="font-size:28px;fill:#fff;" y="841.43347" x="33.287067" xml:space="preserve">
                 <tspan y="841.43347" x="33.287067">建筑环境数据</tspan>
                 <tspan y="876.43347" x="33.287067">（温度,CO2）</tspan>
@@ -146,22 +51,22 @@
         </g>
 
         <g transform="translate(-1.4662304,-31.988171)">
-            <rect class="shadow" style="filter:url(#filter4709);fill:#008000;" height="74.75" width="181.8" y="744.3" x="478.8" />
+            <rect class="shadow" style="fill:#008000;" height="74.75" width="181.8" y="744.3" x="478.8" />
             <text style="font-size:28px;fill:#fff;" y="791.32086" x="485.67136" xml:space="preserve">建筑能耗分析</text>
         </g>
 
         <g transform="translate(-4.4966564,0)">
-            <rect class="shadow" style="filter:url(#filter4729);fill:#008000;" height="74.75" width="181.8" y="908.9" x="481.8" />
+            <rect class="shadow" style="fill:#008000;" height="74.75" width="181.8" y="908.9" x="481.8" />
             <text style="font-size:28px;fill:#fff;" y="955.97571" x="488.70178" xml:space="preserve">节能潜力分析</text>
         </g>
 
         <g transform="translate(13.58806,43.627708)">
-            <rect class="shadow" style="filter:url(#filter4689);fill:#008000;" height="74.75" width="181.8" y="472" x="463.8" />
+            <rect class="shadow" style="fill:#008000;" height="74.75" width="181.8" y="472" x="463.8" />
             <text style="font-size:28px;fill:#fff;" y="519.06195" x="470.67175" xml:space="preserve">建筑能源管理</text>
         </g>
 
         <g transform="translate(4,0)">
-            <rect class="shadow" style="filter:url(#filter4754);fill:#ff9600;" height="276.8" width="63.64" y="515.3" x="718.2" />
+            <rect class="shadow" style="fill:#ff9600;" height="276.8" width="63.64" y="515.3" x="718.2" />
             <text style="font-size:28px;fill:#fff;" y="576.89038" x="735.94922" xml:space="preserve">
                 <tspan y="576.89038" x="735.94922">合</tspan>
                 <tspan y="611.89038" x="735.94922">成</tspan>
@@ -172,11 +77,11 @@
             </text>
         </g>
 
-        <g style="filter:url(#filter4564);" transform="translate(7.1428572,-26.857143)">
-            <rect style="filter:url(#filter4322);fill:#ff2a2a;" height="104.6" width="150.6" y="626" x="16.71" />
-            <path class="shadow" style="filter:url(#filter4314);fill:#ff2a2a;" d="m-74.75,473.7c0,16.18-45.68,29.29-102,29.29-56.35,0-102-13.12-102-29.29,0-16.18,45.68-29.29,102-29.29,56.35,0,102,13.12,102,29.29z" transform="matrix(0.73417201,0,0,0.90820474,221.76653,193.19685)" />
+        <g transform="translate(7.1428572,-26.857143)">
+            <rect class="shadow" style="fill:#ff2a2a;" height="104.6" width="150.6" y="626" x="16.71" />
+            <path class="shadow" style="fill:#ff2a2a;" d="m-74.75,473.7c0,16.18-45.68,29.29-102,29.29-56.35,0-102-13.12-102-29.29,0-16.18,45.68-29.29,102-29.29,56.35,0,102,13.12,102,29.29z" transform="matrix(0.73417201,0,0,0.90820474,221.76653,193.19685)" />
             <text style="font-size:28px;fill:#fff;" y="687.7326" x="22.728441" xml:space="preserve">能耗数据库</text>
-            <path class="shadow" style="filter:url(#filter4314-9);fill:#ff2a2a;" d="m-74.75,473.7c0,16.18-45.68,29.29-102,29.29-56.35,0-102-13.12-102-29.29,0-16.18,45.68-29.29,102-29.29,56.35,0,102,13.12,102,29.29z" transform="matrix(0.73417201,0,0,0.90820474,221.77388,301.95818)" />
+            <path class="shadow" style="fill:#ff2a2a;" d="m-74.75,473.7c0,16.18-45.68,29.29-102,29.29-56.35,0-102-13.12-102-29.29,0-16.18,45.68-29.29,102-29.29,56.35,0,102,13.12,102,29.29z" transform="matrix(0.73417201,0,0,0.90820474,221.77388,301.95818)" />
         </g>
 
         <path class="arrow" d="m98.18,415.5-0.7107,136.2,5.54-14.33-5.54,14.33-5.179-14.5" />

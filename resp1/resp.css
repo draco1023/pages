@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-12 11:05:16
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-17 16:18:43
+* @Last Modified time: 2015-03-17 16:38:31
 */
 html, body {
     margin: 0;
@@ -255,7 +255,7 @@ path.arrow {
 
 rect.shadow {
 	stroke-linejoin:miter;
-	stroke:#fff;
+	stroke:#ccc;
 	stroke-miterlimit:4;
 	stroke-dasharray:none;
 	stroke-width:5;
