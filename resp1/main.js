@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-17 17:22:25
+* @Last Modified time: 2015-03-18 08:21:03
 */
 
 function easeRepeat(easing, times) {
@@ -1007,6 +1007,7 @@ $(function() {
         },
 
         afterLoad: function(anchorLink, index) {
+            _('body', 1).css('background-color', _('.section', 1).eq(index - 1).css('background-color'));
         	var preIndex = index + preload,
             comp = getComponent(index),
             nav = _('#nav-arrow', 1);
@@ -1038,7 +1039,6 @@ $(function() {
             }
             if (index !== 21)
                 nav.show();
-            _('body', 1).css('background-color', _('.section', 1).eq(index - 1).css('background-color'));
 
             // if (ua.match(/iPhone|iPad|iPod/i)) {
             // 	var di = dataIndex(index);
