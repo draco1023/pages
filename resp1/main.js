@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-03 14:45:05
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-18 08:58:21
+* @Last Modified time: 2015-03-18 09:26:57
 */
 
 function easeRepeat(easing, times) {
@@ -1007,7 +1007,6 @@ $(function() {
         },
 
         afterLoad: function(anchorLink, index) {
-            _('body', 1).css('background-color', _('.section', 1).eq(index - 1).css('background-color'));
         	var preIndex = index + preload,
             comp = getComponent(index),
             nav = _('#nav-arrow', 1);
@@ -1055,6 +1054,7 @@ $(function() {
             while (minas.length) {
                 minas.pop().stop();
             }
+            _('body', 1).css('background-color', _('.section', 1).eq(newIndex - 1).css('background-color'));
 
             // if (index == 1 && direction == 'down') {
             // }
