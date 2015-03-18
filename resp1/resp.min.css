@@ -11,7 +11,7 @@ html,body{margin:0;padding:0;overflow:hidden;-webkit-tap-highlight-color:rgba(0,
 #fp-nav ul li .fp-tooltip{position:absolute;top:-2px;color:#fff;font-size:14px;font-family:arial,helvetica,sans-serif;white-space:nowrap;max-width:220px;overflow:hidden;display:block;opacity:0;width:0}
 #fp-nav ul li:hover .fp-tooltip{-webkit-transition:opacity .2s ease-in;transition:opacity .2s ease-in;width:auto;opacity:1}#fp-nav ul li .fp-tooltip.right{right:20px}
 #fp-nav ul li .fp-tooltip.left{left:20px}body{color:#333;font-family:"FZZhunYuan-M02","Helvetica Neue",Helvetica,STHeiTi,sans-serif}
-svg{width:100%;height:100%}svg text{line-height:125%;fill:#fff}#section01,#section02,#section03,#section04,#section05,#section06,#section07,#section08{background:#4cd0ff}
+svg{width:100%;height:100%}svg text{line-height:125%;fill:#fff}.section{background:#fff}#section01,#section02,#section03,#section04,#section05,#section06,#section07,#section08{background:#4cd0ff}
 #g1-4 path,#g2-1 path,#g3-1 path,#g4-1 path,#g5-1 path,.g6-1 path,#g8-1 path,#g14-1 path,#g15-1 path{fill:#fff}#g9-1 path,#g10-1 path,#g11-1 path,#g12-1 path,#g13-1 path{fill:#0594ee}
 #g8-0 path{fill:none;stroke-width:5;stroke-linejoin:miter;stroke:#fff;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none}#section09,#section10,#section11,#section12,#section13{background:#dbfeff}
 path.text11-1,path.text12-1{stroke-linejoin:miter;stroke:#000;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-width:5;fill:none}#section14,#section15{background:#ff6b66}

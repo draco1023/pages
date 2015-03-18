@@ -2,7 +2,7 @@
 * @Author: Draco
 * @Date:   2015-03-12 11:05:16
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-03-17 16:42:43
+* @Last Modified time: 2015-03-18 09:03:50
 */
 html, body {
     margin: 0;
@@ -197,6 +197,10 @@ svg {
 svg text {
 	line-height: 125%;
 	fill: #fff;
+}
+
+.section {
+	background: #fff;
 }
 
 #section01, #section02, #section03, #section04, #section05, #section06, #section07, #section08 {
