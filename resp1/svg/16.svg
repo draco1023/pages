@@ -11,8 +11,10 @@
         </g>
 
         <image xlink:href="img/img_centerimg.png" height="862" width="359" y="184.9" x="216.5" />
-
-        <rect style="fill:#fff;fill-opacity:1;stroke:none" id="rect16-1" width="418.20316" height="872" x="-622" y="-1052" transform="scale(-1,-1)"/>
+        
+        <!-- <g id="g16-3"> -->
+            <rect style="fill:#fff;fill-opacity:0;stroke:none" id="rect16-1" width="418.20316" height="872" x="-622" y="-1052" transform="scale(-1,-1)"/>
+        <!-- </g> -->
 
         <g class="g16-2">
             <image xlink:href="img/p6_r_1.png" height="54" width="57" y="108.1" x="587.7" />
