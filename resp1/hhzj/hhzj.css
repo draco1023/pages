@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-04-14 15:38:29
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-04-15 11:30:39
+* @Last Modified time: 2015-04-15 11:35:46
 */
 * {
 	-webkit-box-sizing: border-box;
@@ -54,13 +54,12 @@ body {
 #description h1 {
 	font-size: 22px;
 	font-weight: bold;
-	margin-top: 20px;
-	margin-bottom: 10px;
+	margin-top: 6px;
 }
 
 #description h4 {
 	font-size: 18px;
-	margin-top: 10px;
+	margin-top: 8px;
 	margin-bottom: 10px;
 	font-weight: 500;
 	line-height: 1.1;

@@ -1,7 +1,7 @@
 *{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0;margin:0;font-family:"Microsoft Yahei","Helvetica Neue",Helvetica,STHeiTi,sans-serif;font-size:14px}
 html,body{width:100%;height:100%}body{background:url('images/banner-bg.jpg');-webkit-background-size:cover;-moz-background-size:cover;-o-background-size:cover;background-size:cover}
 #container{position:absolute;bottom:0;left:0;width:100%}#container .m-scooch{position:relative;display:block;margin:0 auto;max-width:320px}#description{color:white;position:relative;z-index:9999;width:96%;margin:0 auto;overflow:hidden;text-align:justify}
-#description h1{font-size:22px;font-weight:bold;margin-top:20px;margin-bottom:10px}#description h4{font-size:18px;margin-top:10px;margin-bottom:10px;font-weight:500;line-height:1.1}
+#description h1{font-size:22px;font-weight:bold;margin-top:6px}#description h4{font-size:18px;margin-top:8px;margin-bottom:10px;font-weight:500;line-height:1.1}
 #description p{color:#339;text-indent:28px;font-weight:bold}.m-scooch{position:relative;overflow:hidden;-webkit-font-smoothing:antialiased}.m-scooch.m-left{text-align:left}
 .m-scooch.m-center{text-align:center}.m-scooch.m-fluid>.m-scooch-inner>*{width:100%}.m-scooch.m-fluid.m-center>.m-scooch-inner>*:first-child{margin-left:0}
 .m-scooch.m-fluid-2>.m-scooch-inner>*{width:50%}.m-scooch.m-fluid-2.m-center>.m-scooch-inner>*:first-child{margin-left:25%}.m-scooch.m-fluid-3>.m-scooch-inner>*{width:33.333%}
