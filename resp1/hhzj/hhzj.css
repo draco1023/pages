@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-04-14 15:38:29
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-04-15 11:13:57
+* @Last Modified time: 2015-04-15 11:30:39
 */
 * {
 	-webkit-box-sizing: border-box;
@@ -38,6 +38,7 @@ body {
 	position: relative;
 	display: block;
 	margin: 0 auto;
+    max-width: 320px;
 }
 
 #description {
@@ -173,7 +174,7 @@ body {
 */
 
 .m-scooch-controls {
-    padding-top: 10px;
+    /*padding-top: 10px;*/
     text-align: center;
 }
 
