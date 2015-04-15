@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2015-04-14 15:38:29
 * @Last Modified by:   Administrator
-* @Last Modified time: 2015-04-15 11:35:46
+* @Last Modified time: 2015-04-15 13:14:05
 */
 * {
 	-webkit-box-sizing: border-box;
@@ -59,8 +59,8 @@ body {
 
 #description h4 {
 	font-size: 18px;
-	margin-top: 8px;
-	margin-bottom: 10px;
+	margin-top: 6px;
+	margin-bottom: 6px;
 	font-weight: 500;
 	line-height: 1.1;
 }
@@ -175,6 +175,7 @@ body {
 .m-scooch-controls {
     /*padding-top: 10px;*/
     text-align: center;
+    margin-top: -20px;
 }
 
 .m-scooch-controls a {
@@ -381,11 +382,11 @@ body {
     width: 100%;
     height: auto;
 
-    -webkit-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
+    /*-webkit-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
     -moz-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
     -o-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
     -ms-box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
-    box-shadow: rgba(0,0,0,0.5) 0 5px 10px;
+    box-shadow: rgba(0,0,0,0.5) 0 5px 10px;*/
 }
 
 .m-scooch-photos .m-caption {
