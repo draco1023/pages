@@ -21,6 +21,28 @@
         width: 100%;
         height: 100%;
     }
+
+    .info {
+        margin: .5em 0;
+    }
+
+    .nav {
+        background-color: #0078e7;
+        color: #fff;
+        padding: .3em .7em;
+        border-radius: 2px;
+        display: inline-block;
+        zoom: 1;
+        line-height: normal;
+        white-space: nowrap;
+        vertical-align: middle;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .BMap_bubble_content {
+        max-width: 320px !important;
+    }
     </style>
 </head>
 
@@ -30,6 +52,13 @@
     <!-- <script src="http://api.map.baidu.com/api?v=2.0&ak=kwgiPI8Ky6keCNP79B8PuG28"></script> -->
     <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=kwgiPI8Ky6keCNP79B8PuG28&v=1.0"></script>
     <script>
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
     var map = new BMap.Map('container'),
     markerArr = [{
         title:'北京办事处',
@@ -211,7 +240,13 @@
         y: 43.811784,
         address: '新疆维吾尔自治区乌鲁木齐市天山区青年路日月星光花园日光小区4-3-401',
         tel: '0991-8860289'
-    }];
+    }],
+    routeSearch = new BMap.RouteSearch(),
+    opts = {
+        mode: BMAP_MODE_DRIVING
+    },
+    ox = parseFloat(getParameterByName('x')),
+    oy = parseFloat(getParameterByName('y'));
 
     map.centerAndZoom('长沙', 5);      
 	map.addControl(new BMap.ZoomControl());
@@ -219,7 +254,7 @@
 	for (var i = 0, l = markerArr.length; i < l; i++) {
 		var p = markerArr[i],
 		marker = new BMap.Marker(new BMap.Point(p.x, p.y)),
-		html = '<h3>' + p.title + '</h3>地址：' + p.address + '<br>电话：' + p.tel + '<br><button onclick="route(' + p.x + ',' + p.y + ',\'' + p.address + '\')">去这里</button>',
+		html = '<h3>' + p.title + '</h3><p class="info">地址：' + p.address + '</p><p class="info">电话：' + p.tel + '</p><button class="nav" onclick="route(' + p.x + ',' + p.y + ',\'' + p.address + '\')">去这里</button>',
 		info = new BMap.InfoWindow(html);
 		!(function(m, inf) {
 			m.addEventListener('click', function() {
@@ -230,9 +265,16 @@
 		map.addOverlay(marker);
 	};
 
+
+
 	function route(x, y, name) {
-		var url = 'http://map.baidu.com/mobile/webapp/index/index#drive/list/qt=nav&sn=1$$$$12565139.02,3257646.60$$我的位置$$&en=1$$702f21e8f71902539e95de24$$8765059.4,4381178.4$$新疆维吾尔自治区乌鲁木齐市天山区青年路日月星光花园日光小区4-3-401$$&sc=158&ec=92&c=158&pn=0&rn=5&searchFlag=transit&version=3&wm=1/vt=map';
-        console.log(encodeURI(url));
+		var start = {
+            latlng: new BMap.Point(ox, oy)
+        },
+        end = {
+            latlng: new BMap.Point(x, y)
+        };
+        routeSearch.routeCall(start, end, opts);
 	}
     </script>
 </body>
