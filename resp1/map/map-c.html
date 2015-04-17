@@ -218,11 +218,11 @@
     	}
     }),
     geolocation = new BMap.Geolocation(),
-    location;
+    loc;
 
     geolocation.getCurrentPosition(function(r){
-		if(this.getStatus() == BMAP_STATUS_SUCCESS){
-			location = r.point;
+		if(this.getStatus() === BMAP_STATUS_SUCCESS){
+            loc = r.point;
 		}
 	}, {
 		enableHighAccuracy: true
@@ -246,8 +246,8 @@
 	};
 
 	function route(x, y, name) {
-		if (location) {
-			var start = location,
+		if (loc) {
+			var start = loc,
 			end = new BMap.Point(x, y);
 			routeSearch.search(start, end);
 		} else {

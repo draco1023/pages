@@ -211,13 +211,9 @@
         y: 43.811784,
         address: '新疆维吾尔自治区乌鲁木齐市天山区青年路日月星光花园日光小区4-3-401',
         tel: '0991-8860289'
-    }],
-    routeSearch = new BMap.RouteSearch(),
-    opts = {
-    	mode: BMAP_MODE_DRIVING
-    };
+    }];
 
-    map.centerAndZoom('广州', 5);      
+    map.centerAndZoom('长沙', 5);      
 	map.addControl(new BMap.ZoomControl());
 
 	for (var i = 0, l = markerArr.length; i < l; i++) {
@@ -235,16 +231,8 @@
 	};
 
 	function route(x, y, name) {
-		// console.log(this, arguments);
-		var start = {
-			latlng: new BMap.Point(116.404, 39.915)
-    		// name: "故宫"
-		},
-		end = {
-			latlng: new BMap.Point(x, y)
-			// name: name
-		};
-		routeSearch.routeCall(start, end, opts);
+		var url = 'http://map.baidu.com/mobile/webapp/index/index#drive/list/qt=nav&sn=1$$$$12565139.02,3257646.60$$我的位置$$&en=1$$702f21e8f71902539e95de24$$8765059.4,4381178.4$$新疆维吾尔自治区乌鲁木齐市天山区青年路日月星光花园日光小区4-3-401$$&sc=158&ec=92&c=158&pn=0&rn=5&searchFlag=transit&version=3&wm=1/vt=map';
+        console.log(encodeURI(url));
 	}
     </script>
 </body>
