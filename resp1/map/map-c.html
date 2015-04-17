@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <title>联系我们</title>
+    <style type="text/css">
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #container {
+        width: 100%;
+        height: 100%;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container"></div>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=kwgiPI8Ky6keCNP79B8PuG28"></script>
+    <!-- <script type="text/javascript" src="http://api.map.baidu.com/api?type=quick&ak=kwgiPI8Ky6keCNP79B8PuG28&v=1.0"></script> -->
+    <script>
+    var map = new BMap.Map('container'),
+    markerArr = [{
+        title:'北京办事处',
+        x: 116.423915,
+        y: 39.905365,
+        address:'北京市崇文区崇外大街3号新世界写字楼A座1318',
+        tel:'010-67087548'
+    }, {
+        title:'天津办事处',
+        x: 117.247302,
+        y: 39.109369,
+        address:'天津市河东区六纬路神州花园18栋6门1102室',
+        tel:'022-24314816'
+    }, {
+        title:'河北办事处',
+        x: 114.491086,
+        y: 38.044191,
+        address:'河北省石家庄市桥西区南小街金奥府邸A座1306',
+        tel:'0311-67799097'
+    }, {
+        title:'山东办事处',
+        x: 117.001171,
+        y: 36.726872,
+        address:'山东省天桥区济洛路泉星小区1区7号楼1单元1201室',
+        tel:'0531-85800530'
+    }, {
+        title:'山西办事处',
+        x: 112.576647,
+        y: 37.857669,
+        address:'山西省太原市并州北路45号宝佳丽景花园综合楼3单元1101室',
+        tel:'0351-2110116'
+    }, {
+        title:'辽宁办事处',
+        x: 123.411032,
+        y: 41.787383,
+        address:'辽宁省沈阳市和平区南四马路28号枫景名城6栋19-1室',
+        tel:'024-23503935'
+    }, {
+        title:'吉林办事处',
+        x: 125.33155,
+        y: 43.869341,
+        address:'长春市南关区人民大街5116A，2门602（人民大街与自由大路交汇，林业宾馆后面）',
+        tel:'0431-89109600'
+    }, {
+        title:'黑龙江办事处',
+        x: 126.677459,
+        y: 45.774671,
+        address:'哈尔滨市南岗区宣化街沿河路大自然家园三栋四门503室',
+        tel:'0451-55565455'
+    }, {
+        title:'内蒙办事处',
+        x: 111.663517,
+        y: 40.831881,
+        address:'内蒙古呼和浩特市光明大街源海电力家园C座1门601室',
+        tel:'0471-6948443'
+    }, {
+        title:'上海办事处',
+        x: 121.411859,
+        y: 31.224179,
+        address:'上海市长宁区长宁路1188弄2-704',
+        tel:'021-52413138'
+    }, {
+        title:'浙江办事处',
+        x: 120.210794,
+        y: 30.268516,
+        address:'浙江省杭州市江干区景昙路三新家园东区4幢3单元501室',
+        tel:'0571-86025548'
+    }, {
+        title:'江苏办事处',
+        x: 118.748,
+        y: 32.064478,
+        address:'江苏省南京市鼓楼区草场门大街100号新城市花园2单元302室',
+        tel:'025-86531429'
+    }, {
+        title:'安徽办事处',
+        x: 117.308623,
+        y: 31.85853,
+        address:'安徽省合肥市包河区78号贵都花园南楼三单元105室',
+        tel:'0551-63657535'
+    }, {
+        title:'江西办事处',
+        x: 115.888865,
+        y: 28.675457,
+        address:'江西省南昌市西湖区新洲路88号丰源嘉会4栋401',
+        tel:'0791-86566638'
+    }, {
+        title:'福建办事处',
+        x: 119.304546,
+        y: 26.124412,
+        address:'福州市福飞南路340号塞纳阳光小区2栋1001室',
+        tel:'0591-87751400'
+    }, {
+        title:'四川办事处',
+        x: 104.099775,
+        y: 30.664001,
+        address:'四川省成都市成华区天祥街32号东方花园2栋5单元5-D室',
+        tel:'028-84440731'
+    }, {
+        title: '重庆办事处',
+        x: 106.52652,
+        y: 29.597182,
+        address: '重庆市渝北区加州花园A6-17-3',
+        tel: '023-67525990'
+    }, {
+        title: '陕西办事处',
+        x: 108.959242,
+        y: 34.230341,
+        address: '陕西省西安市小寨东路131号西安财经学院家属院7-1-1106',
+        tel: '029-63380038'
+    }, {
+        title: '河南办事处',
+        x: 113.608341,
+        y: 34.752296,
+        address: '郑州市中原区中原路华山路万达小区5栋2单元605室',
+        tel: '18684960604'
+    }, {
+        title: '湖北办事处',
+        x: 114.374258,
+        y: 30.586543,
+        address: '湖北省武汉市徐东大街东湖花园小区2栋2单元1101',
+        tel: '027-88619225'
+    }, {
+    	title: '湖南办事处',
+    	x: 112.960727,
+    	y: 28.226288,
+    	address: '湖南省长沙市高新区银盆南路359号',
+    	tel: '0731-88619575'
+    }, {
+        title: '广东办事处',
+        x: 113.343274,
+        y: 23.118719,
+        address: '广州市天河区珠江新城猎德花园德和楼701',
+        tel: '020-87339498'
+    }, {
+        title: '广西办事处',
+        x: 108.341996,
+        y: 22.834563,
+        address: '南宁市兴宁区民主路北四里力元新城2栋1004',
+        tel: '0771-5667125'
+    }, {
+        title: '海南办事处',
+        x: 110.344939,
+        y: 20.02769,
+        address: '海口市美兰区万华路龙兴公寓2栋3单元501',
+        tel: '13876241480'
+    }, {
+        title: '贵州办事处',
+        x: 106.706172,
+        y: 26.543007,
+        address: '贵阳市南明区沙冲南路198号黔锦花园7栋1单元702号',
+        tel: '15802624693'
+    }, {
+        title: '云南办事处',
+        x: 102.752675,
+        y: 25.07063,
+        address: '云南省昆明市盘龙区白龙路南亚未来城12栋403',
+        tel: '0871-65745357'
+    }, {
+        title: '甘肃办事处',
+        x: 103.763318,
+        y: 36.082904,
+        address: '甘肃省兰州市七里河区火星街明珠家园3号楼2单元1002室',
+        tel: '18794223358'
+    }, {
+        title: '宁夏办事处',
+        x: 106.248014,
+        y: 38.464229,
+        address: '宁夏银川市金凤区正源南街东方尚都29号楼201',
+        tel: '0951-6835596'
+    }, {
+        title: '青海办事处',
+        x: 101.755624,
+        y: 36.64191,
+        address: '青海省西宁市城西区海西西路电力小区9号楼3单元501室',
+        tel: '18502979175'
+    }, {
+        title: '新疆办事处',
+        x: 87.650594,
+        y: 43.811784,
+        address: '新疆维吾尔自治区乌鲁木齐市天山区青年路日月星光花园日光小区4-3-401',
+        tel: '0991-8860289'
+    }],
+    routeSearch = new BMap.DrivingRoute(map, {
+    	renderOptions: {
+    		map: map,
+    		autoViewport: true
+    	}
+    }),
+    geolocation = new BMap.Geolocation(),
+    location;
+
+    geolocation.getCurrentPosition(function(r){
+		if(this.getStatus() == BMAP_STATUS_SUCCESS){
+			location = r.point;
+		}
+	}, {
+		enableHighAccuracy: true
+	});
+
+    map.centerAndZoom('长沙', 5);      
+	map.addControl(new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_LEFT, type: BMAP_NAVIGATION_CONTROL_SMALL}));
+
+	for (var i = 0, l = markerArr.length; i < l; i++) {
+		var p = markerArr[i],
+		marker = new BMap.Marker(new BMap.Point(p.x, p.y)),
+		html = '<h3>' + p.title + '</h3>地址：' + p.address + '<br>电话：' + p.tel + '<br><button onclick="route(' + p.x + ',' + p.y + ',\'' + p.address + '\')">去这里</button>',
+		info = new BMap.InfoWindow(html);
+		!(function(m, inf) {
+			m.addEventListener('click', function() {
+				this.openInfoWindow(inf);
+			});
+		})(marker, info);
+		
+		map.addOverlay(marker);
+	};
+
+	function route(x, y, name) {
+		if (location) {
+			var start = location,
+			end = new BMap.Point(x, y);
+			routeSearch.search(start, end);
+		} else {
+			alert('无法获取当前位置');
+		}
+	}
+    </script>
+</body>
+
+</html>
