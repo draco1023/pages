@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+	<meta charset="utf-8" />
+	<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
+	<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+	<meta HTTP-EQUIV="expires" CONTENT="0">
+	<meta name="apple-touch-fullscreen" content="yes" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta http-equiv="Expires" content="-1" />
+	<meta http-equiv="pragram" content="no-cache" />
+	<title>我们结婚啦-李啸&hearts;李心佩</title>
+	<script type="text/javascript">
+		if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
+			var version = parseFloat(RegExp.$1);
+			if(version>2.3){
+				var phoneScale = parseInt(window.screen.width)/640;
+				document.write('<meta name="viewport" content="width=640, minimum-scale = '+ phoneScale +', maximum-scale = '+ phoneScale +', target-densitydpi=device-dpi">');
+			}else{
+				document.write('<meta name="viewport" content="width=640, target-densitydpi=device-dpi">');
+			}
+		}else{
+			document.write('<meta name="viewport" content="width=640, user-scalable=no, target-densitydpi=device-dpi">');
+		}
+	</script>
+	<link rel="stylesheet" type="text/css" href="main.min.css">
+<head>
+<body class="app" data-app-id=""> <img src="img/snap.jpg" style="display:none;">
+	<div id="app-loading" class="app-loading">
+		<div class="cycleWrap">
+			<span class="cycle cycle-1"></span>
+			<span class="cycle cycle-2"></span>
+			<span class="cycle cycle-3"></span>
+			<span class="cycle cycle-4"></span>
+		</div>
+		<div class="lineWrap">
+			<span class="line line-1"></span>
+			<span class="line line-2"></span>
+			<span class="line line-3"></span>
+		</div>
+	</div>
+		<style type="text/css">
+	#myHtmlArea{position:relative;width:100%;height:100%;position:relative; z-index:999;}
+	#leafContainer { z-index:999;width:100%;height:0;top:0;overflow:hidden}
+    #leafContainer > div { position: absolute;max-width:100px;max-height: 100px;-webkit-animation-iteration-count: infinite, infinite; -webkit-animation-direction: normal, normal;-webkit-animation-timing-function: linear, ease-in;z-index:999;}
+    #leafContainer > div > img {width: 100%; -webkit-animation-iteration-count: infinite;-webkit-animation-direction: alternate;-webkit-animation-timing-function: ease-in-out; -webkit-transform-origin: 50% -100%;} 
+    @-webkit-keyframes fade{ 
+    	0% { opacity: 1; } 
+    	95% { opacity: 1; } 
+    	100% { opacity: 0; }
+    } 
+    @-webkit-keyframes drop{ 
+    	0% { -webkit-transform: translate(0px, -50px); } 
+    	100% { -webkit-transform: translate(0px, 1000px); }
+    } 
+    @-webkit-keyframes clockwiseSpin{ 
+    	0% { -webkit-transform: rotate(-50deg); } 
+    	100% { -webkit-transform: rotate(50deg); }
+    } 
+    @-webkit-keyframes counterclockwiseSpinAndFlip { 
+    	0% { -webkit-transform: scale(-1, 1) rotate(50deg); } 
+    	100% { -webkit-transform: scale(-1, 1) rotate(-50deg);} 
+    }
+	</style>
+	<div id="leafContainer" class="back_tx_area"></div>
+	<script type="text/javascript">
+	var tximages = ['','','','meigui','realLeaf','snow','paopao'];
+	var txiname = tximages[6];
+	const NUMBER_OF_LEAVES = 20;
+	function init(){ 
+		var container = document.getElementById('leafContainer'); 
+		for (var i = 0; i < NUMBER_OF_LEAVES; i++) { 
+			container.appendChild(createALeaf());
+			 } 
+	} 
+	function randomInteger(low, high){ 
+		return low + Math.floor(Math.random() * (high - low)); 
+	} 
+	function randomFloat(low, high){ 
+		return low + Math.random() * (high - low);
+	} 
+	function pixelValue(value){ return value + 'px';} 
+	function durationValue(value){ return value + 's';} 
+	function createALeaf(){
+	  var leafDiv = document.createElement('div');
+	  var image = document.createElement('img');
+	  image.src = 'img/' + txiname + randomInteger(1, 5) + '.png';
+	  leafDiv.style.top = "-100px";
+	  leafDiv.style.left = pixelValue(randomInteger(0, 600));
+	  var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip'; 
+	  leafDiv.style.webkitAnimationName = 'fade, drop'; 
+	  image.style.webkitAnimationName = spinAnimationName; 
+	  var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+	  var spinDuration = durationValue(randomFloat(4, 8)); 
+	  leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+	  var leafDelay = durationValue(randomFloat(0, 5)); 
+	  leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
+	  image.style.webkitAnimationDuration = spinDuration; 
+	  leafDiv.appendChild(image); return leafDiv; } /*window.addEventListener('load', init, false);*/ 
+		init();
+	</script>
+		<header class="app-header">
+		<a href="javascript:void(0);" class="u-globalAudio"> <i class="icon-music"></i>
+			<audio src="http://121.40.147.27/music/jinmushuihuotu.mp3 " autoplay="autoplay" loop="loop"></audio>
+		</a>
+	</header>
+	<section class="app-content">
+	  	  <section class="page page-no" data-plugin-type="info_link" style="background-image: url(img/bg_no.jpg);">
+	  		<div class = 'wed'>
+	  			<img src="img/wed.png"/>
+	  		</div>
+	  	</section>	  <section class="page page-link" data-plugin-type="info_link" style="background-image: url(img/合影竖1.jpg);">
+	  		<div class="tit_cir cover " id="tit_center">
+				<h1>李&emsp;啸 &amp;  李心佩</h1>
+				<p>
+					2015-09-19 (
+											星期六
+											)
+				</p>
+			</div>
+	  	</section>		<section class="page page-teletext" data-plugin-type="info_list" style="background-image:url(img/bg2.jpg)">
+			<section class="page-content">
+				<ul class="m-cascadingTeletext" id="mCascadingTeletext">
+					<li >
+							<table>
+								<tr>
+									<th>
+										<img src="img/合影竖5.jpg"/>
+									</th>
+								</tr>
+							</table>
+							<div class="imgText" style="text-align: center;">
+                                    <div class="contet_ivitation">
+                                        <h4 style="font-size: 32px;text-align: center">爱情宣言</h4>
+                                        <hr class="soften">
+                                        <div class="EvitationFont" style="text-align: left;font-size: 30px;">爱从眼角出发，抵达鬓角；这微不足道的间距，却需要付出跋涉一生的努力。期待您带着祝福，和我们一起见证这幸福的时刻。</div>
+                                        <hr class="soften">
+                                    </div>
+                                    
+                                </div>						</li><li >
+							<table>
+								<tr>
+									<th>
+										<img src="img/合影竖4.jpg"/>
+									</th>
+								</tr>
+							</table>
+													</li><li >
+							<table>
+								<tr>
+									<th>
+										<img src="img/单人竖2.jpg"/>
+									</th>
+								</tr>
+							</table>
+													</li><li >
+							<table>
+								<tr>
+									<th>
+										<img src="img/单人竖1.jpg"/>
+									</th>
+								</tr>
+							</table>
+													</li><li >
+							<table>
+								<tr>
+									<th>
+										<img src="img/合影竖2.jpg"/>
+									</th>
+								</tr>
+							</table>
+													</li><li >
+							<table>
+								<tr>
+									<th>
+										<img src="img/合影竖6.jpg"/>
+									</th>
+								</tr>
+							</table>
+													</li></ul>
+				<a href="javascript:void(0);" class="u-guidePrev z-move">prev</a>
+				<a href="javascript:void(0);" class="u-guideNext z-move">next</a>
+			</section>
+		</section> 
+		<section class="page page-link" data-plugin-type="info_link" style="background-image: url(img/bg3.jpg);">
+			<section class="page-content">
+                 	<div class='u-head'>
+                 		<div class = 'u-head-bg'></div>
+                 	</div>
+       				  <div class="u-info">
+                        <div class="u-dk clearfix ">
+                            <div class="ii-p nam-p"><div>李啸</div><div>李心佩</div></div>
+                            <div class="ii-p timer-p">
+                                <span class="rows-year minijianxiyuan">2015</span>
+                                <span class="rows-date minijianxiyuan">09月19日</span>
+                                <span class="rows-time minijianxiyuan ">12:18</span>
+                            </div>
+                        </div>
+                        <p class="rows-p minijianxiyuan">佳宁娜国际酒店</p>
+                      
+                        <p class="rows-p rows-p2 minijianxiyuan">益阳市高新区梓山路2号</p> 
+                    </div>
+               </section>
+		</section> 
+       <section class="page page-word" style="background-image:url(img/bg5.jpg)">
+			<div class ='wed3'>
+				<img src="img/wed3.png"/>		
+			</div>
+			<div class ='wed4'>
+				<img src="img/wed4.png"/>		
+			</div>
+			<section class="page-content">
+				<a href="http://m.amap.com/navi/?dest=112.359604,28.554427&destName=%E4%BD%B3%E5%AE%81%E5%A8%9C%E5%9B%BD%E9%99%85%E9%85%92%E5%BA%97||%E7%9B%8A%E9%98%B3%E5%B8%82%E9%AB%98%E6%96%B0%E5%8C%BA%E6%A2%93%E5%B1%B1%E8%B7%AF2%E5%8F%B7&key=da975a4eb7d6212541f780b4e3176446" id="myLeave" class="go_in" style="background-image: url(img/go_cj.png); background-color: rgba(85, 169, 255, 0.701961);"></a>
+				<a href="http://m.amap.com/navi/?dest=112.359604,28.554427&destName=%E4%BD%B3%E5%AE%81%E5%A8%9C%E5%9B%BD%E9%99%85%E9%85%92%E5%BA%97||%E7%9B%8A%E9%98%B3%E5%B8%82%E9%AB%98%E6%96%B0%E5%8C%BA%E6%A2%93%E5%B1%B1%E8%B7%AF2%E5%8F%B7&key=da975a4eb7d6212541f780b4e3176446" class="go_in" style="background-image: url(img/go_zl.png); background-color: rgba(85, 169, 255, 0.701961);"></a>
+			</section>
+			<script type="text/javascript" src="jquery.min.js"></script>
+		</section>
+
+	</section>
+	<section class="u-note"></section>
+	<section class="u-pageLoading">
+		<img src="img/load.gif" alt="loading" />
+	</section>
+	<script type="text/javascript" src="init.min.js"></script>
+</body>
+
+</html>
