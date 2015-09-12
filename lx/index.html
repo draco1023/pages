@@ -2,15 +2,10 @@
 <html lang="ch">
 <head>
 	<meta charset="utf-8" />
-	<meta HTTP-EQUIV="pragma" CONTENT="no-cache">
-	<meta HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
-	<meta HTTP-EQUIV="expires" CONTENT="0">
 	<meta name="apple-touch-fullscreen" content="yes" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
 	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
-	<meta http-equiv="Expires" content="-1" />
-	<meta http-equiv="pragram" content="no-cache" />
 	<title>我们结婚啦-李啸&hearts;李心佩</title>
 	<script type="text/javascript">
 		if(/Android (\d+\.\d+)/.test(navigator.userAgent)){
@@ -84,22 +79,23 @@
 	function pixelValue(value){ return value + 'px';} 
 	function durationValue(value){ return value + 's';} 
 	function createALeaf(){
-	  var leafDiv = document.createElement('div');
-	  var image = document.createElement('img');
-	  image.src = 'img/' + txiname + randomInteger(1, 5) + '.png';
-	  leafDiv.style.top = "-100px";
-	  leafDiv.style.left = pixelValue(randomInteger(0, 600));
-	  var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip'; 
-	  leafDiv.style.webkitAnimationName = 'fade, drop'; 
-	  image.style.webkitAnimationName = spinAnimationName; 
-	  var fadeAndDropDuration = durationValue(randomFloat(5, 11));
-	  var spinDuration = durationValue(randomFloat(4, 8)); 
-	  leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
-	  var leafDelay = durationValue(randomFloat(0, 5)); 
-	  leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
-	  image.style.webkitAnimationDuration = spinDuration; 
-	  leafDiv.appendChild(image); return leafDiv; } /*window.addEventListener('load', init, false);*/ 
-		init();
+		var leafDiv = document.createElement('div');
+		var image = document.createElement('img');
+		image.src = 'img/' + txiname + randomInteger(1, 5) + '.png';
+		leafDiv.style.top = "-100px";
+		leafDiv.style.left = pixelValue(randomInteger(0, 600));
+		var spinAnimationName = (Math.random() < 0.5) ? 'clockwiseSpin' : 'counterclockwiseSpinAndFlip'; 
+		leafDiv.style.webkitAnimationName = 'fade, drop'; 
+		image.style.webkitAnimationName = spinAnimationName; 
+		var fadeAndDropDuration = durationValue(randomFloat(5, 11));
+		var spinDuration = durationValue(randomFloat(4, 8)); 
+		leafDiv.style.webkitAnimationDuration = fadeAndDropDuration + ', ' + fadeAndDropDuration;
+		var leafDelay = durationValue(randomFloat(0, 5)); 
+		leafDiv.style.webkitAnimationDelay = leafDelay + ', ' + leafDelay;
+		image.style.webkitAnimationDuration = spinDuration; 
+		leafDiv.appendChild(image); return leafDiv;
+	} /*window.addEventListener('load', init, false);*/ 
+	init();
 	</script>
 		<header class="app-header">
 		<a href="javascript:void(0);" class="u-globalAudio"> <i class="icon-music"></i>
@@ -186,23 +182,23 @@
 		</section> 
 		<section class="page page-link" data-plugin-type="info_link" style="background-image: url(img/bg3.jpg);">
 			<section class="page-content">
-                 	<div class='u-head'>
-                 		<div class = 'u-head-bg'></div>
-                 	</div>
-       				  <div class="u-info">
-                        <div class="u-dk clearfix ">
-                            <div class="ii-p nam-p"><div>李啸</div><div>李心佩</div></div>
-                            <div class="ii-p timer-p">
-                                <span class="rows-year minijianxiyuan">2015</span>
-                                <span class="rows-date minijianxiyuan">09月19日</span>
-                                <span class="rows-time minijianxiyuan ">12:18</span>
-                            </div>
+             	<div class='u-head'>
+             		<div class = 'u-head-bg'></div>
+             	</div>
+   				  <div class="u-info">
+                    <div class="u-dk clearfix ">
+                        <div class="ii-p nam-p"><div>李啸</div><div>李心佩</div></div>
+                        <div class="ii-p timer-p">
+                            <span class="rows-year minijianxiyuan">2015</span>
+                            <span class="rows-date minijianxiyuan">09月19日</span>
+                            <span class="rows-time minijianxiyuan ">12:18</span>
                         </div>
-                        <p class="rows-p minijianxiyuan">佳宁娜国际酒店</p>
-                      
-                        <p class="rows-p rows-p2 minijianxiyuan">益阳市高新区梓山路2号</p> 
                     </div>
-               </section>
+                    <p class="rows-p minijianxiyuan">佳宁娜国际酒店</p>
+                  
+                    <p class="rows-p rows-p2 minijianxiyuan">益阳市高新区梓山路2号</p> 
+                </div>
+           </section>
 		</section> 
        <section class="page page-word" style="background-image:url(img/bg5.jpg)">
 			<div class ='wed3'>
