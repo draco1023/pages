@@ -1,0 +1,17 @@
+/* Write your styles */
+.list-left {
+    text-align: center;
+    color: deepskyblue;
+}
+
+.list-center {
+    text-align: center;
+}
+
+.list-right {
+    text-align: right;
+}
+
+.am-header .am-header-title {
+    margin: 0;
+}
