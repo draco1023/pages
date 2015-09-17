@@ -1,50 +1,72 @@
 * {
-	-webkit-user-select: none;  /* Chrome all / Safari all */
-	-moz-user-select: none;     /* Firefox all */
-	-ms-user-select: none;      /* IE 10+ */
-	user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-html, body {
-	width: 100%;
-	overflow-x: hidden;
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
 }
 
 .am-list-news-default {
-	margin: 0;
+    margin: 0;
 }
 
 .am-list-news-default .am-list .am-list-thumb img {
-	width: initial;
-	display: initial;
+    width: initial;
 }
 
 .am-list-news-default .am-list .am-list-item-desced {
-	padding-top: .5rem;
+    padding-top: .5rem;
     padding-bottom: .5rem;
 }
 
 .am-page {
-	width: 100%;
+    width: 100%;
     position: relative;
     overflow: hidden;
     min-height: 100%;
 }
 
 h3 {
-	margin: 0 0 1rem;
+    margin: 0 0 1rem;
 }
 
 .item-title {
-	margin-left: 1rem;
+    margin-left: 1rem;
 }
 
-a, a:focus, a:hover {
-	color: black;
+a,
+a:focus,
+a:hover {
+    color: black;
 }
+
 a:active {
-	background-color: skyblue;
-	color: white;
+    color: white;
+}
+
+li:active {
+    background-color: skyblue;
+}
+
+.normal-img {
+    display: inline !important;
+}
+
+li:active .normal-img {
+    display: none !important;
+}
+
+.highlight-img {
+    display: none !important;
+}
+
+li:active .highlight-img {
+    display: inline !important;
 }
 
 .list-left {
@@ -64,38 +86,39 @@ a:active {
 }
 
 #main-view {
-	-webkit-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    transform: translate(0,0);
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
     transition: all .3s ease-in-out;
 }
 
 #detail-view {
-	position: absolute;
+    position: absolute;
     top: 0;
     left: 0;
     background-color: #FFF;
     transition: all .3s ease-in-out;
-    -webkit-transform: translate(100%,0);
-    -ms-transform: translate(100%,0);
-    transform: translate(100%,0);
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
 }
 
-#main-view, #detail-view {
-	-webkit-transition: all .3s ease-in-out;
+#main-view,
+#detail-view {
+    -webkit-transition: all .3s ease-in-out;
 }
 
 .detail-active #main-view {
-	-webkit-transform: translate(-100%,0);
-    -ms-transform: translate(-100%,0);
-    transform: translate(-100%,0);
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
 }
 
 .detail-active #detail-view {
-	display: block;
-    -webkit-transform: translate(0,0);
-    -ms-transform: translate(0,0);
-    transform: translate(0,0);
+    display: block;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
 }
 
 .widget-hd #btn-back {
@@ -109,7 +132,6 @@ a:active {
     text-align: center;
     line-height: 43px;
     cursor: pointer;
-
     z-index: 100;
     background: #0e90d2;
     color: #FFF;
