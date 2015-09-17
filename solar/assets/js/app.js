@@ -37,7 +37,7 @@
                 //         e.preventDefault()
                 //     }), this.createList()
                 // }, this.init(), this.mainScroll = new a(l[0])
-            };e('.am-list').on('click tap', 'a', function(a) {
+            };e('#main-view').on('click tap', 'a', function(a) {
               a.preventDefault(), e('body').addClass('detail-active');
             });
             e('#btn-back').on('click', function(a) {
@@ -49,7 +49,17 @@
             // });
             e(function() {
                 new o
-            })
+            });
+            var r = Handlebars.compile(e('#demo-list').html());
+            e('#main-view').append(r({
+              content: [{
+                title: '今日发电量',
+                normalImage: 'assets/i/发电量.png',
+                highlightImage: 'assets/i/icon12.png',
+                value: 123,
+                unit: 'kWh'
+              }]
+            }));
         }
     }
 }(window.jQuery || window.Zepto);

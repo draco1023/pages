@@ -82,6 +82,7 @@
 
     hbs.registerPartial('wechatpay', "{{#this}}\n  <div data-am-widget=\"wechatpay\" class=\"am-wechatpay{{#if theme}} am-wechatpay-{{theme}}{{else}} am-wechatpay-default{{/if}}{{#if widgetId}} {{widgetId}}{{/if}}{{#if className}} {{className}}{{/if}}\"{{#if id}} id=\"{{id}}\"{{/if}} data-wechat-pay=\"{ {{#each content.order}} {{@key}}: '{{this}}',{{/each}} }\">\n      <button type=\"button\" class=\"am-btn am-btn-primary am-btn-block am-wechatpay-btn\">\n        {{#if content.title}}\n          {{content.title}}\n        {{else}}\n          微信支付\n        {{/if}}\n      </button>\n  </div>\n{{/this}}\n");
 
+    hbs.registerPartial('list_solar', "{{#this}} <div data-am-widget=\"list_solar\" class=\"am-list-news am-list-news-default\"> <div class=\"am-list-news-bd\"> <ul class=\"am-list\"> {{#each content}} <li class=\"am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left\"> <a> <div class=\"am-g\"> <h3 class=\"item-title\">{{title}}</h3> </div> <div class=\"am-g\"> <div class=\"am-u-sm-3 am-list-thumb list-left\"> <img class=\"normal-img\" src=\"{{normalImage}}\"/> <img class=\"highlight-img\" src=\"{{highlightImage}}\"/> </div> <div class=\"am-u-sm-6 am-list-main list-center\"> <h1 class=\"am-list-item-hd\">{{value}}</h1> </div> <div class=\"am-u-sm-3 list-right\"> <h1 class=\"am-list-item-hd\">{{unit}}</h1> </div> </div> </a> </li> {{/each}} </ul> </div> </div> {{/this}}")
   };
 
   if (typeof module !== 'undefined' && module.exports) {
