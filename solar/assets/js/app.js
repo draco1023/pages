@@ -130,7 +130,9 @@ var chartData = [{"key":"今日发电量","color":null,"values":[{"label":"1","v
 
             !function (data) {
                 o.prepend(r(data));
-                var scroll = new s(e('#solar-list')[0]);
+                var scroll = new s(e('#solar-list')[0], {
+                    click: true
+                });
                 setTimeout(function () {
                     if (getDataCount(data.chartData)) {
                         var d = [],
@@ -146,7 +148,7 @@ var chartData = [{"key":"今日发电量","color":null,"values":[{"label":"1","v
                     }
 
                     scroll.refresh();
-                }, 200);
+                }, 750);
             }(mainData);
             c.height(e(window).height() - c.prev().height());
         }
