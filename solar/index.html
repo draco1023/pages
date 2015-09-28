@@ -3,252 +3,119 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Amaze UI Widget</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>光伏</title>
+    <meta name="description" content="Wasion Solar System">
+    <meta name="keywords" content="solar">
+    <meta name="author" content="Draco">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="icon" type="image/png" href="assets/i/favicon.png">
     <link rel="stylesheet" href="assets/css/amazeui.min.css">
+    <link rel="stylesheet" href="assets/css/nv.d3.min.css">
     <link rel="stylesheet" href="assets/css/app.css">
 </head>
 <body>
     <div class="am-page" id="main-view">
-        <!-- Header -->
-        <header data-am-widget="header" class="am-header am-header-default">
-            <h1 class="am-header-title">威胜科技园屋顶光伏项目2150KW</h1>
-        </header>
-        <!-- List -->
-        <!-- <div data-am-widget="list_news" class="am-list-news am-list-news-default">
-            <div class="am-list-news-bd">
-                <ul class="am-list">
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img class="normal-img" src="assets/i/发电量.png"/>
-                                    <img class="highlight-img" src="assets/i/icon12.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
-                        <a>
-                            <div class="am-g">
-                                <h3 class="item-title">今日发电量</h3>
-                            </div>
-                            <div class="am-g">
-                                <div class="am-u-sm-3 am-list-thumb list-left">
-                                    <img src="assets/i/发电量.png"/>
-                                </div>
-                                <div class="am-u-sm-6 am-list-main list-center">
-                                    <h1 class="am-list-item-hd">XXX</h1>
-                                </div>
-                                <div class="am-u-sm-3 list-right">
-                                    <h1 class="am-list-item-hd">kWh</h1>
-                                </div>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div> -->
     </div>
     <div class="am-page" id="detail-view">
         <header data-am-widget="header" class="am-header am-header-default widget-hd">
             <span class="am-icon-chevron-left" id="btn-back"></span>
-            <h1 class="am-header-title">今日发电量</h1>
+            <h1 class="am-header-title" id="detail-header"></h1>
         </header>
+        <div id="chart">
+            <svg></svg>
+        </div>
     </div>
-    <script type="text/x-handlebars-template" id="demo-list">
+
+<script type="text/x-handlebars-template" id="demo-list">
 {{#this}}
-<div data-am-widget="list_news" class="am-list-news am-list-news-default">
+<header data-am-widget="header" class="am-header am-header-default">
+    <h1 class="am-header-title">{{{title}}}</h1>
+</header>
+<div data-am-widget="list_solar" class="am-list-news am-list-news-default" id="solar-list">
     <div class="am-list-news-bd">
         <ul class="am-list">
             {{#each content}}
-            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left">
+            {{#if array}}
+            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left half{{#if link}} link{{/if}}">
+                {{#each array}}
+                <div class="am-u-sm-6">
+                    {{#if link}}
+                    <a class="am-cf alink" data-link="{{link}}">
+                    {{else}}
+                    <a class="am-cf">
+                    {{/if}}
+                        <div class="am-g half-title">
+                            <h3>{{{title}}}</h3>
+                        </div>
+                        <div class="am-g">
+                            <div class="am-u-sm-4 am-list-thumb list-left">
+                                <img class="img" src="{{normalImage}}" />
+                            </div>
+                            <div class="am-u-sm-8 am-list-main list-center">
+                                <h2 class="am-list-item-hd">{{value}} {{{unit}}}</h2>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {{/each}}
+            </li>
+            {{else}}
+            <li class="am-g am-list-item-desced am-list-item-thumbed am-list-item-thumb-left{{#if link}} link{{/if}}">
+                {{#if link}}
+                <a class="alink" data-link="{{link}}">
+                {{else}}
                 <a>
+                {{/if}}
                     <div class="am-g">
-                        <h3 class="item-title">{{title}}</h3>
+                        <h3 class="item-title">{{{title}}}</h3>
                     </div>
                     <div class="am-g">
                         <div class="am-u-sm-3 am-list-thumb list-left">
-                            <img class="normal-img" src="{{normalImage}}"/>
-                            <img class="highlight-img" src="{{highlightImage}}"/>
+                            <img class="normal-img" src="{{normalImage}}" />
+                            <img class="highlight-img" src="{{highlightImage}}" />
                         </div>
                         <div class="am-u-sm-6 am-list-main list-center">
                             <h1 class="am-list-item-hd">{{value}}</h1>
                         </div>
                         <div class="am-u-sm-3 list-right">
-                            <h1 class="am-list-item-hd">{{unit}}</h1>
+                            <h1 class="am-list-item-hd list-unit">{{{unit}}}</h1>
                         </div>
                     </div>
                 </a>
             </li>
+            {{/if}}
             {{/each}}
         </ul>
+        <div class="am-g">
+            <h3 id="main-chart-title"></h3>
+        </div>
+        <div class="am-g">
+            <div class="am-u-sm-1 chart-label">
+            {{#each chartData}}
+            {{#each values}}
+            <div>{{label}}</div>
+            {{/each}}
+            {{/each}}
+            </div>
+            <div class="am-u-sm-11">
+                <div id="main-chart">
+                    <!--<svg></svg>-->
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 {{/this}}
-    </script>
+</script>
+
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/handlebars.min.js"></script>
     <script src="assets/js/amazeui.min.js"></script>
     <script src="assets/js/fastclick.min.js"></script>
+    <script src="assets/js/d3.min.js"></script>
+    <script src="assets/js/nv.d3.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
