@@ -12,33 +12,37 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="icon" type="image/png" href="assets/i/favicon.png">
+    <link rel="stylesheet" href="assets/css/amazeui.min.css">
     <link rel="stylesheet" href="assets/css/semantic.min.css">
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/dashicons.css">
     <link rel="stylesheet" href="assets/css/other.css">
 </head>
 
 <body style="background:#0CB8F6;">
-    <div id="slider">
-        <div style="background-image: url('assets/i/nav1.jpg');" class="nav-img"></div>
-        <div style="background-image: url('assets/i/nav2.jpg');" class="nav-img"></div>
-        <div style="background-image: url('assets/i/nav3.jpg');" class="nav-img">
-            <form class="ui inverted form" action="login.html">
-                <button class="ui fluid button">立即体验<i class="angle right icon"></i></button>
-            </form>
-        </div>
+    <div data-am-widget="slider" class="am-slider am-slider-a1" data-am-slider='{"directionNav":false,"animationLoop":false,"slideshow":false}'>
+        <ul class="am-slides">
+            <li>
+                <div style="background-image: url('assets/i/nav1.jpg');" class="nav-img"></div>
+            </li>
+            <li>
+                <div style="background-image: url('assets/i/nav2.jpg');" class="nav-img"></div>
+            </li>
+            <li>
+                <div style="background-image: url('assets/i/nav3.jpg');" class="nav-img">
+                    <form class="ui inverted form" action="login.html">
+                        <button class="ui fluid button">立即体验<i class="angle right icon"></i></button>
+                    </form>
+                </div>
+            </li>
+        </ul>
     </div>
-
     <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/handlebars.min.js"></script>
+    <script src="assets/js/amazeui.min.js"></script>
 
     <script type="text/javascript">
     $(function() {
-        $('#slider > div').width(window.innerWidth).height(window.innerHeight);
-        $('#slider').slick({
-            arrows: false,
-            dots: true,
-            infinite: false
-        });
+        $('li > div').width(window.innerWidth).height(window.innerHeight);
     });
     </script>
 </body>
