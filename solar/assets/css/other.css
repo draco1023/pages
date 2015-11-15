@@ -195,6 +195,12 @@ i.icon, i.icons {
     border-color: #fff;
 }
 
+.ui.active.button:active, .ui.button:active,
+.ui.button:hover, .ui.button:focus {
+    background-color: #fff;
+    color: #0CB8F6;
+}
+
 @media screen and (max-height: 480px) {
     html,
     body {
