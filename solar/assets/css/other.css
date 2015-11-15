@@ -1,0 +1,230 @@
+* {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .07);
+    background-color: transparent;
+    color: #333;
+    outline: 0;
+    -webkit-transition: .05s border-color ease-in-out;
+    transition: .05s border-color ease-in-out
+}
+
+input[type=checkbox]:focus,
+input[type=radio]:focus {
+    outline: 0;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    border: 1px solid rgba(255, 255, 255, .7);
+    background: transparent;
+    color: #555;
+    clear: none;
+    cursor: pointer;
+    display: inline-block;
+    line-height: 0;
+    height: 1.3rem;
+    margin: -4px 4px 0 0;
+    outline: 0;
+    padding: 0!important;
+    text-align: center;
+    vertical-align: middle;
+    width: 1.3rem;
+    min-width: 1rem;
+    -webkit-appearance: none;
+    -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    -webkit-transition: .05s border-color ease-in-out;
+    transition: .05s border-color ease-in-out
+}
+
+input[type=radio] {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    margin-right: 4px;
+    line-height: 10px
+}
+
+input[type=checkbox] {
+    border-radius: .2rem;
+}
+
+input[type=checkbox]:checked:before,
+input[type=radio]:checked:before {
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    font: 400 1.5rem/1 dashicons;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+input[type=checkbox]:checked:before {
+    content: '\f147';
+    margin: -3px 0 0 -4px;
+    color: #fff;
+}
+
+input[type=radio]:checked:before {
+    content: '\2022';
+    text-indent: -9999px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    font-size: 24px;
+    width: 6px;
+    height: 6px;
+    margin: 4px;
+    line-height: 16px;
+    background-color: #fff;
+}
+
+.nav-img {
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: #0CB8F6;
+}
+
+.am-slider-a1 .am-control-nav {
+    bottom: 10px;
+}
+
+.am-slider-a1 .am-control-nav li a {
+    background-color: #42C7F3;
+    box-shadow: none;
+}
+
+.am-slider-a1 .am-control-nav li a.am-active {
+    background-color: #fff;
+}
+
+.am-page {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.ui.form input[type=checkbox], .ui.form textarea {
+    vertical-align: middle;
+}
+
+.ui.form .field>label {
+    display: inline;
+}
+
+.ui.form .am-u-sm-6 {
+    color: #fff;
+}
+
+.ui.form button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .7);
+    color: #fff;
+    font-weight: initial;
+}
+
+.login-page {
+    background-color: #0CB8F6;
+}
+
+.login-page .form {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.company {
+    color: #fff;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo {
+    position: relative;
+    width: 40%;
+    margin: 2rem auto;
+}
+
+.logo img {
+    width: 100%;
+}
+
+i.icon, i.icons {
+    font-size: 1.25em;
+}
+
+.login-page i.con, .login-page i.icons {
+    color: #FF2020;
+}
+
+.ui[class*="left icon"].input>input {
+    padding-left: 3.17142857em!important;
+}
+
+.nav-img .form {
+    position: absolute;
+    bottom: 3rem;
+    margin: 0 10%;
+    width: 80%;
+}
+
+.nav-img .ui.form button {
+    border-color: #fff;
+}
+
+@media screen and (max-height: 480px) {
+    html,
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-height: 640px) {
+    html,
+    body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-height: 960px) {
+    html,
+    body {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-height: 1024px) {
+    html,
+    body {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-height: 1280px) {
+    html,
+    body {
+        font-size: 32px;
+    }
+}
