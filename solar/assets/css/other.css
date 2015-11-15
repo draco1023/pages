@@ -103,6 +103,7 @@ input[type=radio]:checked:before {
     background-repeat: no-repeat;
     background-position: center center;
     background-color: #0CB8F6;
+    position: relative;
 }
 
 .am-slider-a1 .am-control-nav {
@@ -164,7 +165,7 @@ input[type=radio]:checked:before {
 .logo {
     position: relative;
     width: 40%;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 .logo img {
