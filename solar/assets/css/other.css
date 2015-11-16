@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'DSDIGI';
+    src: url('../fonts/DSDIGI.eot');
+    src: local('DSDIGI'), url('../fonts/DSDIGI.woff') format('woff'), url('../fonts/DSDIGI.ttf') format('truetype');
+}
+
 * {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -246,6 +252,41 @@ i.icon, i.icons {
 .block-unit {
     padding-left: .5rem;
     padding-top: 1rem;
+}
+
+.main-slider, .main-slider .am-viewport, .main-slider ul, .main-slider li {
+    height: 100%;
+}
+
+li > .am-table > thead {
+    background: #0CB8F6;
+    color: #fff;
+    font-size: 1.25rem;
+}
+
+.am-table>thead>tr>th {
+    font-weight: normal;
+    border-bottom: 0px;
+    padding: 1rem;
+}
+
+li > .am-table > tbody > tr > td {
+    border-top: 2px solid #0CB8F6;
+    padding: 0;
+}
+
+.am-table .am-table {
+    margin-bottom: 0;
+}
+
+.am-slider .am-slides .am-table img {
+    width: initial;
+    display: inline;
+}
+
+.am-table>tbody>tr>td.pump-index {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 @media screen and (max-height: 480px) {
