@@ -168,7 +168,13 @@ input[type=radio]:checked:before {
     margin: 1rem auto;
 }
 
-.logo img {
+.logo2 {
+    position: relative;
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.logo img, .logo2 img {
     width: 100%;
 }
 
@@ -201,10 +207,58 @@ i.icon, i.icons {
     color: #0CB8F6;
 }
 
+.block {
+    position: relative;
+    width: 80%;
+    height: 13%;
+    margin: 1rem auto;
+    border-radius: .4rem;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.orange {
+    background: #E67F22;
+}
+
+.blue {
+    background: #3C91E1;
+}
+
+.cyan {
+    background: #1BBC9B;
+}
+
+.darkblue {
+    background: #34495E;
+}
+
+.block-title {
+    text-align: center;
+}
+
+.block-data {
+    font-size: 2rem;
+    text-align: right;
+    padding-right: .5rem;
+}
+
+.block-unit {
+    padding-left: .5rem;
+    padding-top: 1rem;
+}
+
 @media screen and (max-height: 480px) {
     html,
     body {
         font-size: 12px;
+    }
+}
+
+@media screen and (min-height: 560px) {
+    html,
+    body {
+        font-size: 14px;
     }
 }
 
@@ -215,6 +269,27 @@ i.icon, i.icons {
     }
 }
 
+@media screen and (min-height: 720px) {
+    html,
+    body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-height: 800px) {
+    html,
+    body {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-height: 880px) {
+    html,
+    body {
+        font-size: 22px;
+    }
+}
+
 @media screen and (min-height: 960px) {
     html,
     body {
@@ -222,10 +297,24 @@ i.icon, i.icons {
     }
 }
 
-@media screen and (min-height: 1024px) {
+@media screen and (min-height: 1040) {
     html,
     body {
         font-size: 26px;
+    }
+}
+
+@media screen and (min-height: 1120) {
+    html,
+    body {
+        font-size: 28px;
+    }
+}
+
+@media screen and (min-height: 1200) {
+    html,
+    body {
+        font-size: 30px;
     }
 }
 
