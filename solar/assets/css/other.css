@@ -241,6 +241,7 @@ i.icon, i.icons {
 
 .block-title {
     text-align: center;
+    line-height: 100%;
 }
 
 .block-data {
@@ -251,8 +252,8 @@ i.icon, i.icons {
 
 .block-unit {
     padding-left: .5rem;
-    padding-top: .7rem;
-    font-size: .8rem;
+    padding-top: .525rem;
+    font-size: 1rem;
 }
 
 .main-slider, .main-slider .am-viewport, .main-slider ul, .main-slider li {
