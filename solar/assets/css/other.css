@@ -244,14 +244,15 @@ i.icon, i.icons {
 }
 
 .block-data {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: right;
     padding-right: .5rem;
 }
 
 .block-unit {
     padding-left: .5rem;
-    padding-top: 1rem;
+    padding-top: .7rem;
+    font-size: .8rem;
 }
 
 .main-slider, .main-slider .am-viewport, .main-slider ul, .main-slider li {
@@ -261,7 +262,7 @@ i.icon, i.icons {
 li > .am-table > thead {
     background: #0CB8F6;
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 .am-table>thead>tr>th {
