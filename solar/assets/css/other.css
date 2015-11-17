@@ -291,6 +291,16 @@ li > .am-table > tbody > tr > td {
     padding-right: 1.5rem;
 }
 
+.project>tbody>tr:active {
+    background: #0CB8F6;
+    color: #fff;
+}
+
+.project>tbody>tr>td>img {
+    pointer-events: none;
+    /*-webkit-touch-callout: none;*/
+}
+
 @media screen and (max-height: 480px) {
     html,
     body {
