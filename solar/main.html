@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <div class="am-page" id="main-view">
     <div data-am-widget="slider" class="am-slider am-slider-a1 main-slider" data-am-slider='{"directionNav":false,"controlNav":false,"animationLoop":false,"slideshow":false}'>
         <ul class="am-slides">
             <li>
@@ -130,6 +131,38 @@
             </li>
         </ul>
     </div>
+    </div>
+
+    <div class="am-page" id="detail-view">
+        <header data-am-widget="header" class="am-header am-header-default">
+            <span class="am-icon-chevron-left btn-back">返回</span>
+            <h1 class="am-header-title" id="detail-header">详情</h1>
+        </header>
+        <button data-prefix="threshold">阈值</button>
+        <button data-prefix="chart">历史</button>
+        <button data-prefix="prop">名牌</button>
+    </div>
+
+    <div class="am-page" id="threshold-view">
+        <header data-am-widget="header" class="am-header am-header-default">
+            <span class="am-icon-chevron-left btn-back">返回</span>
+            <h1 class="am-header-title">详情</h1>
+        </header>
+    </div>
+
+    <div class="am-page" id="chart-view">
+        <header data-am-widget="header" class="am-header am-header-default">
+            <span class="am-icon-chevron-left btn-back">返回</span>
+            <h1 class="am-header-title">详情</h1>
+        </header>
+    </div>
+
+    <div class="am-page" id="prop-view">
+        <header data-am-widget="header" class="am-header am-header-default">
+            <span class="am-icon-chevron-left btn-back">返回</span>
+            <h1 class="am-header-title">详情</h1>
+        </header>
+    </div>
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/amazeui.min.js"></script>
@@ -137,7 +170,27 @@
     <script type="text/javascript">
     $(function() {
         $('body').on('click tap', '.project>tbody>tr', function() {
-            
+            $('body').addClass('detail-active');
+        });
+
+        $('#detail-view .btn-back').on('click tap', function() {
+            $('body').removeClass('detail-active');
+        });
+
+        $('#threshold-view .btn-back').on('click tap', function() {
+            $('body').removeClass('threshold-active');
+        });
+
+        $('#chart-view .btn-back').on('click tap', function() {
+            $('body').removeClass('chart-active');
+        });
+
+        $('#prop-view .btn-back').on('click tap', function() {
+            $('body').removeClass('prop-active');
+        });
+
+        $('#detail-view button').on('click tap', function() {
+            $('body').addClass($(this).data('prefix') + '-active');
         });
     });
     </script>

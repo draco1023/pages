@@ -127,9 +127,10 @@ input[type=radio]:checked:before {
 
 .am-page {
     width: 100%;
-    position: relative;
-    overflow: hidden;
     height: 100%;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .ui.form input[type=checkbox], .ui.form textarea {
@@ -376,4 +377,59 @@ li > .am-table > tbody > tr > td {
     body {
         font-size: 32px;
     }
+}
+
+#main-view {
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+#detail-view, #chart-view, #prop-view, #threshold-view {
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
+    transform: translate(100%, 0);
+}
+
+#main-view, #detail-view, #chart-view, #prop-view, #threshold-view {
+    background: #fff;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.detail-active #main-view {
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+}
+
+.detail-active #detail-view, .chart-active #chart-view, .prop-active #prop-view, .threshold-active #threshold-view {
+    display: block;
+    -webkit-transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.am-header-default {
+    background: #fff;
+}
+
+.am-header .am-header-title {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.btn-back {
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -21.5px;
+    line-height: 43px;
+    cursor: pointer;
+    z-index: 100;
+    color: #0CB8F6;
 }
