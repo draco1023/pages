@@ -433,3 +433,11 @@ li > .am-table > tbody > tr > td {
     z-index: 100;
     color: #0CB8F6;
 }
+
+.prop-separator {
+    position: relative;
+    width: 100%;
+    height: 2rem;
+    background: #F0EFF5;
+    border: 1px solid #D9D9DB;
+}
