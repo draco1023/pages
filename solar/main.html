@@ -59,7 +59,7 @@
                     </div>
                 </div>
             </li>
-            <li style="overflow-y:scroll;">
+            <li style="overflow-y:auto;">
                 <table class="am-table am-table-centered">
                     <thead>
                         <tr>
@@ -134,24 +134,163 @@
     </div>
 
     <div class="am-page" id="detail-view">
-        <header data-am-widget="header" class="am-header am-header-default">
+        <header data-am-widget="header" class="am-header am-header-default" style="border-bottom:1px solid #0CB8F6;">
             <span class="am-icon-chevron-left btn-back">返回</span>
             <h1 class="am-header-title" id="detail-header">详情</h1>
         </header>
-        <button data-prefix="threshold">阈值</button>
-        <button data-prefix="chart">历史</button>
-        <button data-prefix="prop">名牌</button>
+        <div class="prop-item text-blue am-cf">
+            <div class="am-fr">数据时标：2015-11-09 16:45:00</div>
+        </div>
+        <div class="main-detail">
+            <div class="prop-item">电力数据</div>
+            <div class="am-g">
+                <div class="am-u-sm-3 block-name">电&emsp;&emsp;压</div>
+                <div class="am-u-sm-3 prop-block"><span>220</span><div class="am-fr">V</div></div>
+                <div class="am-u-sm-3 block-name">电&emsp;&emsp;流</div>
+                <div class="am-u-sm-3 prop-block"><span>0.00</span><div class="am-fr">A</div></div>
+            </div>
+            <div class="am-g detail-bottom">
+                <div class="am-u-sm-3 block-name">有功功率</div>
+                <div class="am-u-sm-3 prop-block"><span>0.02</span><div class="am-fr">kW</div></div>
+                <div class="am-u-sm-3 block-name">功率因数</div>
+                <div class="am-u-sm-3 prop-block"><span>1.00</span></div>
+            </div>
+            <div class="prop-item">泵体监测数据</div>
+            <div class="am-g">
+                <div class="am-u-sm-3 block-name">左轴承温度</div>
+                <div class="am-u-sm-3 prop-block"><span>18.41</span><div class="am-fr">℃</div></div>
+                <div class="am-u-sm-3 block-name">右轴承温度</div>
+                <div class="am-u-sm-3 prop-block"><span>18.41</span><div class="am-fr">℃</div></div>
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-3 block-name">储罐压力</div>
+                <div class="am-u-sm-3 prop-block"><span>已断开</span><div class="am-fr">MPa</div></div>
+                <div class="am-u-sm-3 block-name">泵出口压力</div>
+                <div class="am-u-sm-3 prop-block"><span>已断开</span><div class="am-fr">MPa</div></div>
+            </div>
+            <div class="am-g">
+                <div class="am-u-sm-3 block-name">系统流量</div>
+                <div class="am-u-sm-3 prop-block"><span>已断开</span><div class="am-fr">m<sup>3</sup>/h</div></div>
+                <div class="am-u-sm-3 block-name">轴承振动</div>
+                <div class="am-u-sm-3 prop-block"><span>已断开</span><div class="am-fr">mm/s</div></div>
+            </div>
+            <div class="am-g detail-bottom">
+                <div class="am-u-sm-3 block-name">储罐液位</div>
+                <div class="am-u-sm-3 prop-block"><span>已断开</span><div class="am-fr">mm</div></div>
+                <div class="am-u-sm-3 block-name">电&emsp;压&emsp;2</div>
+                <div class="am-u-sm-3 prop-block"><span>已断开</span><div class="am-fr">V</div></div>
+            </div>
+        </div>
+        <div class="am-g button-group">
+            <button class="am-btn am-btn-default am-radius am-btn-xs" data-prefix="prop">设计参数</button>
+            <button class="am-btn am-btn-default am-radius am-btn-xs" data-prefix="threshold">监测阈值</button>
+            <button class="am-btn am-btn-default am-radius am-btn-xs" data-prefix="chart">历史数据</button>
+        </div>
+    </div>
+
+    <div class="am-page" id="prop-view">
+        <header data-am-widget="header" class="am-header am-header-default">
+            <span class="am-icon-chevron-left btn-back">返回</span>
+            <h1 class="am-header-title">铭牌参数</h1>
+        </header>
+        <div class="prop-separator"></div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">名称</div>
+            <div class="am-fr"><span>XXXX泵</span></div>
+        </div>
+        <div class="prop-separator"></div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">流量</div>
+            <div class="am-fr"><span>10</span>&nbsp;m<sup>3</sup>/h</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">扬程</div>
+            <div class="am-fr"><span>10</span>&nbsp;m</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">转速</div>
+            <div class="am-fr"><span>2900</span>&nbsp;rpm</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">效率</div>
+            <div class="am-fr"><span>85</span>&nbsp;%</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">轴功率</div>
+            <div class="am-fr"><span>2.5</span>&nbsp;kW</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">配套功率</div>
+            <div class="am-fr"><span>2.5</span>&nbsp;kW</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">汽蚀余量</div>
+            <div class="am-fr"><span>4.0</span>&nbsp;m</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">泵重量</div>
+            <div class="am-fr"><span>20</span>&nbsp;Kg</div>
+        </div>
     </div>
 
     <div class="am-page" id="threshold-view">
         <header data-am-widget="header" class="am-header am-header-default">
             <span class="am-icon-chevron-left btn-back">返回</span>
-            <h1 class="am-header-title">详情</h1>
+            <h1 class="am-header-title">监测量阈值</h1>
         </header>
         <div class="prop-separator"></div>
-        <div class="prop-item">
-            <div class="am-fl">test</div>
-            <div class="am-fr">unit</div>
+        <div class="prop-item">电力数据</div>
+        <div class="prop-separator narrow"></div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">电压</div>
+            <div class="am-fr"><span>220~223</span>&nbsp;V</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">电流</div>
+            <div class="am-fr"><span>1~0</span>&nbsp;A</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">有功功率</div>
+            <div class="am-fr"><span>0.01~0.02</span>&nbsp;A</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">功率因数</div>
+            <div class="am-fr"><span>1~2</span>&nbsp;&ensp;</div>
+        </div>
+        <div class="prop-separator"></div>
+        <div class="prop-item">泵体监测数据</div>
+        <div class="prop-separator narrow"></div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">左轴承温度</div>
+            <div class="am-fr"><span>18.41~18.12</span>&nbsp;℃</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">右轴承温度</div>
+            <div class="am-fr"><span>18.34~18.35</span>&nbsp;℃</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">储罐压力</div>
+            <div class="am-fr"><span>已断开</span>&nbsp;MPa</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">泵出口压力</div>
+            <div class="am-fr"><span>已断开</span>&nbsp;MPa</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">系统流量</div>
+            <div class="am-fr"><span>已断开</span>&nbsp;m<sup>3</sup>/h</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">轴承振动</div>
+            <div class="am-fr"><span>已断开</span>&nbsp;mm/s</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">储罐液位</div>
+            <div class="am-fr"><span>已断开</span>&nbsp;mm</div>
+        </div>
+        <div class="prop-item am-cf">
+            <div class="am-fl">电压2</div>
+            <div class="am-fr"><span>已断开</span>&nbsp;MPa</div>
         </div>
     </div>
 
@@ -160,14 +299,6 @@
             <span class="am-icon-chevron-left btn-back">返回</span>
             <h1 class="am-header-title">详情</h1>
         </header>
-    </div>
-
-    <div class="am-page" id="prop-view">
-        <header data-am-widget="header" class="am-header am-header-default">
-            <span class="am-icon-chevron-left btn-back">返回</span>
-            <h1 class="am-header-title">详情</h1>
-        </header>
-        <div class="prop-separator"></div>
     </div>
 
     <script src="assets/js/jquery.min.js"></script>

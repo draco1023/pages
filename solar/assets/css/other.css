@@ -270,7 +270,7 @@ li > .am-table > thead {
 .am-table>thead>tr>th {
     font-weight: normal;
     border-bottom: 0px;
-    padding: 1rem;
+    padding: .5rem 1rem;
 }
 
 li > .am-table > tbody > tr > td {
@@ -440,4 +440,81 @@ li > .am-table > tbody > tr > td {
     height: 2rem;
     background: #F0EFF5;
     border: 1px solid #D9D9DB;
+}
+
+.prop-separator.narrow {
+    height: 1rem;
+}
+
+.prop-item {
+    padding: .5rem;
+    position: relative;
+}
+
+.prop-item .am-fr {
+    color: #aaa;
+}
+
+.prop-item.am-cf {
+    border-bottom: 1px solid #ddd;
+}
+
+.text-blue {
+    color: #0CB8F6;
+}
+
+.main-detail {
+    color: #fff;
+    background: #30C3F7;
+}
+
+.main-detail [class*=am-u-] {
+    font-size: .75rem;
+    padding: 0 0 0 .3rem;
+    line-height: 2rem;
+}
+
+.prop-block {
+    background: #838383;
+    border-radius: .3rem;
+}
+
+.prop-block span {
+    font-family: DSDIGI,"Segoe UI","Lucida Grande",Helvetica,Arial,"Microsoft YaHei",FreeSans,Arimo,"Droid Sans","wenquanyi micro hei","Hiragino Sans GB","Hiragino Sans GB W3",FontAwesome,sans-serif;;
+    /*font-weight: bold;*/
+}
+
+.prop-block .am-fr {
+    margin-right: .2rem;
+    font-size: .5rem;
+}
+
+/*.main-detail .block-name {
+    padding-top: .5rem;
+}*/
+
+.main-detail .prop-block {
+    padding-left: .2rem;
+}
+
+.main-detail .am-g {
+    padding: .5rem 0.2rem;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+}
+
+.main-detail .am-g.detail-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+}
+
+#detail-view button {
+    background: #66D6FC;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .5rem .8rem;
+    font-size: 1rem;
+}
+
+.button-group {
+    margin: 1rem 0;
+    text-align: center;
 }
