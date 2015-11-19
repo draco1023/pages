@@ -217,7 +217,7 @@ i.icon, i.icons {
 .block {
     position: relative;
     width: 80%;
-    height: 4.2rem;
+    height: 4rem;
     margin: 1rem auto;
     border-radius: .4rem;
     color: #fff;
@@ -271,6 +271,14 @@ li > .am-table > thead {
     font-weight: normal;
     border-bottom: 0px;
     padding: .5rem 1rem;
+}
+
+.am-table>thead>tr>th>span {
+    color: #fff;
+    background: #0CB8F6;
+    /*display: inline-block;*/
+    padding: 0 .5rem;
+    margin-right: .5rem;
 }
 
 li > .am-table > tbody > tr > td {
@@ -482,6 +490,10 @@ li > .am-table > tbody > tr > td {
     font-size: 1.5rem;
 }
 
+.main-detail .prop-block span.zh {
+    font-size: .75rem;
+}
+
 .prop-block {
     background: #838383;
     border-radius: .3rem;
@@ -525,4 +537,8 @@ li > .am-table > tbody > tr > td {
 .button-group {
     margin: 1rem 0;
     text-align: center;
+}
+
+.prop-item.am-cf.no-bottom {
+    border-bottom: 0px;
 }
