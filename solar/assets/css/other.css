@@ -292,6 +292,10 @@ li > .am-table > tbody > tr > td {
     padding-right: 1.5rem;
 }
 
+.project>tbody>tr {
+    cursor: pointer;
+}
+
 .project>tbody>tr:active {
     background: #0CB8F6;
     color: #fff;
