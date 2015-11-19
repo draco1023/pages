@@ -217,7 +217,7 @@ i.icon, i.icons {
 .block {
     position: relative;
     width: 80%;
-    height: 13%;
+    height: 4.2rem;
     margin: 1rem auto;
     border-radius: .4rem;
     color: #fff;
@@ -459,12 +459,12 @@ li > .am-table > tbody > tr > td {
     color: #aaa;
 }
 
-.prop-item.am-cf {
-    border-bottom: 1px solid #ddd;
+.text-blue .am-fr {
+    color: #0CB8F6;
 }
 
-.text-blue {
-    color: #0CB8F6;
+.prop-item.am-cf {
+    border-bottom: 1px solid #ddd;
 }
 
 .main-detail {
@@ -476,6 +476,10 @@ li > .am-table > tbody > tr > td {
     font-size: .75rem;
     padding: 0 0 0 .3rem;
     line-height: 2rem;
+}
+
+.main-detail .prop-block span {
+    font-size: 1.5rem;
 }
 
 .prop-block {
