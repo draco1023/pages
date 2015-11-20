@@ -482,7 +482,7 @@ li > .am-table > tbody > tr > td {
 
 .main-detail [class*=am-u-] {
     font-size: .75rem;
-    padding: 0 0 0 .3rem;
+    padding: 0.3rem 0 0 .3rem;
     line-height: 2rem;
 }
 
@@ -537,6 +537,10 @@ li > .am-table > tbody > tr > td {
 .button-group {
     margin: 1rem 0;
     text-align: center;
+}
+
+.button-group .am-u-sm-4 {
+    padding: 0;
 }
 
 .prop-item.am-cf.no-bottom {
