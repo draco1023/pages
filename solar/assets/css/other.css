@@ -546,3 +546,67 @@ li > .am-table > tbody > tr > td {
 .prop-item.am-cf.no-bottom {
     border-bottom: 0px;
 }
+
+/**
+ * d3
+ */
+.background {
+  fill:  url(#background-gradient);
+  shape-rendering: geometricPrecision;
+}
+
+.axis path,
+.axis line {
+  display: none;
+}
+
+.tick text {
+  fill: #fff;
+}
+
+.line {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+.date-line {
+  fill: none;
+  stroke: #fff;
+  stroke-opacity: .6;
+  stroke-width: 1px;
+  shape-rendering: crispEdges;
+}
+
+.area {
+  fill: url(#area-gradient);
+}
+
+.dot {
+  stroke: #fff;
+  fill: #0CB8F6;
+  stroke-width: 1.5px;
+}
+
+.label-small {
+  fill: #fff;
+  fill-opacity: 1;
+  font-size: 12px;
+}
+
+.label-large {
+  fill: #fff;
+  fill-opacity: 1;
+  font-size: 16px;
+}
+
+.icon {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 1.5px;
+  shape-rendering: geometricPrecision;
+}
+
+#chart-view svg {
+    margin: 10px;
+}

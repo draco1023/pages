@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>机泵</title>
+    <title>机泵远程监测云平台</title>
     <meta name="description" content="resp pump">
     <meta name="keywords" content="pump">
     <meta name="author" content="Draco">
@@ -301,7 +301,7 @@
     </div>
 
     <div class="am-page" id="chart-view">
-        <header data-am-widget="header" class="am-header am-header-default">
+        <header data-am-widget="header" class="am-header am-header-default" id="chart-header">
             <span class="am-icon-chevron-left btn-back">返回</span>
             <h1 class="am-header-title">详情</h1>
         </header>
@@ -309,6 +309,7 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/amazeui.min.js"></script>
+    <script src="assets/js/d3.min.js"></script>
 
     <script type="text/javascript">
     $(function() {
@@ -335,6 +336,165 @@
         $('#detail-view button').on('click tap', function() {
             $('body').addClass($(this).data('prefix') + '-active');
         });
+
+        // d3
+        var margin = {top: 30, right: 10, bottom: 30, left: 10},
+            width = window.innerWidth - margin.left - margin.right - 20,
+            height = 160 - margin.top - margin.bottom;
+
+        var parseDate = d3.time.format("%d-%b-%y").parse;
+
+        var x = d3.time.scale()
+            .range([0, width]);
+
+        var y = d3.scale.linear()
+            .range([height, 0]);
+
+        var xAxis = d3.svg.axis()
+            .scale(x)
+            .ticks(3)
+            .tickFormat(d3.time.format("%Y-%m-%d"))
+            .orient("bottom");
+
+        var line = d3.svg.line()
+            .x(function(d) { return x(d.date); })
+            .y(function(d) { return y(d.rate); });
+
+        var area = d3.svg.area()
+          .x(function(d) { return x(d.date); })
+          .y0(height)
+          .y1(function(d) { return y(d.rate); });
+
+        var svg = d3.select("#chart-view").append("svg")
+            .attr("class", "svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom);
+
+        svg.append("rect")
+          .attr("class", "background")
+          .attr("rx", "5px")
+          .attr("ry", "5px")
+          .attr("width", width + margin.left + margin.right)
+          .attr("height", height + margin.top + margin.bottom);
+
+        svg = svg.append("g")
+          .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+        var d3data = [['1-Jan-15','210.73'], ['1-Dec-14','196.97'], ['1-Nov-14','189.31'], ['1-Oct-14','180.86'], ['1-Sep-14','165.30'], ['1-Aug-14','166.43'], ['1-Jul-14','142.83'], ['1-Jun-14','139.35'], ['1-May-14','127.24'], ['1-Apr-14','108.69'], ['1-Mar-14','123.94'], ['1-Feb-14','155.51'], ['1-Jan-14','128.35'], ['1-Dec-13','120.93'], ['1-Nov-13','106.96'], ['1-Oct-13','109.12'], ['1-Sep-13','166.19'], ['1-Aug-13','156.66'], ['1-Jul-13','174.68'], ['1-Jun-13','186.10'], ['1-May-13','180.00'], ['1-Apr-13','149.53'], ['1-Mar-13','121.73'], ['1-Feb-13','133.75'], ['1-Jan-13','194.84'], ['1-Dec-12','178.86'], ['1-Nov-12','187.44'], ['1-Oct-12','156.34'], ['1-Sep-12','144.16'], ['1-Aug-12','135.00'], ['1-Jul-12','121.26'],['1-Jun-12', '118.4']];
+
+                var data = [];
+                  d3data.forEach(function(d) {
+                    data.push({
+                        date : parseDate(d[0]),
+                        rate : +d[1]
+                    });
+                  });
+
+          var maxValue = d3.max(data, function(d) { return d.rate; }) + 50,
+            minValue = d3.min(data, function(d) { return d.rate; }) - 50;
+
+          x.domain(d3.extent(data, function(d) { return d.date; }));
+          y.domain([minValue, maxValue]);
+
+          svg.append("linearGradient")
+            .attr("id", "background-gradient")
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("x1", 0).attr("y1", 0)
+            .attr("x2", 0).attr("y2", height)
+          .selectAll("stop")
+            .data([
+              {offset: "0%", color: "#5CD1FC"},
+              {offset: "100%", color: "#0CB8F6"}
+            ])
+          .enter().append("stop")
+            .attr("offset", function(d) { return d.offset; })
+            .attr("stop-color", function(d) { return d.color; });
+
+          svg.append("linearGradient")
+            .attr("id", "area-gradient")
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("x1", 0).attr("y1", y(0))
+            .attr("x2", 0).attr("y2", y(d3.max(data, function(d) { return d.rate; })))
+          .selectAll("stop")
+            .data([
+              {offset: "40%", color: "#fff", opacity: "0%"},
+              {offset: "100%", color: "#fff", opacity: "30%"}
+            ])
+          .enter().append("stop")
+            .attr("offset", function(d) { return d.offset; })
+            .attr("stop-color", function(d) { return d.color; })
+            .attr("stop-opacity", function(d) { return d.opacity; });
+
+          svg.append("g")
+              .attr("class", "x axis")
+              .attr("transform", "translate(" + (-35) + "," + height + ")")
+              .call(xAxis);
+
+          svg.append("path")
+              .datum(data)
+              .attr("class", "line")
+              .attr("d", line);
+
+          svg.append("path")
+              .datum(data)
+              .attr("class", "area")
+              .attr("d", area);
+
+            var sd = [];
+            for (var i = 0; i < data.length; i+=3) {
+                sd.push(data[i]);
+            };
+
+          svg.append("g").attr("class", "scatter")
+            .selectAll("circle")
+            .data(data)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("cx", function(d) {
+                  return x(d.date);
+             })
+             .attr("cy", function(d) {
+                  return y(d.rate);
+             })
+             .attr("r", 3);
+
+          svg.append("g").selectAll("line")
+            .data([
+              {y1: y(minValue), y2: y(minValue), x1: 0, x2: width},
+              {y1: y((maxValue+minValue)/2), y2: y((maxValue+minValue)/2), x1: 0, x2: width},
+              {y1: y(maxValue), y2: y(maxValue), x1: 0, x2: width},
+
+            ])
+          .enter().append("line")
+            .attr("class", "date-line")
+            .attr("y1", function(d) { return d.y1; })
+            .attr("y2", function(d) { return d.y2; })
+            .attr("x1", function(d) { return d.x1; })
+            .attr("x2", function(d) { return d.x2; });
+
+          svg.append("g").selectAll("text")
+            .data([
+              {text: d3.round(minValue, 0), x: width, y: y(minValue) - 5, anchor: "end", labelClass: "label-small"},
+              {text: d3.round(maxValue, 0), x: width, y: y(maxValue) + 15, anchor: "end", labelClass: "label-small"},
+              // {text: "Daily Avg: " + d3.round(d3.mean(data ,function (d) { return d.rate}), 0), x: 0, y: y(maxValue) - 5, anchor: "start", labelClass: "label-small"},
+              {text: "XX项目XX泵", x: 0, y: y(maxValue) - 5, anchor: "start", labelClass: "label-large"},
+              {text: d3.round(data[0].rate, 0) + "cal", x: width, y: y(maxValue) - 5, anchor: "end", labelClass: "label-large"},
+              // {text: "Today", x: width, y: y(maxValue) - 5, anchor: "end", labelClass: "label-small"}
+            ])
+          .enter().append("text")
+            .attr("class", function(d) { return d.labelClass; })
+            .text(function(d) { return d.text; })
+            .attr("x", function(d) { return d.x; })
+            .attr("y", function(d) { return d.y; })
+            .attr("text-anchor", function(d) { return d.anchor; });
+
+  // svg.append("path")
+  //     .attr("d", d3.svg.symbol()
+  //       .size(function(d) { return 400; })
+  //       .type(function(d) { return "triangle-up"; }))
+  //     .attr("class", "icon")
+  //     .attr("transform", "translate(" + 25 + "," + (-20) + ")");
+
     });
     </script>
 </body>
