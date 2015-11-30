@@ -141,6 +141,10 @@ input[type=radio]:checked:before {
     overflow-y: auto;
 }
 
+.ui.fluid.input>input {
+    width: 100%!important;
+}
+
 .ui.form input[type=checkbox], .ui.form textarea {
     vertical-align: middle;
 }
