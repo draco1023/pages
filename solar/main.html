@@ -315,26 +315,33 @@
     $(function() {
         $('body').on('click tap', '.project>tbody>tr', function() {
             $('body').addClass('detail-active');
+            history.pushState(null, '', '#pump');
         });
 
         $('#detail-view .btn-back').on('click tap', function() {
             $('body').removeClass('detail-active');
+            history.back();
         });
 
         $('#threshold-view .btn-back').on('click tap', function() {
             $('body').removeClass('threshold-active');
+            history.back();
         });
 
         $('#chart-view .btn-back').on('click tap', function() {
             $('body').removeClass('chart-active');
+            history.back();
         });
 
         $('#prop-view .btn-back').on('click tap', function() {
             $('body').removeClass('prop-active');
+            history.back();
         });
 
         $('#detail-view button').on('click tap', function() {
-            $('body').addClass($(this).data('prefix') + '-active');
+            var prefix = $(this).data('prefix');
+            $('body').addClass(prefix + '-active');
+            history.pushState(null, '', '#' + prefix);
         });
 
         // d3
@@ -447,7 +454,7 @@
 
           svg.append("g").attr("class", "scatter")
             .selectAll("circle")
-            .data(data)
+            .data(sd)
             .enter().append("circle")
             .attr("class", "dot")
             .attr("cx", function(d) {
